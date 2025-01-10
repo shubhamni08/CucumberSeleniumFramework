@@ -208,13 +208,13 @@ public class ElementsSteps  extends BaseTest {
         linksPage = new LinksPage();
         String actualMessage = linksPage.getAPIResponseText();
         System.out.println("Actual message: " + actualMessage);
+        String[] expectedStatusCodeRes = expectedMessage.split(" ");
 
-        String statusCode = driver.findElement(By.xpath("//p[@id='linkResponse']/b[1]")).getText();
-        Assert.assertEquals("201", statusCode, "The status code does not match.");
+        String actualStatusCode = driver.findElement(By.xpath("//p[@id='linkResponse']/b[1]")).getText();
+        Assert.assertEquals(actualStatusCode,expectedStatusCodeRes[0]);
 
-
-//        Assert.assertTrue(actualMessage,
-//                actualMessage.contains(expectedMessage));
+        String actualStatusResponse = driver.findElement(By.xpath("//p[@id='linkResponse']/b[2]")).getText();
+        Assert.assertEquals(actualStatusResponse,expectedStatusCodeRes[1]);
     }
 
     @And("I download a file")
