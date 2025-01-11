@@ -14,14 +14,11 @@ public class Alerts_Windows_FramesPage extends BaseTest {
     }
 
     public static String modelDialogButtonXpath = "//*[@id='modalWrapper']/div/*[text()='%s']";
-
     public static String closeButtonXpath = "//button[text()='%s']";
-
     public static String browserWindowButtonXpath = "//*[text()='Browser Windows']/following-sibling::div/button[text()='%s']";
-
     public static String alertButtonXpath = "//*[@id='%s']";
-
     public WebDriverWait wait;
+    public Alert alert;
 
     public void openModal(String modal){
         wait = new WebDriverWait(driver,Duration.ofSeconds(2));
@@ -112,32 +109,39 @@ public class Alerts_Windows_FramesPage extends BaseTest {
         alert.dismiss();
     }
 
-    public void acceptAlert(){
-        Alert alert = driver.switchTo().alert();
-        wait.until(ExpectedConditions.alertIsPresent());
-        alert.accept();
-    }
-
     public void clickAlertButton(String btn){
-        System.out.print("Click Alert Button: "+btn);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-        WebElement alertButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format(alertButtonXpath,btn))));
+        System.out.print("Click Alert Button: " + btn);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebElement alertButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format(alertButtonXpath, btn))));
+        // Scroll into view and click the button
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", alertButton);
         alertButton.click();
+
+        // Optional: Add a small delay after clicking, just to ensure the alert has time to appear
+        try {
+            Thread.sleep(1000);  // Sleep for a second to give the alert time to show up
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public String alertMessage(){
         try {
-            Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-            String alertText = alert.getText(); // Get the alert text
-            alert.accept(); // Accept the alert
-            return alertText;
-        } catch (UnhandledAlertException e) {
-            // In case the alert is already open and causing the issue
-            Alert alert = driver.switchTo().alert();
+            // Explicitly wait for alert to be present
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            Alert alert = wait.until(ExpectedConditions.alertIsPresent());  // Wait for alert to be present
+
+            // Log the alert message
             String alertText = alert.getText();
+            System.out.println("Alert message: " + alertText);
+
+            // Accept the alert to proceed and prevent blocking the next actions
             alert.accept();
+
             return alertText;
+        } catch (Exception e) {
+            e.printStackTrace();
+           return null;
         }
     }
 
