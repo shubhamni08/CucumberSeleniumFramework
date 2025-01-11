@@ -1,8 +1,7 @@
 package pages;
 
 import Base.BaseTest;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -20,6 +19,7 @@ public class Alerts_Windows_FramesPage extends BaseTest {
 
     public static String browserWindowButtonXpath = "//*[text()='Browser Windows']/following-sibling::div/button[text()='%s']";
 
+    public static String alertButtonXpath = "//*[@id='%s']";
 
     public WebDriverWait wait;
 
@@ -51,11 +51,6 @@ public class Alerts_Windows_FramesPage extends BaseTest {
 
     public void triggerNonExistentAlert() {
         driver.findElement(By.id("nonExistentAlertButton")).click();
-    }
-
-    public void dismissAlert() {
-
-        driver.switchTo().alert().dismiss();
     }
 
     public boolean switchBetweenAllWindowsAndVerify() {
@@ -101,7 +96,6 @@ public class Alerts_Windows_FramesPage extends BaseTest {
                 // Perform any actions or assertions in the new window
                 Assert.assertTrue(newWindowTitle.contains("https://demoqa.com/sample"), "Content validation failed");
 
-
                 // Close the new window and switch back to the parent
                 driver.close();
                 break;
@@ -111,6 +105,40 @@ public class Alerts_Windows_FramesPage extends BaseTest {
         // Switch back to the parent window
         driver.switchTo().window(parentHandle);
         System.out.println("Switched back to parent window");
+    }
+
+    public void dismissAlert() {
+        Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+        alert.dismiss();
+    }
+
+    public void acceptAlert(){
+        Alert alert = driver.switchTo().alert();
+        wait.until(ExpectedConditions.alertIsPresent());
+        alert.accept();
+    }
+
+    public void clickAlertButton(String btn){
+        System.out.print("Click Alert Button: "+btn);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebElement alertButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format(alertButtonXpath,btn))));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", alertButton);
+        alertButton.click();
+    }
+
+    public String alertMessage(){
+        try {
+            Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+            String alertText = alert.getText(); // Get the alert text
+            alert.accept(); // Accept the alert
+            return alertText;
+        } catch (UnhandledAlertException e) {
+            // In case the alert is already open and causing the issue
+            Alert alert = driver.switchTo().alert();
+            String alertText = alert.getText();
+            alert.accept();
+            return alertText;
+        }
     }
 
 
