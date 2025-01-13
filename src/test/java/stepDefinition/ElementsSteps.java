@@ -8,32 +8,44 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import pages.*;
 
-import javax.xml.crypto.Data;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class ElementsSteps  extends BaseTest {
-    private HomePage homePage;
-    private BasePage basePage;
-    private TextBoxPage textBoxPage;
-    private CheckBoxPage checkBoxPage;
-    private RadioButtonPage radioButtonPage;
-    private LinksPage linksPage;
-    private UploadDownloadPage uploadDownloadPage;
-    private DynamicProperties dynamicProperties;
-    private Alerts_Windows_FramesPage alertsWindowsFramesPage;
+
+    public ElementsSteps(){
+        super();
+        homePage = new HomePage();
+        basePage = new BasePage();
+        textBoxPage = new TextBoxPage();
+        checkBoxPage = new CheckBoxPage();
+        radioButtonPage = new RadioButtonPage();
+        webTablesPage = new WebTablesPage();
+        linksPage = new LinksPage();
+        uploadDownloadPage = new UploadDownloadPage();
+        dynamicProperties = new DynamicProperties();
+        alertsWindowsFramesPage = new Alerts_Windows_FramesPage();
+    }
+
+    private final HomePage homePage;
+    private final BasePage basePage;
+    private final TextBoxPage textBoxPage;
+    private final CheckBoxPage checkBoxPage;
+    private final RadioButtonPage radioButtonPage;
+    private final WebTablesPage webTablesPage;
+    private final LinksPage linksPage;
+    private final UploadDownloadPage uploadDownloadPage;
+    private final DynamicProperties dynamicProperties;
+    private final Alerts_Windows_FramesPage alertsWindowsFramesPage;
+
 
     @Given( "I am on the DemoQA homepage")
     public void I_am_on_the_DemoQA_homepage(){
         System.out.println("I_am_on_the_DemoQA_homepage method");
-//        WebDriver driver = DriverManager.getDriver(null); // Use existing driver
-        homePage = new HomePage();
     }
 
     @When("I navigate to the {string} section")
@@ -45,26 +57,22 @@ public class ElementsSteps  extends BaseTest {
     @And("I click on {string}")
     public void I_click_on_MenuItem(String menuItem){
         System.out.println("I_click_on_MenuItem: " + menuItem);
-        basePage = new BasePage();
         basePage.click_on_menu_items_from_cards(menuItem);
     }
 
     @When("I fill the form with:")
     public void I_fill_the_form_with(DataTable dataTable){
-        textBoxPage = new TextBoxPage();
         textBoxPage.fillTextBoxForm(dataTable);
     }
 
     @Then("I click on submit button")
     public void I_click_on_submit_button() {
         System.out.println("I_click_on_submit_button method");
-        textBoxPage = new TextBoxPage();
         textBoxPage.clickSubmitButton();
     }
 
     @Then("the output should display:")
     public void the_output_should_display(DataTable expectedOutput) {
-        textBoxPage = new TextBoxPage();
         List<Map<String, String>> expectedData = expectedOutput.asMaps(String.class, String.class);
         for (Map<String, String> field : expectedData) {
             String fieldName = field.get("Field");
@@ -94,7 +102,6 @@ public class ElementsSteps  extends BaseTest {
     @Then("no output should be displayed")
     public void no_output_should_be_displayed() {
         System.out.println("no_output_should_be_displayed method");
-        textBoxPage = new TextBoxPage();
         Assert.assertFalse( textBoxPage.isOutputSectionDisplayed(),"");
         Assert.assertEquals(textBoxPage.getOutputText(),"" );
     }
@@ -102,35 +109,30 @@ public class ElementsSteps  extends BaseTest {
     @And("I click on ExpandAll button")
     public void I_click_on_ExpandAll_button() {
         System.out.println("I_click_on_ExpandAll_button method");
-        checkBoxPage = new CheckBoxPage();
         checkBoxPage.clickExpandAll();
     }
 
     @When("I click on CollapseAll button")
     public void I_click_on_CollapseAll_button() {
         System.out.println("I_click_on_CollapseAll_button method");
-        checkBoxPage = new CheckBoxPage();
         checkBoxPage.clickCollapseAll();
     }
 
     @And("I select the {string} checkbox")
     public void I_select_the_checkbox(String checkboxName) throws InterruptedException{
         System.out.println("I_select_the_checkbox: "+checkboxName);
-        checkBoxPage = new CheckBoxPage();
         checkBoxPage.selectCheckBox(checkboxName);
     }
 
     @When("I select the following checkboxes:")
     public void i_select_the_following_checkboxes(DataTable dataTable){
         System.out.println("I_Select_the_following_checkboxes: "+dataTable);
-        checkBoxPage = new CheckBoxPage();
         checkBoxPage.selectMultipleCheckBoxes(dataTable);
     }
 
     @Then("the success message {string} should be displayed")
     public void the_success_message_should_be_displayed(String expectedMessage) {
         System.out.println("Validating success message: " + expectedMessage);
-        checkBoxPage = new CheckBoxPage();
         String actualValues = checkBoxPage.successMessageActualResult(expectedMessage);
         Assert.assertEquals("You have selected : "+actualValues,expectedMessage,"Success message mismatch" );
     }
@@ -149,16 +151,14 @@ public class ElementsSteps  extends BaseTest {
 
 
     @When("I select the {string} radio button")
-    public void I_select_the_button_option(String optionName) throws InterruptedException{
+    public void I_select_the_button_option(String optionName){
         System.out.println("I_select_the_radio_button_option: "+optionName);
-        radioButtonPage = new RadioButtonPage();
         radioButtonPage.selectRadioButtonOption(optionName);
     }
 
     @Then("the message {string} should be displayed")
     public void the_Message_Should_Be_Displayed(String expectedMessage) {
         System.out.println("the_Message_Should_Be_Displayed: "+expectedMessage);
-        radioButtonPage = new RadioButtonPage();
         String actualMessage = radioButtonPage.getClickMessage();
         System.out.println(actualMessage);
         Assert.assertEquals(actualMessage,expectedMessage,"Message does not match!");
@@ -174,38 +174,41 @@ public class ElementsSteps  extends BaseTest {
     @When("I click on {string} button")
     public void I_click_on_button(String buttonName) {
         System.out.println("I_click_on_button: "+buttonName);
-        radioButtonPage = new RadioButtonPage();
         radioButtonPage.clickButton(buttonName);
     }
 
 
+    @When("I click on the {string} button")
+    public void clickButton(String buttonName) {
+        if ("Add".equalsIgnoreCase(buttonName)) {
+            webTablesPage.clickAddButton();
+        } else {
+            throw new IllegalArgumentException("Unsupported button: " + buttonName);
+        }
+    }
+
     @Given("I am on the Links page")
     public void i_am_on_the_Links_page() {
         System.out.println("i_am_on_the_Links_page method");
-        homePage = new HomePage();
         homePage.click_on_card_by_name("Elements");
-        basePage = new BasePage();
         basePage.click_on_menu_items_from_cards("Links");
     }
 
     @When("I click on the {string} link")
     public void I_click_on_the_link(String link){
         System.out.println("I_click_on_the_link: "+link);
-        linksPage = new LinksPage();
         linksPage.clickLink(link);
     }
 
     @Then("I should be redirected to {string}")
     public void I_should_be_redirected_to(String expectedUrl){
         System.out.println("I_should_be_redirected_to: "+expectedUrl);
-        linksPage = new LinksPage();
         Assert.assertEquals(expectedUrl, linksPage.getCurrentURL());
     }
 
     @Then("I should see the API response message {string}")
     public void I_should_see_the_API_response_message(String expectedMessage) {
         System.out.println("I_should_see_the_API_response_message: "+expectedMessage);
-        linksPage = new LinksPage();
         String actualMessage = linksPage.getAPIResponseText();
         System.out.println("Actual message: " + actualMessage);
         String[] expectedStatusCodeRes = expectedMessage.split(" ");
@@ -220,14 +223,12 @@ public class ElementsSteps  extends BaseTest {
     @And("I download a file")
     public void i_download_a_file(){
         System.out.println("I download a file");
-        uploadDownloadPage = new UploadDownloadPage();
         uploadDownloadPage.clickDowloadLink();
     }
 
     @Then("the file should be downloaded in the local folder")
     public void the_file_should_be_downloaded_in_the_local_folder(){
         System.out.println("The File Should be downloaded in the Local Folder");
-        uploadDownloadPage = new UploadDownloadPage();
         File file = uploadDownloadPage.verifyDownloadedImage();
         System.out.println(file);
         Assert.assertTrue(file.exists(), "Downloaded file not found in the expected location");
@@ -236,9 +237,7 @@ public class ElementsSteps  extends BaseTest {
     @When("I upload a file")
     public void i_upload_a_file(){
         System.out.println("I upload a file");
-        uploadDownloadPage = new UploadDownloadPage();
         uploadDownloadPage.uploadFile();
-
     }
 
     @Then("the uploaded file path should be displayed")
@@ -249,19 +248,16 @@ public class ElementsSteps  extends BaseTest {
 
     @Then("the {string} button should be enabled after 5 seconds")
     public void the_button_should_be_enabled_after_5_seconds(String btn){
-        dynamicProperties = new DynamicProperties();
         Assert.assertTrue(dynamicProperties.buttonEnabledVisible(btn), btn+" button is not enabled after 5 seconds");
     }
 
     @Then("the {string} button should change color")
     public void the_button_should_change_color(String btn){
-        dynamicProperties = new DynamicProperties();
         dynamicProperties.btnChangeColor(btn);
     }
 
     @Then("the {string} button should become visible after 5 seconds")
     public void the_button_should_become_visible_after_5_seconds(String btn){
-        dynamicProperties = new DynamicProperties();
         boolean actualResult = dynamicProperties.buttonEnabledVisible(btn);
         Assert.assertTrue(actualResult,btn+" Button is visible after 5 seconds");
     }

@@ -13,4 +13,16 @@ public class BaseTest {
     public BaseTest() {
         this.driver = DriverManager.getDriver(null); // Get the existing driver instance
     }
+
+    /**
+     * Handle unexpected alerts gracefully to avoid UnhandledAlertException.
+     */
+    protected void dismissUnexpectedAlert() {
+        try {
+            driver.switchTo().alert().dismiss();
+        } catch (Exception ignored) {
+            // No alert present, continue execution.
+        }
+    }
+
 }
