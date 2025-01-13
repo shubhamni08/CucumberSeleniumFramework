@@ -197,6 +197,29 @@ public class ElementsSteps  extends BaseTest {
         webTablesPage.submitForm();
     }
 
+    @Then("I verify the entry {string} exists in the table")
+    public void verifyEntryExists(String entry){
+        boolean isPresent = webTablesPage.isEntryPresent(entry);
+        Assert.assertTrue(isPresent,"Expected entry '" + entry + "' to exist in the table, but it was not found.");
+    }
+
+    @When("I edit the entry {string} with the following details:")
+    public void editEntry(String identifier, DataTable updatedData) {
+        Assert.assertTrue(webTablesPage.isEntryPresent(identifier),"Cannot edit entry '" + identifier + "' because it does not exist.");
+        webTablesPage.editEntry(identifier, updatedData);
+    }
+
+    @When("I delete the entry {string}")
+    public void deleteEntry(String identifier) {
+        Assert.assertTrue(webTablesPage.isEntryPresent(identifier),"Cannot delete entry '" + identifier + "' because it does not exist.");
+        webTablesPage.deleteEntry(identifier);
+    }
+
+    @Then("I verify the entry {string} no longer exists in the table")
+    public void verifyEntryDoesNotExist(String identifier) {
+        boolean isPresent = webTablesPage.isEntryPresent(identifier);
+        Assert.assertFalse(isPresent,"Expected entry '" + identifier + "' to not exist in the table, but it was found.");
+    }
 
 
     @Given("I am on the Links page")

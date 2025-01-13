@@ -13,7 +13,7 @@ Feature: Web Tables Management
       | salary     | 50000   |
       | department | Finance |
     And I submit the registration form
-    Then I verify the entry "John" exists in the table
+    Then I verify the entry "Test" exists in the table
 
     When I edit the entry "Test" with the following details:
       | firstName  | Test    |
@@ -21,5 +21,5 @@ Feature: Web Tables Management
     And I submit the registration form
     Then I verify the entry "Test" exists in the table
 
-    When I delete the entry "Johnny"
-    Then I verify the entry "Johnny" no longer exists in the table
+    When I delete the entry "Test"
+    Then I verify the entry "Test" no longer exists in the table
