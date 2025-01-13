@@ -33,7 +33,7 @@ public class WebTablesPage extends BaseTest {
         dataTable.cells().forEach(System.out::println);
 
         formFields.forEach((field,value)->{
-            field = field.trim().toLowerCase();
+            field = field.trim();
             value = value.trim();
 
             // Debugging log

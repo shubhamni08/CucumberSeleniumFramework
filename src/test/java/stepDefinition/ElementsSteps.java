@@ -178,7 +178,7 @@ public class ElementsSteps  extends BaseTest {
     }
 
 
-    @When("I click on the {string} button")
+    @When("I click on the {string} button.")
     public void clickButton(String buttonName) {
         if ("Add".equalsIgnoreCase(buttonName)) {
             webTablesPage.clickAddButton();
@@ -186,6 +186,18 @@ public class ElementsSteps  extends BaseTest {
             throw new IllegalArgumentException("Unsupported button: " + buttonName);
         }
     }
+
+    @When("I fill the registration form with the following details:")
+    public void fillRegistrationForm(DataTable dataTable) {
+        webTablesPage.fillTextBoxForm(dataTable);
+    }
+
+    @When("I submit the registration form")
+    public void submitRegistrationForm() {
+        webTablesPage.submitForm();
+    }
+
+
 
     @Given("I am on the Links page")
     public void i_am_on_the_Links_page() {
