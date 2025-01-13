@@ -78,7 +78,6 @@ public class Alerts_Windows_FramesPage extends BaseTest {
         newWindowButton.click();
 
         // Wait for the new window to appear
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(driver->driver.getWindowHandles().size()>1);
 
         // Get all window handles and switch to the new window

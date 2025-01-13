@@ -12,6 +12,8 @@ import java.time.Duration;
 
 public class WidgetsPage extends BasePage {
     public WidgetsPage() {
+        super();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
     public static String accordianSectionXpath = "//*[@class='card']//*[text()='%s']";
@@ -26,9 +28,9 @@ public class WidgetsPage extends BasePage {
 
     public static String tabContentXpath = "//*[@id='demo-tabpane-%s']"; //*[@role='tabpanel' and contains(@id,'%s')]";
 
+    public final WebDriverWait wait;
+
     public void expandAccordionSection(String sectionName) {
-        //usage of explicit wait
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String sectionXpath = String.format(accordianSectionXpath, sectionName);
         try {
             WebElement section = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(sectionXpath)));
@@ -40,7 +42,6 @@ public class WidgetsPage extends BasePage {
     }
 
     public boolean isAccordionContentDisplayed(String sectionName) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         String contentXpath = String.format(accordianSectionContentXpath, sectionName);
         try {
             WebElement cardContent = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(contentXpath)));
@@ -67,39 +68,6 @@ public class WidgetsPage extends BasePage {
                 sliderValue
         ));
 
-
-//        Actions actions = new Actions(driver);
-//
-//        // Get the current value of the slider
-//        int currentValue = Integer.parseInt(slider.getAttribute("value"));
-//        int targetValue = Integer.parseInt(sliderValue);
-//
-//        // Ensure the target value is within the slider's range
-//        int minValue = Integer.parseInt(slider.getAttribute("min"));
-//        int maxValue = Integer.parseInt(slider.getAttribute("max"));
-//
-//        if (targetValue < minValue || targetValue > maxValue) {
-//            throw new IllegalArgumentException("Target value is out of range!");
-//        }
-//
-//        // Calculate the pixel offset based on the slider's range and width
-//        int sliderWidth = slider.getSize().getWidth();
-//        int range = maxValue - minValue;
-//        int offsetPixels = (sliderWidth * (targetValue - currentValue)) / range;
-
-        // Perform the drag-and-drop action
-//        actions.dragAndDropBy(slider, offsetPixels, 0).perform();
-//
-//        // Wait for the slider value to update
-//        wait.until(ExpectedConditions.attributeToBe(slider, "value", sliderValue));
-
-//        int offset = Integer.parseInt(sliderValue) - Integer.parseInt(slider.getAttribute("value"));
-//        actions.dragAndDropBy(slider, offset, 0).perform();
-
-
-//        wait.until(ExpectedConditions.attributeToBe(slider, "value", sliderValue));
-
-
     }
 
     public String getSliderValue() {
@@ -115,19 +83,16 @@ public class WidgetsPage extends BasePage {
     }
 
     public boolean isProgressBarComplete(String percentage) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         return wait.until(ExpectedConditions.textToBePresentInElementLocated(
                 By.xpath("//*[@role='progressbar']"), percentage));
     }
 
     public String getProgressBarValue() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement progressBar = driver.findElement(By.xpath(progressBarXpath));
         return progressBar.getText();
     }
 
     public void clickOnTab(String tabName) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String tabXpath = String.format(tabNameXpath, tabName);
         try {
             WebElement tab = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tabXpath)));
@@ -140,7 +105,6 @@ public class WidgetsPage extends BasePage {
     }
 
     public boolean isTabContentDisplayed(String tabName) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         String contentXpath = String.format(tabContentXpath, tabName);
         try {
             WebElement tabContent = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(contentXpath)));
@@ -153,7 +117,6 @@ public class WidgetsPage extends BasePage {
 
     public boolean isMoreButtonDisabled(String tabName) {
         System.out.println( "isMoreButtonDisabled");
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 //        String moreTabXpath = String.format(tabContentXpath, tabName.toLowerCase());
         WebElement moreTab = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='demo-tab-more' and text()='More']")));
 //        WebElement moreButton = driver.findElement(By.xpath("//*[@id='demo-tab-more']"));

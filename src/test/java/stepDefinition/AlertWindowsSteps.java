@@ -9,34 +9,29 @@ import org.testng.Assert;
 import pages.Alerts_Windows_FramesPage;
 
 public class AlertWindowsSteps extends BaseTest {
-    private Alerts_Windows_FramesPage alertsWindowsPage;
+    private final Alerts_Windows_FramesPage alertsWindowsPage;
 
     public AlertWindowsSteps() {
         this.alertsWindowsPage = new Alerts_Windows_FramesPage();
     }
 
-
     @When("I open the {string} dialog")
     public void I_open_the_dialog(String buttonLabel) {
-//        alertsWindowsPage = new Alerts_Windows_FramesPage();
         alertsWindowsPage.openModal(buttonLabel);
     }
 
     @Then("I should see the dialog content as {string}")
     public void I_should_see_the_dialog_content_as(String expectedContent) {
-//        alertsWindowsPage = new Alerts_Windows_FramesPage();
         Assert.assertEquals(expectedContent, alertsWindowsPage.getModalContent());
     }
 
     @Then("I should see the dialog content starting with {string}")
     public void I_should_see_the_dialog_content_starting_with(String expectedStart) {
-//        alertsWindowsPage = new Alerts_Windows_FramesPage();
         Assert.assertTrue(alertsWindowsPage.getModalContent().startsWith(expectedStart));
     }
 
     @Then("I should be able to close it by clicking the {string} button")
     public void I_should_be_able_to_close_it_by_clicking_the_button(String buttonLabel) {
-//        alertsWindowsPage = new Alerts_Windows_FramesPage();
         alertsWindowsPage.closeModal(buttonLabel);
         Assert.assertTrue(alertsWindowsPage.isModalVisible());
     }

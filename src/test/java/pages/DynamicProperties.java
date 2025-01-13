@@ -17,8 +17,6 @@ public class DynamicProperties extends BaseTest {
 
     public static String dynamicButtonXpath = "//*[text()='%s']";
 
-    public static String colorChangeButtonXpath = "//*[@class='mt-4 text-danger btn btn-primary']";
-
     private WebDriverWait wait;
 
     public boolean buttonEnabledVisible(String btn){

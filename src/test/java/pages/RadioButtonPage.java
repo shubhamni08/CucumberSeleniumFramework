@@ -2,7 +2,6 @@ package pages;
 
 import Base.BaseTest;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -16,6 +15,8 @@ import java.util.NoSuchElementException;
 public class RadioButtonPage extends BaseTest {
 
     public RadioButtonPage() {
+        super();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     Actions action;
@@ -28,7 +29,9 @@ public class RadioButtonPage extends BaseTest {
 
     public static String buttonXpath = "//*[@type='button' and text()='%s']";
 
-    public static String messageIdXpath = "//*[@id='%s']";
+//    public static String messageIdXpath = "//*[@id='%s']";
+
+    public final WebDriverWait wait;
 
     public void selectRadioButtonOption(String value){
         WebElement element = driver.findElement(By.xpath(String.format(radioButtonXpath, value)));
@@ -40,14 +43,13 @@ public class RadioButtonPage extends BaseTest {
         return  driver.findElement(By.xpath(noRadioButtonXpath)).getAttribute("class").contains("disabled");
     }
 
-    public String getSuccessMessage() {
-        String msg =  driver.findElement(By.xpath(successMessageXpath)).getText();
-        return "You have selected "+msg;
-    }
+//    public String getSuccessMessage() {
+//        String msg =  driver.findElement(By.xpath(successMessageXpath)).getText();
+//        return "You have selected "+msg;
+//    }
 
     public void clickButton(String buttonName) {
         System.out.println("click Button method:"+buttonName);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement element = driver.findElement(By.xpath(String.format(buttonXpath, buttonName)));
 
         action = new Actions(driver);

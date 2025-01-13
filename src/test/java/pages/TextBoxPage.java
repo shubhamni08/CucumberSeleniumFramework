@@ -17,6 +17,8 @@ import java.util.Map;
 public class TextBoxPage extends BaseTest {
 
     public TextBoxPage() {
+        super();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     public static String fullNameInputXpath = "//*[@id='userForm']/div/div[2]/*[@id='userName']";
@@ -28,11 +30,12 @@ public class TextBoxPage extends BaseTest {
     public static String outputSectionXpath = "//div[contains(@class,'border')]/*[@id='%s']";
     public static Map<String,String> formFields;
     public Actions actions;
+    public final WebDriverWait wait;
 
     public void fillTextBoxForm(DataTable dataTable) {
         formFields = dataTable.asMap(String.class, String.class);
         System.out.println("Raw Table Data:");
-        dataTable.cells().forEach(row -> System.out.println(row));
+        dataTable.cells().forEach(System.out::println);
 
 
         for(Map.Entry<String,String> entry : formFields.entrySet()){
@@ -71,14 +74,12 @@ public class TextBoxPage extends BaseTest {
 
     public void clickSubmitButton() {
         actions = new Actions(driver);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement element = driver.findElement(By.xpath(submitButtonXpath));
         actions.moveToElement(element).click().perform();
     }
 
     // Method to check if the output section is displayed
     public boolean isOutputSectionDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         try {
             // Wait for the output section to appear
             WebElement outputSection = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("output")));

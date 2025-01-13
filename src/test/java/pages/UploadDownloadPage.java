@@ -11,7 +11,10 @@ import java.time.Duration;
 
 public class UploadDownloadPage extends BaseTest {
 
-    public UploadDownloadPage(){}
+    public UploadDownloadPage(){
+        super();
+        wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+    }
 
     public static String downloadXpath = "//a[@id='downloadButton']";
 
@@ -26,9 +29,8 @@ public class UploadDownloadPage extends BaseTest {
     public static WebDriverWait wait;
 
     public void clickDowloadLink(){
-        wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+
         WebElement downloadElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(downloadXpath)));
-//        WebElement downloadElement  = driver.findElement(By.xpath(downloadXpath));
         downloadElement.click();
     }
 
@@ -40,9 +42,7 @@ public class UploadDownloadPage extends BaseTest {
 
 
     public void uploadFile(){
-        wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         WebElement uploadElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(uploadFileXpath)));
-//        WebElement uploadElement = driver.findElement(By.xpath(uploadFileXpath));
         uploadElement.sendKeys(uploadFilePath);
     }
 

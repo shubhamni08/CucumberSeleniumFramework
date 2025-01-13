@@ -13,6 +13,8 @@ import java.util.Set;
 
 public class LinksPage extends BaseTest {
     public LinksPage() {
+        super();
+        wait = new WebDriverWait(driver,Duration.ofSeconds(10));
     }
 
     public static String linksXpath = "//*[text()='%s']";
@@ -24,8 +26,6 @@ public class LinksPage extends BaseTest {
     public String getCurrentURL(){
         // Store the parent window handle
         String parentWindow = driver.getWindowHandle();
-
-        wait = new WebDriverWait(driver,Duration.ofSeconds(10));
         wait.until(ExpectedConditions.numberOfWindowsToBe(2));
 
         //switch to the new window
@@ -48,7 +48,6 @@ public class LinksPage extends BaseTest {
     }
 
     public String getAPIResponseText() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(responseCodeXpath)));
         String response = element.getText();
         System.out.println("getAPIResponseText method successful: "+response);

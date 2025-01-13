@@ -11,11 +11,15 @@ import pages.WidgetsPage;
 
 public class WidgetsSteps extends BaseTest {
 
-    private WidgetsPage widgetsPage;
+    public WidgetsSteps(){
+        super();
+        widgetsPage = new WidgetsPage();
+    }
+
+    private final WidgetsPage widgetsPage;
 
     @When("I expand the {string} section")
     public void i_expand_the_section(String section) {
-        widgetsPage = new WidgetsPage();
         widgetsPage.expandAccordionSection(section);
     }
 
@@ -26,20 +30,17 @@ public class WidgetsSteps extends BaseTest {
 
     @When("I move the slider to {string}")
     public void i_move_the_slider_to(String sliderValue) {
-        widgetsPage = new WidgetsPage();
         widgetsPage.moveSliderToValue(sliderValue);
     }
 
     @Then("the slider value should be {string}")
     public void the_slider_value_should_be(String expectedValue){
-        widgetsPage = new WidgetsPage();
         String actualValue = widgetsPage.getSliderValue();
         Assert.assertEquals(expectedValue, actualValue,"Slider value did not update correctly.");
     }
 
     @When("I click on the {string} button")
     public void I_click_on_button(String buttonName) throws InterruptedException{
-        widgetsPage = new WidgetsPage();
         widgetsPage.clickProgressBarButton(buttonName);
     }
 
@@ -50,14 +51,12 @@ public class WidgetsSteps extends BaseTest {
 
     @Then("I get progress bar value")
     public void i_get_progress_bar_value(){
-        widgetsPage = new WidgetsPage();
         System.out.println("i_get_progress_bar_value: "+widgetsPage.getProgressBarValue());
     }
 
     @When("I click on the {string} tab")
     public void I_click_on_tab(String tabName) {
         System.out.println("I_click_on_tab: "+tabName);
-        widgetsPage = new WidgetsPage();
         widgetsPage.clickOnTab(tabName);
     }
 
@@ -68,7 +67,6 @@ public class WidgetsSteps extends BaseTest {
 
     @Then("I click on the {string} tab it is disabled")
     public void i_click_on_the_tab_it_is_disabled(String tabName) {
-        widgetsPage = new WidgetsPage();  // Initialize the page object
         Assert.assertTrue( widgetsPage.isMoreButtonDisabled(tabName),"More tab is disabled");
     }
 }
