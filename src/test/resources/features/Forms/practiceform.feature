@@ -13,8 +13,7 @@ Feature: Automation Practice Form Submission
       | Date of Birth | 01 Jan 1990         |
       | Hobbies       | Reading, Music      |
       | Address       | 123 Main St, City   |
-#      | State         | Haryana             |
-#      | City          | Panipat             |
+
 
     And I submit the form
     Then I should see a confirmation message or the table should reflect the submission details
