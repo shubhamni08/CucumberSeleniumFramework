@@ -36,8 +36,23 @@ public class UploadDownloadPage extends BaseTest {
 
     public File verifyDownloadedImage() {
         String downloadedFileName = "sampleFile.jpeg";
-        System.out.println(downloadPath+"/"+ downloadedFileName);
-        return new File(downloadPath + "/" + downloadedFileName);
+        File downloadedFile = new File(downloadPath + "/" + downloadedFileName);
+        int timeoutInSeconds = 10;
+
+        for (int i = 0; i < timeoutInSeconds; i++) {
+            if (downloadedFile.exists()) {
+                return downloadedFile;
+            }
+            try {
+                Thread.sleep(1000); // Wait 1 second before retrying
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                break;
+            }
+        }
+        System.out.println("File not found after waiting: " + downloadedFile.getAbsolutePath());
+        return downloadedFile;
+
     }
 
 
