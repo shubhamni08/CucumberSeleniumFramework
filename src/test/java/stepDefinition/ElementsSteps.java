@@ -158,10 +158,18 @@ public class ElementsSteps  extends BaseTest {
 
     @Then("the message {string} should be displayed")
     public void the_Message_Should_Be_Displayed(String expectedMessage) {
-        System.out.println("the_Message_Should_Be_Displayed: "+expectedMessage);
-        String actualMessage = radioButtonPage.getClickMessage();
+        System.out.println("the_Message_Should_Be_Displayed: " + expectedMessage);
+        String actualMessage = radioButtonPage.getClickMessage(expectedMessage); // Pass the expected message
         System.out.println(actualMessage);
-        Assert.assertEquals(actualMessage,expectedMessage,"Message does not match!");
+        Assert.assertEquals(actualMessage, expectedMessage, "Message does not match!");
+    }
+
+    @Then("the message You have selected {string} should be displayed")
+    public void the_Message_you_have_selected_Should_Be_Displayed(String expectedMessage) {
+        System.out.println("the_Message_Should_Be_Displayed: " + expectedMessage);
+        String actualMessage = radioButtonPage.getClickMessage(expectedMessage); // Pass the expected message
+        System.out.println(actualMessage);
+        Assert.assertEquals(actualMessage, expectedMessage, "Message does not match!");
     }
 
     @Then("the {string} radio button is disabled")
@@ -199,7 +207,11 @@ public class ElementsSteps  extends BaseTest {
 
     @Then("I verify the entry {string} exists in the table")
     public void verifyEntryExists(String entry){
+        // Refresh page to handle potential blank page issues
+        driver.navigate().refresh();
+
         boolean isPresent = webTablesPage.isEntryPresent(entry);
+        System.out.println(isPresent);
         Assert.assertTrue(isPresent,"Expected entry '" + entry + "' to exist in the table, but it was not found.");
     }
 
@@ -265,7 +277,7 @@ public class ElementsSteps  extends BaseTest {
     public void the_file_should_be_downloaded_in_the_local_folder(){
         System.out.println("The File Should be downloaded in the Local Folder");
         File file = uploadDownloadPage.verifyDownloadedImage();
-        System.out.println(file);
+        System.out.println("File path checked: " + file.getAbsolutePath());
         Assert.assertTrue(file.exists(), "Downloaded file not found in the expected location");
     }
 
