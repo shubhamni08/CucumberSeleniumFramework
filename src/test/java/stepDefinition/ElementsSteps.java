@@ -207,9 +207,6 @@ public class ElementsSteps  extends BaseTest {
 
     @Then("I verify the entry {string} exists in the table")
     public void verifyEntryExists(String entry){
-        // Refresh page to handle potential blank page issues
-        driver.navigate().refresh();
-
         boolean isPresent = webTablesPage.isEntryPresent(entry);
         System.out.println(isPresent);
         Assert.assertTrue(isPresent,"Expected entry '" + entry + "' to exist in the table, but it was not found.");

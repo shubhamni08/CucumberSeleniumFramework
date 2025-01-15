@@ -16,10 +16,10 @@ Feature: Web Tables Management
     Then I verify the entry "Test" exists in the table
 
     When I edit the entry "Test" with the following details:
-      | firstName  | Test    |
+      | firstName  | Test121    |
       | department | AQA     |
     And I submit the registration form
-    Then I verify the entry "Test" exists in the table
+    Then I verify the entry "Test121" exists in the table
 
-    When I delete the entry "Test"
-    Then I verify the entry "Test" no longer exists in the table
+    When I delete the entry "Test121"
+    Then I verify the entry "Test121" no longer exists in the table
