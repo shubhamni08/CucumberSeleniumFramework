@@ -2,6 +2,7 @@ package pages;
 
 import Base.BaseTest;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -53,6 +54,10 @@ public class RadioButtonPage extends BaseTest {
         WebElement element = driver.findElement(By.xpath(String.format(buttonXpath, buttonName)));
 
         action = new Actions(driver);
+
+        // Scroll element into view
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+
         switch (buttonName){
             case "Double Click Me":
                 action.doubleClick(element).perform();
@@ -69,30 +74,48 @@ public class RadioButtonPage extends BaseTest {
 
     }
 
-    public String getClickMessage(){
-        // Map IDs to click actions
-        Map<String, String> messagesMap = Map.of(
-                "//*[@id='doubleClickMessage']", "You have done a double click",
-                "//*[@id='rightClickMessage']", "You have done a right click",
-                "//*[@id='dynamicClickMessage']", "You have done a dynamic click"
-        );
-
-        for (Map.Entry<String, String> entry : messagesMap.entrySet()) {
-            try {
-                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-                System.out.print("Key - "+entry.getKey());
-                System.out.println("Value - "+entry.getValue());
-                WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(entry.getKey())));
-                if (element.isDisplayed()) {
-                    String message = element.getText();
-                    System.out.println("Found message: " + message);
-                    return message;
-                }
-            } catch (TimeoutException e) {
-                // Do nothing, continue to next message
+    public String getClickMessage(String expectedMessage){
+        String xpath = "";
+        // Map button messages to corresponding XPaths
+        if (expectedMessage.equals("You have done a double click")) {
+            xpath = "//*[@id='doubleClickMessage']";
+        } else if (expectedMessage.equals("You have done a right click")) {
+            xpath = "//*[@id='rightClickMessage']";
+        } else if (expectedMessage.equals("You have done a dynamic click")) {
+            xpath = "//*[@id='dynamicClickMessage']";
+        } else {
+            throw new IllegalArgumentException("Invalid expected message: " + expectedMessage);
+        }
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+            if (element.isDisplayed()) {
+                String message = element.getText();
+                System.out.println("Found message: " + message);
+                return message;
             }
+        } catch (TimeoutException e) {
+            throw new NoSuchElementException("Message element not found for: " + expectedMessage);
         }
 
-        throw new NoSuchElementException("No message found for any click action.");
+        return null;
+
+//        for (Map.Entry<String, String> entry : messagesMap.entrySet()) {
+//            try {
+//                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+//                System.out.print("Key - "+entry.getKey());
+//                System.out.println("Value - "+entry.getValue());
+//                WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(entry.getKey())));
+//                if (element.isDisplayed()) {
+//                    String message = element.getText();
+//                    System.out.println("Found message: " + message);
+//                    return message;
+//                }
+//            } catch (TimeoutException e) {
+//                // Do nothing, continue to next message
+//            }
+//        }
+//
+//        throw new NoSuchElementException("No message found for any click action.");
     }
 }

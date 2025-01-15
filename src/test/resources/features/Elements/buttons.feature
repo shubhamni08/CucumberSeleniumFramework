@@ -9,5 +9,5 @@ Feature: Validate Buttons Page Section
     When I click on "Right Click Me" button
     Then the message "You have done a right click" should be displayed
 
-#    When I click on "Click Me" button
-#    Then the message "You have done a dynamic click" should be displayed
+    When I click on "Click Me" button
+    Then the message "You have done a dynamic click" should be displayed
