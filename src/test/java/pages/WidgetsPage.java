@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -13,7 +12,7 @@ import java.time.Duration;
 public class WidgetsPage extends BasePage {
     public WidgetsPage() {
         super();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
     public static String accordianSectionXpath = "//*[@class='card']//*[text()='%s']";
@@ -26,7 +25,7 @@ public class WidgetsPage extends BasePage {
 
     public static String tabNameXpath = "//*[@role='tab' and text()='%s']";
 
-    public static String tabContentXpath = "//*[@id='demo-tabpane-%s']"; //*[@role='tabpanel' and contains(@id,'%s')]";
+    public static String tabContentXpath = "//*[@id='demo-tabpane-%s']";
 
     public final WebDriverWait wait;
 
@@ -53,25 +52,51 @@ public class WidgetsPage extends BasePage {
     }
 
     public void moveSliderToValue(String sliderValue){
-        WebElement slider = driver.findElement(By.xpath("//*[@type='range']"));
+        try {
+            // Locate the slider element
+            WebElement slider = driver.findElement(By.xpath("//*[@type='range']"));
+            System.out.println("Slider found: " + slider);
 
-        // Use JavaScript to set the value
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].value='" + sliderValue + "'; arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", slider);
+            // Log current slider attributes
+            System.out.println("Initial slider value: " + slider.getAttribute("value"));
+            System.out.println("Min value: " + slider.getAttribute("min"));
+            System.out.println("Max value: " + slider.getAttribute("max"));
 
-        // Wait for the slider to reflect the change in the tooltip or input field
-        WebElement tooltip = driver.findElement(By.xpath("//div[contains(@class, 'range-slider__tooltip__label')]"));
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//        wait.until(ExpectedConditions.textToBePresentInElement(tooltip, sliderValue));
-        wait.until(ExpectedConditions.textToBePresentInElement(
-                driver.findElement(By.xpath("//div[contains(@class, 'range-slider__tooltip__label')]")),
-                sliderValue
-        ));
+            // Using JS Executor
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript(
+                    "arguments[0].value='" + sliderValue + "';" +
+                            "arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", slider);
 
+            System.out.println("Attempted to set slider value to: " + sliderValue);
+
+            // Wait for the slider to reflect the new value
+            boolean isValueSet = wait.until(ExpectedConditions.attributeToBe(slider, "value", sliderValue));
+
+            // Wait for 2 seconds to ensure the slider value is updated
+            Thread.sleep(1000);
+            String currentValue = slider.getAttribute("value");
+
+            if (currentValue.equals(sliderValue)) {
+                System.out.println("Slider value successfully updated to: " + sliderValue);
+            } else {
+                System.out.println("Slider value update failed. Current value: " + currentValue);
+            }
+        } catch (TimeoutException e) {
+            System.err.println("Timeout while waiting for slider value to update to: " + sliderValue);
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            System.err.println("Thread sleep interrupted.");
+            e.printStackTrace();
+        } catch (Exception e) {
+            System.err.println("An error occurred while moving the slider to value: " + sliderValue);
+            e.printStackTrace();
+        }
     }
 
     public String getSliderValue() {
-        return driver.findElement(By.xpath("//*[@type='range']")).getAttribute("value");
+        WebElement slider = driver.findElement(By.xpath("//*[@type='range']"));
+        return slider.getAttribute("value");
     }
 
     public void clickProgressBarButton(String buttonName) throws InterruptedException{
@@ -117,9 +142,7 @@ public class WidgetsPage extends BasePage {
 
     public boolean isMoreButtonDisabled(String tabName) {
         System.out.println( "isMoreButtonDisabled");
-//        String moreTabXpath = String.format(tabContentXpath, tabName.toLowerCase());
         WebElement moreTab = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='demo-tab-more' and text()='More']")));
-//        WebElement moreButton = driver.findElement(By.xpath("//*[@id='demo-tab-more']"));
         System.out.println(moreTab.getAttribute("aria-disabled").equals("true"));
         return moreTab.getAttribute("aria-disabled").equals("true");
     }
