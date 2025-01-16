@@ -1,5 +1,6 @@
 package pages;
 
+import Base.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
@@ -9,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class WidgetsPage extends BasePage {
+public class WidgetsPage extends BaseTest {
     public WidgetsPage() {
         super();
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -57,7 +58,7 @@ public class WidgetsPage extends BasePage {
             WebElement slider = driver.findElement(By.xpath("//*[@type='range']"));
             System.out.println("Slider found: " + slider);
 
-            // Log current slider attributes
+            // Log slider attributes
             System.out.println("Initial slider value: " + slider.getAttribute("value"));
             System.out.println("Min value: " + slider.getAttribute("min"));
             System.out.println("Max value: " + slider.getAttribute("max"));
