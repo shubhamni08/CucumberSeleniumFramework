@@ -14,6 +14,8 @@ import pages.*;
 import java.io.File;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 
 public class ElementsSteps  extends BaseTest {
 
@@ -62,7 +64,14 @@ public class ElementsSteps  extends BaseTest {
 
     @When("I fill the form with:")
     public void I_fill_the_form_with(DataTable dataTable){
-        textBoxPage.fillTextBoxForm(dataTable);
+        List<String> fields = dataTable.column(0);
+        List<String> values = dataTable.column(1);
+        AtomicInteger index = new AtomicInteger(0);
+        fields.forEach( field ->
+                textBoxPage.fillTextBoxForm(field, values.get(index.getAndIncrement()))
+        );
+
+
     }
 
     @Then("I click on submit button")

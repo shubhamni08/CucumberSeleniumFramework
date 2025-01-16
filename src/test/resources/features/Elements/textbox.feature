@@ -5,7 +5,6 @@ Feature: Validate TextBox Section
     When I navigate to the "Elements" section
     And I click on "Text Box"
     When I fill the form with:
-      | Field             | Value           |
       | Full Name         | Shubham Nikam   |
       | Email             | nikam@yahoo.com |
       | Current Address   | 123 Main Street |

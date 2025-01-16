@@ -35,8 +35,7 @@ public class Alerts_Windows_FramesPage extends BaseTest {
     }
 
     public void closeModal(String buttonLabel) {
-        WebElement ele = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format(closeButtonXpath,buttonLabel))));
-        ele.click();
+        super.clickButton(String.format(closeButtonXpath,buttonLabel));
     }
 
     public boolean isModalVisible() {
@@ -109,14 +108,7 @@ public class Alerts_Windows_FramesPage extends BaseTest {
 
     //alert page interaction methods
     public void clickAlertButton(String btn) {
-        try {
-            WebElement alertButton = wait.until(ExpectedConditions.elementToBeClickable(
-                    By.xpath(String.format(alertButtonXpath, btn))));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", alertButton);
-            alertButton.click();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        super.clickButton(String.format(alertButtonXpath,btn));
     }
 
     public String getAlertMessageSafely() {
@@ -135,6 +127,7 @@ public class Alerts_Windows_FramesPage extends BaseTest {
         try {
             Alert alert = wait.until(ExpectedConditions.alertIsPresent());
             alert.accept();
+            //TODO Chech that alert not present anymore
         } catch (NoAlertPresentException e) {
             System.out.println("No alert present to accept.");
         }
@@ -144,6 +137,7 @@ public class Alerts_Windows_FramesPage extends BaseTest {
         try {
             Alert alert = wait.until(ExpectedConditions.alertIsPresent());
             alert.dismiss();
+            //TODO Chech that alert not present anymore
         } catch (NoAlertPresentException e) {
             System.out.println("No alert present to dismiss.");
         }

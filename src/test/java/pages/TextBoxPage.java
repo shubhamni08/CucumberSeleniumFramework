@@ -21,10 +21,10 @@ public class TextBoxPage extends BaseTest {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public static String fullNameInputXpath = "//*[@id='userForm']/div/div[2]/*[@id='userName']";
-    public static String emailInputXpath = "//*[@id='userForm']/div/div[2]/*[@id='userEmail']";
-    public static String currentAddressInputXpath = "//*[@id='userForm']/div/div[2]/*[@id='currentAddress']";
-    public static String permanentAddressInputXpath = "//*[@id='userForm']/div/div[2]/*[@id='permanentAddress']";
+    public WebElement getFieldByName(Fields fieldName){
+        return driver.findElement(By.xpath(String.format("//*[@id='userForm']/div/div[2]/*[@id='%s']",fieldName.getLocator())));
+    }
+
     public static String submitButtonXpath = "//*[@id='userForm']/*/*/button[text()='Submit']";
 //    public static String inputSelectionXpath = "//*[@class='menu-list']/li/*[text()='%s']";
     public static String outputSectionXpath = "//div[contains(@class,'border')]/*[@id='%s']";
@@ -32,48 +32,9 @@ public class TextBoxPage extends BaseTest {
     public Actions actions;
     public final WebDriverWait wait;
 
-    public void fillTextBoxForm(DataTable dataTable) {
-        formFields = dataTable.asMap(String.class, String.class);
-        System.out.println("Raw Table Data:");
-        dataTable.cells().forEach(System.out::println);
-
-
-        for(Map.Entry<String,String> entry : formFields.entrySet()){
-            String field = entry.getKey().trim().toLowerCase();
-            String value = entry.getValue().trim();
-
-            // Debugging log
-            System.out.println("Processing field: '" + field + "', value: '" + value + "'");
-            if ("field".equals(field)) {
-                System.out.println("Skipping header row...");
-                continue;
-            }
-            WebElement inputField = null;
-
-            switch (field) {
-                case "full name":
-                    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(fullNameInputXpath)))
-                            .sendKeys(value);
-                    break;
-                case "email":
-                    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(emailInputXpath)))
-                                    .sendKeys(value);
-                    break;
-                case "current address":
-                    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(currentAddressInputXpath)))
-                            .sendKeys(value);
-                    break;
-                case "permanent address":
-                    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(permanentAddressInputXpath)))
-                            .sendKeys(value);
-                    break;
-                default:
-                    throw new IllegalArgumentException("Unknown field: " + field);
-            }
-
-
+    public void fillTextBoxForm(String field, String value) {
+            getFieldByName(Fields.valueOf(field)).sendKeys(value);
             System.out.println("Entered '" + value + "' in field: " + field);
-        }
     }
 
     public void clickSubmitButton() {
