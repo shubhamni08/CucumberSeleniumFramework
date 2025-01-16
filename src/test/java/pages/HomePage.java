@@ -15,9 +15,9 @@ import java.time.Duration;
 public class HomePage extends BaseTest {
 
     public static String elements_xpath = "//*[@class='card-body']/*[text()='Elements']";
-    public static String forms_xpath = "//*[@class='card-body']/*[text()='Forms']";
-    public static String alerts_frames_windows_xpath = "//*[@class='card-body']/*[text()='Alerts, Frame & Windows']";
-    public static String book_store_application_xpath = "//*[@class='card-body']/*[text()='Book Store Application']";
+//    public static String forms_xpath = "//*[@class='card-body']/*[text()='Forms']";
+//    public static String alerts_frames_windows_xpath = "//*[@class='card-body']/*[text()='Alerts, Frame & Windows']";
+//    public static String book_store_application_xpath = "//*[@class='card-body']/*[text()='Book Store Application']";
 
     public HomePage() {
         driver.get("https://demoqa.com/");

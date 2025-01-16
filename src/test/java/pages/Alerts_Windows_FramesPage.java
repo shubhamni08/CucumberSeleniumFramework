@@ -15,15 +15,11 @@ public class Alerts_Windows_FramesPage extends BaseTest {
     public static String browserWindowButtonXpath = "//*[text()='Browser Windows']/following-sibling::div/button[text()='%s']";
     public static String alertButtonXpath = "//*[@id='%s']";
     public final WebDriverWait wait;
-    private Alert alert;
-
 
     public Alerts_Windows_FramesPage() {
         super();
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
-
-
 
     public void openModal(String modal){
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(String.format(modelDialogButtonXpath,modal))));
@@ -44,13 +40,12 @@ public class Alerts_Windows_FramesPage extends BaseTest {
     }
 
     public String getCurrentURL() {
-
         return driver.getCurrentUrl();
     }
 
-    public void triggerNonExistentAlert() {
-        driver.findElement(By.id("nonExistentAlertButton")).click();
-    }
+//    public void triggerNonExistentAlert() {
+//        driver.findElement(By.id("nonExistentAlertButton")).click();
+//    }
 
     public boolean switchBetweenAllWindowsAndVerify() {
         Set<String> allWindowHandles = driver.getWindowHandles();
@@ -62,10 +57,10 @@ public class Alerts_Windows_FramesPage extends BaseTest {
         return verified;
     }
 
-    public void verifyNewTab(String tab){
-        WebElement newTabElement  = driver.findElement(By.xpath(String.format(browserWindowButtonXpath,tab)));
-        newTabElement.click();
-    }
+//    public void verifyNewTab(String tab){
+//        WebElement newTabElement  = driver.findElement(By.xpath(String.format(browserWindowButtonXpath,tab)));
+//        newTabElement.click();
+//    }
 
     public void verifyNewWindow(String windowName){
         // Store the parent window handle
