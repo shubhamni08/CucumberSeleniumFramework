@@ -48,7 +48,8 @@ public class TextBoxPage extends BaseTest {
                 System.out.println("Skipping header row...");
                 continue;
             }
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebElement inputField = null;
+
             switch (field) {
                 case "full name":
                     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(fullNameInputXpath)))
@@ -69,6 +70,9 @@ public class TextBoxPage extends BaseTest {
                 default:
                     throw new IllegalArgumentException("Unknown field: " + field);
             }
+
+
+            System.out.println("Entered '" + value + "' in field: " + field);
         }
     }
 

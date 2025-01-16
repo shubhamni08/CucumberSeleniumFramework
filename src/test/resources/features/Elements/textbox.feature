@@ -17,7 +17,6 @@ Feature: Validate TextBox Section
       | Email             | Email:nikam@yahoo.com |
       | Current Address   | Current Address :123 Main Street |
       | Permanent Address | Permananet Address :456 Side Street |
-#    Then I verify the submitted data is displayed correctly.
 
   Scenario: Verify TextBox negative functionality
     Given I am on the DemoQA homepage
