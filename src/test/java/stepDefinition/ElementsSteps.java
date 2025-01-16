@@ -158,7 +158,7 @@ public class ElementsSteps  extends BaseTest {
 
     @Then("the message {string} should be displayed")
     public void the_Message_Should_Be_Displayed(String expectedMessage) {
-        System.out.println("the_Message_Should_Be_Displayed: " + expectedMessage);
+        System.out.println("Verifying message: " + expectedMessage);
         String actualMessage = radioButtonPage.getClickMessage(expectedMessage); // Pass the expected message
         System.out.println(actualMessage);
         Assert.assertEquals(actualMessage, expectedMessage, "Message does not match!");

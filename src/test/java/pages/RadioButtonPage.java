@@ -71,20 +71,12 @@ public class RadioButtonPage extends BaseTest {
         return  driver.findElement(By.xpath(noRadioButtonXpath)).getAttribute("class").contains("disabled");
     }
 
-//    public String getSuccessMessage() {
-//        String msg =  driver.findElement(By.xpath(successMessageXpath)).getText();
-//        return "You have selected "+msg;
-//    }
-
     public void clickButton(String buttonName) {
         System.out.println("click Button method:"+buttonName);
-        WebElement element = driver.findElement(By.xpath(String.format(buttonXpath, buttonName)));
-
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(String.format(buttonXpath, buttonName))));
         action = new Actions(driver);
-
         // Scroll element into view
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-
         switch (buttonName){
             case "Double Click Me":
                 action.doubleClick(element).perform();
@@ -98,7 +90,30 @@ public class RadioButtonPage extends BaseTest {
             default:
                 throw new IllegalArgumentException("Invalid button name: " + buttonName);
         }
+        waitForMessage(buttonName);
+    }
 
+    public void waitForMessage(String buttonName) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        String expectedMessage = "";
+
+        switch (buttonName) {
+            case "Double Click Me":
+                expectedMessage = "You have done a double click";
+                break;
+            case "Right Click Me":
+                expectedMessage = "You have done a right click";
+                break;
+            case "Click Me":
+                expectedMessage = "You have done a dynamic click";
+                break;
+        }
+
+        String actualMessage = getClickMessage(expectedMessage);
+
+        if (!actualMessage.equals(expectedMessage)) {
+            throw new AssertionError("Expected message '" + expectedMessage + "' but found '" + actualMessage + "'");
+        }
     }
 
     public String getClickMessage(String expectedMessage){
@@ -120,15 +135,12 @@ public class RadioButtonPage extends BaseTest {
         }
         try {
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
-            if (element.isDisplayed()) {
-                String message = element.getText();
-                System.out.println("Found message: " + message);
-                return message;
-            }
+            String message = element.getText();
+            System.out.println("Expected: " + expectedMessage + " | Found: " + message);
+            return message;
         } catch (TimeoutException e) {
             throw new NoSuchElementException("Message element not found for: " + expectedMessage);
         }
 
-        return null;
     }
 }
