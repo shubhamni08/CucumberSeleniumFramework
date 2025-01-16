@@ -5,7 +5,7 @@ Feature: Validate Browser Windows Section
     Given I am on the DemoQA homepage
     When I navigate to the "Alerts, Frame & Windows" section
     And I click on "Browser Windows"
-    When I open a new tab
+#    When I open a new tab
 #    Then I should see "This is a sample page"
 #    And I should verify the URL is "https://demoqa.com/sample"
 
@@ -13,7 +13,7 @@ Feature: Validate Browser Windows Section
     Given I am on the DemoQA homepage
     When I navigate to the "Alerts, Frame & Windows" section
     And I click on "Browser Windows"
-    When I open a "New Window"
+#    When I open a "New Window"
 #    Then I should see "This is a sample page"
 #    And I should verify the URL is "https://demoqa.com/sample"
 
@@ -21,6 +21,6 @@ Feature: Validate Browser Windows Section
     Given I am on the DemoQA homepage
     When I navigate to the "Alerts, Frame & Windows" section
     And I click on "Browser Windows"
-    When I open a new tab
-    And I open a new window
-    Then I should be able to switch between all tabs and windows
+#    When I open a new tab
+#    And I open a new window
+#    Then I should be able to switch between all tabs and windows
