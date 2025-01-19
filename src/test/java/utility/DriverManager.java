@@ -1,6 +1,8 @@
 package utility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -9,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class DriverManager {
 
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static final String DEFAULT_BROWSER = "chrome";
 
     // Private constructor to prevent instantiation
     private DriverManager() {}
@@ -17,31 +20,28 @@ public class DriverManager {
     public static WebDriver getDriver(String browser) {
         if (driver.get() == null) {
             if (browser == null || browser.isEmpty()) {
-                browser = "chrome"; // Default to Chrome if no browser is specified
+                browser = DEFAULT_BROWSER;
             }
-            switch (browser.toLowerCase()) {
-                case "chrome":
-                    WebDriverManager.chromedriver().setup();
-                    driver.set(new ChromeDriver());
-//                    driver = new ChromeDriver();
-                    break;
-                case "firefox":
-                    WebDriverManager.firefoxdriver().setup();
-                    driver.set(new FirefoxDriver());
-//                    driver = new FirefoxDriver();
-                    break;
-                case "edge":
-                    WebDriverManager.edgedriver().setup();
-                    driver.set(new EdgeDriver());
-//                    driver = new EdgeDriver();
-                    break;
-                default:
-                    throw new IllegalArgumentException("Browser not supported: " + browser);
-            }
-
+            driver.set(createDriver(browser.toLowerCase()));
+            driver.get().manage().window().maximize();
         }
-        driver.get().manage().window().maximize();
         return driver.get();
+    }
+
+    private static WebDriver createDriver(String browser) {
+        switch (browser) {
+            case "chrome":
+                WebDriverManager.chromedriver().setup();
+                return new ChromeDriver();
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();
+                return new FirefoxDriver();
+            case "edge":
+                WebDriverManager.edgedriver().setup();
+                return new EdgeDriver();
+            default:
+                throw new IllegalArgumentException("Unsupported browser: " + browser);
+        }
     }
 
     // Method to close the driver
