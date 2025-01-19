@@ -1,7 +1,6 @@
 package utility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,6 +11,7 @@ public class DriverManager {
 
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     private static final String DEFAULT_BROWSER = "chrome";
+    private static final Logger logger = LoggerFactory.getLogger(DriverManager.class);
 
     // Private constructor to prevent instantiation
     private DriverManager() {}
@@ -49,6 +49,7 @@ public class DriverManager {
         if (driver != null) {
             driver.get().quit();
             driver.remove();
+            logger.info("WebDriver session quit successfully.");
         }
     }
 }
