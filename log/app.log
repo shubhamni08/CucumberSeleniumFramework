@@ -1,0 +1,160 @@
+16:21:31.381 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:21:31.386 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+16:21:31.543 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+16:47:46.402 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:47:47.693 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:47:50.674 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:47:50.676 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:47:50.814 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:47:50.814 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+16:47:51.256 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:47:51.256 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:47:52.026 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:47:54.851 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:47:54.853 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:47:55.102 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:47:55.102 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+16:48:00.806 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:48:00.806 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:48:01.577 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:48:04.287 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:48:04.288 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:48:04.470 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:48:04.471 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+16:48:05.297 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:48:05.297 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:48:05.942 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:48:08.643 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:48:08.643 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:48:08.876 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:48:08.876 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+16:48:09.431 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:48:09.431 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:52:55.123 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:52:56.441 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:52:59.485 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:52:59.488 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:52:59.733 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:52:59.734 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+16:53:00.599 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:53:00.599 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:57:40.143 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:57:41.432 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:57:44.451 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:57:44.452 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:57:44.666 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:57:44.666 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+16:57:45.113 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:57:45.113 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:57:45.865 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:57:48.562 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:57:48.563 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:57:48.708 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:57:48.708 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+16:57:54.327 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:57:54.327 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:57:55.131 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:58:00.543 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:58:00.545 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:58:00.735 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:58:00.736 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+16:58:01.553 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:58:01.554 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:58:02.230 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:58:04.626 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:58:04.627 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:58:04.874 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:58:04.875 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+16:58:05.407 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:58:05.408 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:04:00.789 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:04:02.091 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:04:04.564 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:04:04.566 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:04:04.745 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+17:04:04.746 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+17:04:05.269 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:04:05.269 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:04:06.062 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:04:08.535 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:04:08.536 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:04:08.747 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+17:04:08.747 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+17:04:14.709 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:04:14.709 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:04:15.477 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:04:17.842 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:04:17.844 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:04:18.050 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+17:04:18.050 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+17:04:19.054 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:04:19.056 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:04:19.815 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:04:22.373 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:04:22.374 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:04:22.608 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+17:04:22.608 [main]INFO  Base.BasePage - Clicking on menu item: Alerts
+17:04:23.298 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:04:23.298 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:05:58.532 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:05:59.769 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:06:02.751 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:06:02.753 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:06:02.921 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Modal Dialogs
+17:06:02.922 [main]INFO  Base.BasePage - Clicking on menu item: Modal Dialogs
+17:06:03.530 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:06:03.530 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:06:04.270 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:06:07.834 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:06:07.835 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:06:08.032 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Modal Dialogs
+17:06:08.032 [main]INFO  Base.BasePage - Clicking on menu item: Modal Dialogs
+17:06:08.628 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:06:08.628 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:06:09.453 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:06:12.654 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:06:12.655 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:06:12.831 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Modal Dialogs
+17:06:12.831 [main]INFO  Base.BasePage - Clicking on menu item: Modal Dialogs
+17:06:13.664 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:06:13.664 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:06:59.115 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:07:00.360 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:07:03.429 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:07:03.431 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:07:03.652 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Browser Windows
+17:07:03.652 [main]INFO  Base.BasePage - Clicking on menu item: Browser Windows
+17:07:04.008 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:07:04.008 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:07:56.088 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:07:56.103 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+17:07:56.294 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+17:07:56.294 [main]INFO  Base.BasePage - Clicking on menu item: Practice Form
+17:09:41.204 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:09:41.216 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+17:09:41.363 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+17:09:41.363 [main]INFO  Base.BasePage - Clicking on menu item: Practice Form
+17:10:50.116 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:10:51.402 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:10:54.409 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:10:54.412 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:10:54.584 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Accordian
+17:10:54.585 [main]INFO  Base.BasePage - Clicking on menu item: Accordian
+17:10:56.624 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:10:56.624 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:13:50.820 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:13:50.837 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:13:51.030 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Accordian
+17:13:51.030 [main]INFO  Base.BasePage - Clicking on menu item: Accordian
+17:13:53.579 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:13:53.581 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:13:53.910 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Progress Bar
+17:13:53.911 [main]INFO  Base.BasePage - Clicking on menu item: Progress Bar
+17:14:10.679 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:14:10.681 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:14:10.922 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Slider
+17:14:10.923 [main]INFO  Base.BasePage - Clicking on menu item: Slider
+17:14:12.833 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:14:12.835 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:14:13.145 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Tabs
+17:14:13.145 [main]INFO  Base.BasePage - Clicking on menu item: Tabs
