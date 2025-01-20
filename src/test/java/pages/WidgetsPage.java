@@ -1,19 +1,19 @@
 package pages;
 
-import Base.BaseTest;
+import Base.BasePage;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import utility.LoggerFactory;
 
-import java.time.Duration;
+public class WidgetsPage extends BasePage {
+    private static final Logger logger = LoggerFactory.getLogger(WidgetsPage.class);
 
-public class WidgetsPage extends BaseTest {
     public WidgetsPage() {
         super();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
     public static String accordianSectionXpath = "//*[@class='card']//*[text()='%s']";
@@ -28,16 +28,14 @@ public class WidgetsPage extends BaseTest {
 
     public static String tabContentXpath = "//*[@id='demo-tabpane-%s']";
 
-    public final WebDriverWait wait;
-
     public void expandAccordionSection(String sectionName) {
         String sectionXpath = String.format(accordianSectionXpath, sectionName);
         try {
             WebElement section = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(sectionXpath)));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", section);
+            scrollToElement(section);
             section.click();
         } catch (TimeoutException e) {
-            System.out.println("TimeOutException: "+e);
+            logger.error("TimeOutException: "+e);
         }
     }
 
@@ -45,7 +43,7 @@ public class WidgetsPage extends BaseTest {
         String contentXpath = String.format(accordianSectionContentXpath, sectionName);
         try {
             WebElement cardContent = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(contentXpath)));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", cardContent);
+            scrollToElement(cardContent);
             return cardContent.isDisplayed();
         } catch (TimeoutException e) {
             return false;
@@ -56,12 +54,12 @@ public class WidgetsPage extends BaseTest {
         try {
             // Locate the slider element
             WebElement slider = driver.findElement(By.xpath("//*[@type='range']"));
-            System.out.println("Slider found: " + slider);
+            logger.info("Slider found: " + slider);
 
             // Log slider attributes
-            System.out.println("Initial slider value: " + slider.getAttribute("value"));
-            System.out.println("Min value: " + slider.getAttribute("min"));
-            System.out.println("Max value: " + slider.getAttribute("max"));
+            logger.info("Initial slider value: " + slider.getAttribute("value"));
+            logger.info("Min value: " + slider.getAttribute("min"));
+            logger.info("Max value: " + slider.getAttribute("max"));
 
             // Using JS Executor
             JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -69,7 +67,7 @@ public class WidgetsPage extends BaseTest {
                     "arguments[0].value='" + sliderValue + "';" +
                             "arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", slider);
 
-            System.out.println("Attempted to set slider value to: " + sliderValue);
+            logger.info("Attempted to set slider value to: " + sliderValue);
 
             // Wait for the slider to reflect the new value
             boolean isValueSet = wait.until(ExpectedConditions.attributeToBe(slider, "value", sliderValue));
@@ -79,18 +77,18 @@ public class WidgetsPage extends BaseTest {
             String currentValue = slider.getAttribute("value");
 
             if (currentValue.equals(sliderValue)) {
-                System.out.println("Slider value successfully updated to: " + sliderValue);
+                logger.info("Slider value successfully updated to: " + sliderValue);
             } else {
-                System.out.println("Slider value update failed. Current value: " + currentValue);
+                logger.info("Slider value update failed. Current value: " + currentValue);
             }
         } catch (TimeoutException e) {
-            System.err.println("Timeout while waiting for slider value to update to: " + sliderValue);
+            logger.error("Timeout while waiting for slider value to update to: " + sliderValue);
             e.printStackTrace();
         } catch (InterruptedException e) {
-            System.err.println("Thread sleep interrupted.");
+            logger.error("Thread sleep interrupted.");
             e.printStackTrace();
         } catch (Exception e) {
-            System.err.println("An error occurred while moving the slider to value: " + sliderValue);
+            logger.error("An error occurred while moving the slider to value: " + sliderValue);
             e.printStackTrace();
         }
     }
@@ -122,10 +120,10 @@ public class WidgetsPage extends BaseTest {
         String tabXpath = String.format(tabNameXpath, tabName);
         try {
             WebElement tab = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tabXpath)));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", tab);
+            scrollToElement(tab);
             tab.click();
         } catch (TimeoutException e) {
-            System.out.println("TimeOutException: "+e);
+            logger.error("TimeOutException: "+e);
         }
 
     }
@@ -134,7 +132,7 @@ public class WidgetsPage extends BaseTest {
         String contentXpath = String.format(tabContentXpath, tabName);
         try {
             WebElement tabContent = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(contentXpath)));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", tabContent);
+            scrollToElement(tabContent);
             return tabContent.isDisplayed();
         } catch (TimeoutException e) {
             return false;
@@ -142,9 +140,9 @@ public class WidgetsPage extends BaseTest {
     }
 
     public boolean isMoreButtonDisabled(String tabName) {
-        System.out.println( "isMoreButtonDisabled");
+        logger.info( "isMoreButtonDisabled");
         WebElement moreTab = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='demo-tab-more' and text()='More']")));
-        System.out.println(moreTab.getAttribute("aria-disabled").equals("true"));
+        logger.info(moreTab.getAttribute("aria-disabled").equals("true"));
         return moreTab.getAttribute("aria-disabled").equals("true");
     }
 }

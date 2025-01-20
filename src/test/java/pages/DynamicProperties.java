@@ -1,53 +1,54 @@
 package pages;
 
-import Base.BaseTest;
+import Base.BasePage;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import utility.LoggerFactory;
 
-import java.time.Duration;
+public class DynamicProperties extends BasePage {
 
-public class DynamicProperties extends BaseTest {
     public DynamicProperties(){
         super();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Adding buffer for 5 seconds
     }
 
-    public static String dynamicButtonXpath = "//*[text()='%s']";
-
-    private final WebDriverWait wait;
+    private static final Logger logger = LoggerFactory.getLogger(DynamicProperties.class); // Logger initialization
+    public static String dynamicButtonXpath = "//*[contains(text(),'%s')]";
 
     public boolean buttonEnabledVisible(String btn){
         try {
+            WebElement button = getButton(btn);
+            scrollToElement(button);
+
             if(btn.equals("Will enable 5 seconds")){
-                WebElement button = driver.findElement(By.xpath(String.format(dynamicButtonXpath,btn)));
-                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", button);
-                wait.until(ExpectedConditions.elementToBeClickable(button));
+                waitForElementToBeClickable(button);
                 return button.isEnabled();
             }else if(btn.equals("Visible After 5 Seconds")){
-                wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format(dynamicButtonXpath,btn))));
-                WebElement button = driver.findElement(By.xpath(String.format(dynamicButtonXpath,btn)));
-                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", button);
+                wait.until(ExpectedConditions.visibilityOf(button));
                 return button.isDisplayed();
             }
         } catch (TimeoutException e) {
-            throw new AssertionError(btn + " button did not become visible after 5 seconds", e);
+            logger.error("{} button did not become visible/enable after 5 seconds", btn);
+            throw new AssertionError(btn + " button did not become visible or enabled after 5 seconds", e);
         }
         return false;
     }
 
-    public void btnChangeColor(String buttonName){
-        WebElement button = driver.findElement(By.xpath(String.format(dynamicButtonXpath,buttonName)));
+    // Helper method to find the button element by name
+    private WebElement getButton(String btn) {
+        return driver.findElement(By.xpath(String.format(dynamicButtonXpath, btn)));
+    }
 
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", button);
+    public void btnChangeColor(String buttonName){
+        WebElement button = getButton(buttonName);
+        scrollToElement(button);
 
         // Get the initial color of the button
         String initialColor = button.getCssValue("color");
-        System.out.println("Initial color: " + initialColor);
+        logger.info("Initial color: " + initialColor);
 
         wait.until(driver -> {
             String currentColor = button.getCssValue("color");
@@ -55,7 +56,7 @@ public class DynamicProperties extends BaseTest {
         });
 
         String newColor = button.getCssValue("color");
-        System.out.println("New color: " + newColor);
+        logger.info("New color: " + newColor);
 
         Assert.assertNotEquals(initialColor, newColor, buttonName + " button color did not change as expected.");
     }

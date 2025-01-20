@@ -2,6 +2,7 @@ package Base;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utility.DriverManager;
@@ -41,6 +42,11 @@ public class BasePage {
 
     public void scrollToElement(WebElement element) {
         jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    // Helper method to wait for the button to become clickable
+    public void waitForElementToBeClickable(WebElement button) {
+        wait.until(ExpectedConditions.elementToBeClickable(button));
     }
 
     public void clickOnMenuItem(String menuName) {

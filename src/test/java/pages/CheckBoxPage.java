@@ -1,22 +1,22 @@
 package pages;
 
-import Base.BaseTest;
+import Base.BasePage;
 import io.cucumber.datatable.DataTable;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utility.LoggerFactory;
 
 import java.time.Duration;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class CheckBoxPage extends BaseTest {
+public class CheckBoxPage extends BasePage {
 
     public CheckBoxPage() {
+        super();
     }
 
     public static String expandAllXpath = "//*[@title='Expand all']/*";
@@ -29,14 +29,14 @@ public class CheckBoxPage extends BaseTest {
 
     public static String resultSelectedCheckBoxXpath = "//span[@class='text-success']";
 
+    private static final Logger logger = LoggerFactory.getLogger(CheckBoxPage.class);
+
     public void clickExpandAll() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(expandAllXpath)));
         element.click();
     }
 
     public void clickCollapseAll(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(collapseAllXpath)));
         element.click();
     }
@@ -47,10 +47,9 @@ public class CheckBoxPage extends BaseTest {
     }
 
     public void selectCheckBox(String checkboxName) throws InterruptedException{
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format(selectCheckBoxXpath, checkboxName))));
-        System.out.println("WebElement - "+element);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        logger.info("WebElement - "+element);
+        scrollToElement(element);
         element.click();
         Thread.sleep(2000);
     }
@@ -59,9 +58,9 @@ public class CheckBoxPage extends BaseTest {
         List<String> checkBoxNames = dataTable.asList();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         for (String checkBoxName : checkBoxNames) {
-            System.out.println("Selecting checkbox: " + checkBoxName);
+            logger.info("Selecting checkbox: " + checkBoxName);
             WebElement checkbox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='" + checkBoxName + "']/preceding-sibling::span[@class='rct-checkbox']")));
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", checkbox);
+            scrollToElement(checkbox);
             checkbox.click();
         }
     }

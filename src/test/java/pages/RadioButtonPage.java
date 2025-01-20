@@ -1,28 +1,23 @@
 package pages;
 
-import Base.BaseTest;
+import Base.BasePage;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.lang.reflect.InvocationTargetException;
-import java.time.Duration;
+import utility.LoggerFactory;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
-public class RadioButtonPage extends BaseTest {
+public class RadioButtonPage extends BasePage {
 
     public RadioButtonPage() {
         super();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     Actions action;
 
     public static String radioButtonXpath = "//*[@name='like']/following-sibling::label[text()='%s']";
-//
-//    public static String successMessageXpath = "//span[@class='text-success']";
 
     public static String noRadioButtonXpath = "//label[@for='noRadio']";
 
@@ -30,8 +25,7 @@ public class RadioButtonPage extends BaseTest {
 
     private static final String SELECTED_MESSAGE_XPATH = "//span[@class='text-success']";
 
-
-    public final WebDriverWait wait;
+    private static Logger logger = LoggerFactory.getLogger(RadioButtonPage.class);
 
     public void selectRadioButtonOption(String option){
         // Define the XPath for the radio button based on the common XPath format
@@ -42,41 +36,41 @@ public class RadioButtonPage extends BaseTest {
 
         // Check if the radio button is disabled
         if (radioButton.getAttribute("disabled") != null) {
-            System.out.println("The '" + option + "' radio button is disabled and cannot be selected.");
+            logger.info("The '" + option + "' radio button is disabled and cannot be selected.");
         } else {
             try {
                 // Wait for the radio button to be clickable
                 radioButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(optionXpath)));
 
                 // Scroll the element into view if it's out of the viewport
-                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", radioButton);
+                scrollToElement(radioButton);
 
                 // Retry the click in case it was blocked by an overlay
                 radioButton.click();
-                System.out.println(option + " radio button clicked successfully.");
+                logger.info(option + " radio button clicked successfully.");
             } catch (ElementClickInterceptedException e) {
                 // If click is intercepted, try clicking via JavaScript
-                System.out.println("Click intercepted, trying JavaScript click...");
-                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", radioButton);
-                System.out.println(option + " radio button clicked using JavaScript.");
+                logger.info("Click intercepted, trying JavaScript click...");
+                scrollToElement(radioButton);
+                logger.error(option + " radio button clicked using JavaScript.");
             } catch (TimeoutException e) {
-                System.out.println("Timeout: The '" + option + "' radio button is not clickable.");
+                logger.error("Timeout: The '" + option + "' radio button is not clickable.");
                 throw e; // Rethrow the exception after logging
             }
         }
     }
 
     public boolean isNoRadioButtonDisabled() {
-        System.out.println("No Radio Button is disabled");
+        logger.info("No Radio Button is disabled");
         return  driver.findElement(By.xpath(noRadioButtonXpath)).getAttribute("class").contains("disabled");
     }
 
     public void clickButton(String buttonName) {
-        System.out.println("click Button method:"+buttonName);
+        logger.info("click Button method:"+buttonName);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(String.format(buttonXpath, buttonName))));
         action = new Actions(driver);
         // Scroll element into view
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        scrollToElement(element);
         switch (buttonName){
             case "Double Click Me":
                 action.doubleClick(element).perform();
@@ -94,7 +88,6 @@ public class RadioButtonPage extends BaseTest {
     }
 
     public void waitForMessage(String buttonName) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         String expectedMessage = "";
 
         switch (buttonName) {
@@ -136,7 +129,7 @@ public class RadioButtonPage extends BaseTest {
         try {
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
             String message = element.getText();
-            System.out.println("Expected: " + expectedMessage + " | Found: " + message);
+            logger.info("Expected: " + expectedMessage + " | Found: " + message);
             return message;
         } catch (TimeoutException e) {
             throw new NoSuchElementException("Message element not found for: " + expectedMessage);

@@ -1,21 +1,19 @@
 package pages;
 
-import Base.BaseTest;
+import Base.BasePage;
 import io.cucumber.datatable.DataTable;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
+import utility.LoggerFactory;
 import java.util.Map;
 
-public class PracticeFormPage extends BaseTest {
+public class PracticeFormPage extends BasePage {
+
     public PracticeFormPage() {
         super();
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     private static final String firstNameXpath = "//*[@id='firstName']";
     private static final String lastNameXpath = "//*[@id='lastName']";
@@ -26,15 +24,13 @@ public class PracticeFormPage extends BaseTest {
     private static final String hobbiesXpath = "//*[@type='checkbox']";
     private static final String currentAddressXpath = "//*[@id='currentAddress']";
     private static final String submitButtonXpath = "//*[text()='Submit']";
-    private final WebDriverWait wait;
-
-    //*[@id='userEmail']
+    private static final Logger logger = LoggerFactory.getLogger(PracticeFormPage.class);
 
     private WebElement getElementByXpath(String xpath) {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 
         // Scroll the element into view using JavaScript
-        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        scrollToElement(element);
         return element;
     }
 
@@ -61,7 +57,7 @@ public class PracticeFormPage extends BaseTest {
                 case "gender":
                     String genderXpath = String.format("//*[@id='genterWrapper']//input[@name='gender' and @value='%s']", value);
                     WebElement genderElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(genderXpath)));
-                    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", genderElement);
+                    scrollToElement(genderElement);
                     // Click using JavaScript to avoid interception issues
                     ((JavascriptExecutor) driver).executeScript("arguments[0].click();", genderElement);
                     break;
@@ -73,9 +69,7 @@ public class PracticeFormPage extends BaseTest {
                 case "dateofbirth":
                     WebElement dobElement = getElementByXpath("//*[@id='dateOfBirthInput']");
                     dobElement.click();
-//                    dobElement.clear();
                     dobElement.sendKeys(value);
-//                    dobElement.sendKeys(Keys.ENTER);
                     break;
 
                 case "hobbies":
@@ -84,7 +78,7 @@ public class PracticeFormPage extends BaseTest {
                         WebElement hobbyElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(hobbyXpath)));
 
                         // Scroll into view
-                        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", hobbyElement);
+                        scrollToElement(hobbyElement);
 
                         // Click using JavaScript
                         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", hobbyElement);
@@ -107,7 +101,7 @@ public class PracticeFormPage extends BaseTest {
 
     public void submitForm(){
         WebElement submitButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(submitButtonXpath)));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
+        scrollToElement(submitButton);
         submitButton.click();
 
     }
@@ -128,7 +122,7 @@ public class PracticeFormPage extends BaseTest {
             throw new AssertionError("Confirmation table not found.");
         }
 
-        System.out.println("Form submitted successfully, confirmation details displayed.");
+        logger.info("Form submitted successfully, confirmation details displayed.");
     }
 
 }

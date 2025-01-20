@@ -1,15 +1,17 @@
 package stepDefinition;
 
 import Base.BaseTest;
+import hooks.Hooks;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import pages.WidgetsPage;
+import utility.LoggerFactory;
 
 public class WidgetsSteps extends BaseTest {
+
+    private static final Logger logger = LoggerFactory.getLogger(WidgetsSteps.class);
 
     public WidgetsSteps(){
         super();
@@ -51,12 +53,11 @@ public class WidgetsSteps extends BaseTest {
 
     @Then("I get progress bar value")
     public void i_get_progress_bar_value(){
-        System.out.println("i_get_progress_bar_value: "+widgetsPage.getProgressBarValue());
+        logger.info("i_get_progress_bar_value: "+widgetsPage.getProgressBarValue());
     }
 
     @When("I click on the {string} tab")
     public void I_click_on_tab(String tabName) {
-        System.out.println("I_click_on_tab: "+tabName);
         widgetsPage.clickOnTab(tabName);
     }
 

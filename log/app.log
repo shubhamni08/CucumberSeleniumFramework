@@ -158,3 +158,153 @@
 17:14:12.835 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
 17:14:13.145 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Tabs
 17:14:13.145 [main]INFO  Base.BasePage - Clicking on menu item: Tabs
+17:36:43.277 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:36:45.560 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:36:48.052 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:36:48.056 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:36:48.433 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+17:36:48.433 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+17:36:54.386 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:36:54.386 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:36:55.479 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:36:58.592 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:36:58.594 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:36:58.976 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+17:36:58.979 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+17:37:04.810 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:37:04.811 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:37:05.899 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:37:09.777 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:37:09.778 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:37:10.123 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+17:37:10.123 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+17:37:15.787 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:37:15.787 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:52:54.364 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:52:56.191 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:52:58.862 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:52:58.866 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:52:59.209 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+17:52:59.210 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+17:53:05.318 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:53:05.318 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:53:06.482 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:53:09.131 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:53:09.132 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:53:09.370 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+17:53:09.370 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+17:53:09.696 [main]INFO  pages.DynamicProperties - Initial color: rgba(255, 255, 255, 1)
+17:53:14.635 [main]INFO  pages.DynamicProperties - New color: rgba(247, 208, 212, 1)
+17:53:14.934 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:53:14.934 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:53:15.895 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:53:18.458 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:53:18.459 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:53:18.694 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+17:53:18.694 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+17:53:19.274 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:53:19.274 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:55:32.246 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:55:33.880 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:55:36.630 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:55:36.633 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:55:36.931 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+17:55:36.932 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+17:55:42.950 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:55:42.950 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:55:44.041 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:55:46.611 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:55:46.614 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:55:46.855 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+17:55:46.856 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+17:55:47.117 [main]INFO  pages.DynamicProperties - Initial color: rgba(255, 255, 255, 1)
+17:55:52.307 [main]INFO  pages.DynamicProperties - New color: rgba(220, 53, 69, 1)
+17:55:52.572 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:55:52.573 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:55:53.559 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:55:56.530 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:55:56.532 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:55:56.876 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+17:55:56.877 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+17:55:57.541 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:55:57.541 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:59:00.732 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:59:02.374 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:59:05.126 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:59:05.129 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:59:05.512 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+17:59:05.512 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+17:59:11.548 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:59:11.549 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:59:12.749 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:59:15.835 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:59:15.836 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:59:16.123 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+17:59:16.124 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+17:59:16.493 [main]INFO  pages.DynamicProperties - Initial color: rgba(255, 255, 255, 1)
+17:59:21.452 [main]INFO  pages.DynamicProperties - New color: rgba(241, 173, 180, 1)
+17:59:21.761 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:59:21.761 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:59:22.870 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:59:25.723 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:59:25.725 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:59:25.996 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+17:59:25.998 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+17:59:26.853 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:59:26.853 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:01:38.546 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+18:01:40.229 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:01:43.245 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:01:43.248 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+18:01:43.610 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+18:01:43.610 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+18:01:49.594 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:01:49.594 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:01:50.712 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:02:01.547 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:02:01.549 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+18:02:01.882 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+18:02:01.882 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+18:02:02.151 [main]INFO  pages.DynamicProperties - Initial color: rgba(255, 255, 255, 1)
+18:02:07.120 [main]INFO  pages.DynamicProperties - New color: rgba(252, 235, 236, 1)
+18:02:07.430 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:02:07.431 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:02:08.393 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:02:11.270 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:02:11.271 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+18:02:11.621 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+18:02:11.622 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+18:02:12.264 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:02:12.264 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:04:09.328 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+18:04:10.943 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:04:13.857 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:04:13.860 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+18:04:14.155 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+18:04:14.156 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+18:04:20.131 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:04:20.132 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:04:21.157 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:04:24.243 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:04:24.245 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+18:04:24.545 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+18:04:24.546 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+18:04:24.941 [main]INFO  pages.DynamicProperties - Initial color: rgba(255, 255, 255, 1)
+18:04:30.357 [main]INFO  pages.DynamicProperties - New color: rgba(220, 53, 69, 1)
+18:04:30.665 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:04:30.666 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:04:31.730 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:04:34.987 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:04:34.989 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+18:04:35.352 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+18:04:35.352 [main]INFO  Base.BasePage - Clicking on menu item: Dynamic Properties
+18:04:35.943 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:04:35.943 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:08:51.379 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+18:08:53.156 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:08:56.044 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:08:56.046 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+18:08:56.418 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Tabs
+18:08:56.418 [main]INFO  Base.BasePage - Clicking on menu item: Tabs
+18:08:58.616 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:08:58.617 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.

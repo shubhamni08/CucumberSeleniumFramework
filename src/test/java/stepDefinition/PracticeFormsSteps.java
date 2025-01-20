@@ -4,7 +4,9 @@ import Base.BaseTest;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.logging.log4j.Logger;
 import pages.PracticeFormPage;
+import utility.LoggerFactory;
 
 public class PracticeFormsSteps extends BaseTest {
 
@@ -12,7 +14,7 @@ public class PracticeFormsSteps extends BaseTest {
         super();
         practiceFormPage = new PracticeFormPage();
     }
-
+    private static final Logger logger = LoggerFactory.getLogger(PracticeFormsSteps.class);
     private final PracticeFormPage practiceFormPage;
 
     @When("I fill out the form with valid details:")

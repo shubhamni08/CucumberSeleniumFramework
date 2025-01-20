@@ -4,12 +4,15 @@ import Base.BaseTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
+import org.apache.logging.log4j.Logger;
+import utility.LoggerFactory;
 import org.testng.Assert;
 import pages.Alerts_Windows_FramesPage;
 
 public class AlertWindowsSteps extends BaseTest {
+
     private final Alerts_Windows_FramesPage alertsWindowsPage;
+    private static final Logger logger = LoggerFactory.getLogger(AlertWindowsSteps.class);
 
     public AlertWindowsSteps() {
         this.alertsWindowsPage = new Alerts_Windows_FramesPage();

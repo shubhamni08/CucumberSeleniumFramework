@@ -12,6 +12,7 @@
         <cucumber.version>6.11.0</cucumber.version>
         <selenium.version>4.17.0</selenium.version>
         <testng.version>7.10.2</testng.version>
+        <log4j-version>2.24.3</log4j-version>
         <webdrivermanager.version>5.9.2</webdrivermanager.version>
         <apache.common.version>2.4</apache.common.version>
         <maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
@@ -71,6 +72,21 @@
             <artifactId>org.apache.commons.io</artifactId>
             <version>${apache.common.version}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j-version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>${log4j-version}</version>
+        </dependency>
+
 
     </dependencies>
 

@@ -1,24 +1,22 @@
 package pages;
 
-import Base.BaseTest;
+import Base.BasePage;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
-import java.time.Duration;
+import utility.LoggerFactory;
 import java.util.Set;
 
-public class Alerts_Windows_FramesPage extends BaseTest {
+public class Alerts_Windows_FramesPage extends BasePage {
     public static String modelDialogButtonXpath = "//*[@id='modalWrapper']/div/*[text()='%s']";
     public static String closeButtonXpath = "//button[text()='%s']";
     public static String browserWindowButtonXpath = "//*[text()='Browser Windows']/following-sibling::div/button[text()='%s']";
     public static String alertButtonXpath = "//*[@id='%s']";
-    public final WebDriverWait wait;
+    private static final Logger logger = LoggerFactory.getLogger(Alerts_Windows_FramesPage.class);
 
     public Alerts_Windows_FramesPage() {
         super();
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     public void openModal(String modal){
@@ -35,17 +33,13 @@ public class Alerts_Windows_FramesPage extends BaseTest {
     }
 
     public boolean isModalVisible() {
-        System.out.print(driver.findElements(By.className("modal-dialog")).isEmpty());
+        logger.info(driver.findElements(By.className("modal-dialog")).isEmpty());
         return !driver.findElements(By.className("modal-dialog")).isEmpty();
     }
 
     public String getCurrentURL() {
         return driver.getCurrentUrl();
     }
-
-//    public void triggerNonExistentAlert() {
-//        driver.findElement(By.id("nonExistentAlertButton")).click();
-//    }
 
     public boolean switchBetweenAllWindowsAndVerify() {
         Set<String> allWindowHandles = driver.getWindowHandles();
@@ -57,15 +51,10 @@ public class Alerts_Windows_FramesPage extends BaseTest {
         return verified;
     }
 
-//    public void verifyNewTab(String tab){
-//        WebElement newTabElement  = driver.findElement(By.xpath(String.format(browserWindowButtonXpath,tab)));
-//        newTabElement.click();
-//    }
-
     public void verifyNewWindow(String windowName){
         // Store the parent window handle
         String parentHandle = driver.getWindowHandle();
-        System.out.println("Parent window handle: " + parentHandle);
+        logger.info("Parent window handle: " + parentHandle);
 
         // Locate and click the button to open the new window
         WebElement newWindowButton = driver.findElement(By.xpath(String.format(browserWindowButtonXpath, windowName)));
@@ -78,12 +67,12 @@ public class Alerts_Windows_FramesPage extends BaseTest {
         Set<String> allHandles = driver.getWindowHandles();
 
         for(String handle :allHandles){
-            System.out.println(handle);
+            logger.info(handle);
             if(!handle.equals(parentHandle)){
                 driver.switchTo().window(handle);
-                System.out.println("Switched to new window with handle: " + handle);
+                logger.info("Switched to new window with handle: " + handle);
                 String newWindowTitle = driver.getTitle();
-                System.out.println("New window title: " + newWindowTitle);
+                logger.info("New window title: " + newWindowTitle);
                 Assert.assertNotEquals(parentHandle, handle, "Failed to switch to the new window");
 
                 // Perform any actions or assertions in the new window
@@ -97,7 +86,7 @@ public class Alerts_Windows_FramesPage extends BaseTest {
         }
         // Switch back to the parent window
         driver.switchTo().window(parentHandle);
-        System.out.println("Switched back to parent window");
+        logger.info("Switched back to parent window");
     }
 
 
@@ -110,7 +99,7 @@ public class Alerts_Windows_FramesPage extends BaseTest {
         try {
             Alert alert = wait.until(ExpectedConditions.alertIsPresent());
             String alertText = alert.getText();
-            System.out.println("Alert message: " + alertText);
+            logger.info("Alert message: " + alertText);
             return alertText;
         } catch (Exception e) {
             e.printStackTrace();
@@ -124,7 +113,7 @@ public class Alerts_Windows_FramesPage extends BaseTest {
             alert.accept();
             //TODO Chech that alert not present anymore
         } catch (NoAlertPresentException e) {
-            System.out.println("No alert present to accept.");
+            logger.error("No alert present to accept.");
         }
     }
 
@@ -134,16 +123,15 @@ public class Alerts_Windows_FramesPage extends BaseTest {
             alert.dismiss();
             //TODO Chech that alert not present anymore
         } catch (NoAlertPresentException e) {
-            System.out.println("No alert present to dismiss.");
+            logger.error("No alert present to dismiss.");
         }
     }
 
     public void enterTextInPromptAlertSafely(String text) {
         try {
             Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-            System.out.println(text);
+            logger.info(text);
             alert.sendKeys(text);
-//            alert.accept();
         } catch (Exception e) {
             e.printStackTrace();
         }

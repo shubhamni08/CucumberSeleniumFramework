@@ -1,27 +1,22 @@
 package pages;
 
-import Base.BaseTest;
+import Base.BasePage;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+import utility.LoggerFactory;
 
-import java.time.Duration;
-import java.util.Iterator;
 import java.util.Set;
 
-public class LinksPage extends BaseTest {
+public class LinksPage extends BasePage {
     public LinksPage() {
         super();
-        wait = new WebDriverWait(driver,Duration.ofSeconds(10));
     }
 
     public static String linksXpath = "//*[text()='%s']";
-
     public static String responseCodeXpath = "//*[@id='linkResponse']";
-
-    public WebDriverWait wait;
+    private static final Logger logger = LoggerFactory.getLogger(LinksPage.class);
 
     public String getCurrentURL(){
         // Store the parent window handle
@@ -50,7 +45,7 @@ public class LinksPage extends BaseTest {
     public String getAPIResponseText() {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(responseCodeXpath)));
         String response = element.getText();
-        System.out.println("getAPIResponseText method successful: "+response);
+        logger.info("getAPIResponseText method successful: "+response);
         return response;
     }
 }

@@ -1,32 +1,26 @@
 package pages;
 
-import Base.BaseTest;
+import Base.BasePage;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.io.File;
-import java.time.Duration;
+import utility.LoggerFactory;
 
-public class UploadDownloadPage extends BaseTest {
+
+public class UploadDownloadPage extends BasePage {
 
     public UploadDownloadPage(){
         super();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(2));
     }
 
     public static String downloadXpath = "//a[@id='downloadButton']";
-
     public static String uploadFileXpath = "//input[@id='uploadFile']";
-
     public static String uploadFilePathXpath = "//*[@id='uploadedFilePath']";
-
     public static String downloadPath = System.getProperty("user.home") + "/Downloads";
-
     public static String uploadFilePath = System.getProperty("user.dir") + "/src/test/resources/testUploadFile.txt";
-
-    public static WebDriverWait wait;
+    private static final Logger logger = LoggerFactory.getLogger(UploadDownloadPage.class);
 
     public void clickDowloadLink(){
 
@@ -50,7 +44,7 @@ public class UploadDownloadPage extends BaseTest {
                 break;
             }
         }
-        System.out.println("File not found after waiting: " + downloadedFile.getAbsolutePath());
+        logger.info("File not found after waiting: " + downloadedFile.getAbsolutePath());
         return downloadedFile;
 
     }
