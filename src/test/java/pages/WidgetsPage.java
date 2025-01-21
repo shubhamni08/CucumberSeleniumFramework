@@ -11,27 +11,20 @@ import utility.Waits;
 
 public class WidgetsPage extends BasePage {
     private static final Logger logger = LoggerFactory.getLogger(WidgetsPage.class);
-    private Waits waits;
+    private final Waits waits;
 
     public WidgetsPage() {
         super();
-        this.waits = new Waits();
+        this.waits = new Waits(driver);
     }
 
     public static String accordianSectionXpath = "//*[@class='card']//*[text()='%s']";
-
     public static String accordianSectionContentXpath = "//div[@class='accordion']//div[@class='card-header' and text()='%s']/following-sibling::div[contains(@class, 'collapse')]//div[contains(@class, 'card-body')]/p";
-
     public static String progressBarButtonXpath = "//*[text()='%s']";
-
     public static String progressBarXpath = "//*[@role='progressbar']";
-
     public static String tabNameXpath = "//*[@role='tab' and text()='%s']";
-
     public static String tabContentXpath = "//*[@id='demo-tabpane-%s']";
-
     public static String moreButtonXpath = "//*[@id='demo-tab-more' and text()='%s']";
-
     public static String rangeXpath = "//*[@type='range']";
 
     public void expandAccordionSection(String sectionName) {
@@ -41,7 +34,7 @@ public class WidgetsPage extends BasePage {
             scrollToElement(section);
             section.click();
         } catch (TimeoutException e) {
-            logger.error("TimeOutException: "+e);
+            logger.error("TimeOutException: ",e);
         }
     }
 
@@ -60,12 +53,12 @@ public class WidgetsPage extends BasePage {
         try {
             // Locate the slider element
             WebElement slider = driver.findElement(By.xpath(rangeXpath));
-            logger.info("Slider found: " + slider);
+            logger.info("Slider found: {}", slider);
 
             // Log slider attributes
-            logger.info("Initial slider value: " + slider.getAttribute("value"));
-            logger.info("Min value: " + slider.getAttribute("min"));
-            logger.info("Max value: " + slider.getAttribute("max"));
+            logger.info("Initial slider value: {}", slider.getAttribute("value"));
+            logger.info("Min value: {}", slider.getAttribute("min"));
+            logger.info("Max value: {}" , slider.getAttribute("max"));
 
             // Using JS Executor
             JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -73,28 +66,28 @@ public class WidgetsPage extends BasePage {
                     "arguments[0].value='" + sliderValue + "';" +
                             "arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", slider);
 
-            logger.info("Attempted to set slider value to: " + sliderValue);
+            logger.info("Attempted to set slider value to: {}" , sliderValue);
 
             // Wait for the slider to reflect the new value
-            boolean isValueSet = waits.waitForAttributeToBe(slider,"value",sliderValue);
+//            boolean isValueSet = waits.waitForAttributeToBe(slider,"value",sliderValue);
 
             // Wait for 2 seconds to ensure the slider value is updated
             Thread.sleep(1000);
             String currentValue = slider.getAttribute("value");
 
             if (currentValue.equals(sliderValue)) {
-                logger.info("Slider value successfully updated to: " + sliderValue);
+                logger.info("Slider value successfully updated to: {}" ,sliderValue);
             } else {
-                logger.info("Slider value update failed. Current value: " + currentValue);
+                logger.info("Slider value update failed. Current value: {}" , currentValue);
             }
         } catch (TimeoutException e) {
-            logger.error("Timeout while waiting for slider value to update to: " + sliderValue);
+            logger.error("Timeout while waiting for slider value to update to: {}" , sliderValue);
             e.printStackTrace();
         } catch (InterruptedException e) {
             logger.error("Thread sleep interrupted.");
             e.printStackTrace();
         } catch (Exception e) {
-            logger.error("An error occurred while moving the slider to value: " + sliderValue);
+            logger.error("An error occurred while moving the slider to value: {}" , sliderValue);
             e.printStackTrace();
         }
     }
@@ -113,8 +106,8 @@ public class WidgetsPage extends BasePage {
     }
 
     public boolean isProgressBarComplete(String percentage) {
-        By precentageLocator = By.xpath(progressBarXpath);
-        return waits.waitForTextOfElementPresent(precentageLocator,percentage);
+        By percentageLocator = By.xpath(progressBarXpath);
+        return waits.waitForTextOfElementPresent(percentageLocator,percentage);
     }
 
     public String getProgressBarValue() {
@@ -129,7 +122,7 @@ public class WidgetsPage extends BasePage {
             scrollToElement(tab);
             tab.click();
         } catch (TimeoutException e) {
-            logger.error("TimeOutException: "+e);
+            logger.error("TimeOutException: ",e);
         }
 
     }

@@ -16,7 +16,7 @@ public class TextBoxPage extends BasePage {
 
     public TextBoxPage() {
         super();
-        this.waits = new Waits();
+        this.waits = new Waits(driver);
     }
 
     public WebElement getFieldByName(Fields fieldName){

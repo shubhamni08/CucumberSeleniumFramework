@@ -7,6 +7,7 @@ import org.testng.Assert;
 import utility.LoggerFactory;
 import utility.Waits;
 import java.util.Set;
+import Base.BaseTest;
 
 public class Alerts_Windows_FramesPage extends BasePage {
     public static String modelDialogButtonXpath = "//*[@id='modalWrapper']/div/*[text()='%s']";
@@ -14,17 +15,20 @@ public class Alerts_Windows_FramesPage extends BasePage {
     public static String browserWindowButtonXpath = "//*[text()='Browser Windows']/following-sibling::div/button[text()='%s']";
     public static String alertButtonXpath = "//*[@id='%s']";
     private static final Logger logger = LoggerFactory.getLogger(Alerts_Windows_FramesPage.class);
-    private Waits waits;
+    private final Waits waits;
+    private BaseTest baseTest;
 
     public Alerts_Windows_FramesPage() {
         super();
-        this.waits = new Waits();
+        this.waits = new Waits(driver);
+        baseTest = new BaseTest();
     }
 
     public void openModal(String modal){
         By modelLocator = By.xpath(String.format(modelDialogButtonXpath,modal));
         WebElement element = waits.waitForElementToBeClickable(modelLocator);
         element.click();
+        logger.info("Opened modal: {}", modal);
     }
 
     public String getModalContent() {
@@ -33,11 +37,13 @@ public class Alerts_Windows_FramesPage extends BasePage {
 
     public void closeModal(String buttonLabel) {
         super.clickButton(String.format(closeButtonXpath,buttonLabel));
+        logger.info("Closed modal using button: {}", buttonLabel);
     }
 
     public boolean isModalVisible() {
-        logger.info(driver.findElements(By.className("modal-dialog")).isEmpty());
-        return !driver.findElements(By.className("modal-dialog")).isEmpty();
+        boolean isVisible = !driver.findElements(By.className("modal-dialog")).isEmpty();
+        logger.info("Is modal visible: {}", isVisible);
+        return isVisible;
     }
 
     public String getCurrentURL() {
@@ -46,18 +52,19 @@ public class Alerts_Windows_FramesPage extends BasePage {
 
     public boolean switchBetweenAllWindowsAndVerify() {
         Set<String> allWindowHandles = driver.getWindowHandles();
-        boolean verified = true;
         for (String handle : allWindowHandles) {
             driver.switchTo().window(handle);
-            verified = verified && driver.getPageSource().contains("This is a sample page");
+            if (!driver.getPageSource().contains("This is a sample page")) {
+                return false;
+            }
         }
-        return verified;
+        return true;
     }
 
     public void verifyNewWindow(String windowName){
         // Store the parent window handle
         String parentHandle = driver.getWindowHandle();
-        logger.info("Parent window handle: " + parentHandle);
+        logger.info("Parent window handle: {}", parentHandle);
 
         // Locate and click the button to open the new window
         WebElement newWindowButton = driver.findElement(By.xpath(String.format(browserWindowButtonXpath, windowName)));
@@ -69,33 +76,34 @@ public class Alerts_Windows_FramesPage extends BasePage {
         // Get all window handles and switch to the new window
         Set<String> allHandles = driver.getWindowHandles();
 
-        for(String handle :allHandles){
-            logger.info(handle);
-            if(!handle.equals(parentHandle)){
-                driver.switchTo().window(handle);
-                logger.info("Switched to new window with handle: " + handle);
-                String newWindowTitle = driver.getTitle();
-                logger.info("New window title: " + newWindowTitle);
-                Assert.assertNotEquals(parentHandle, handle, "Failed to switch to the new window");
+        switchToNewWindow(parentHandle);
+        String newWindowTitle = driver.getTitle();
+        logger.info("New window title: {}", newWindowTitle);
+        Assert.assertTrue(newWindowTitle.contains("https://demoqa.com/sample"), "New window content validation failed");
 
-                // Perform any actions or assertions in the new window
-                Assert.assertTrue(newWindowTitle.contains("https://demoqa.com/sample"), "Content validation failed");
-
-                // Close the new window and switch back to the parent
-                driver.close();
-                break;
-            }
-
-        }
-        // Switch back to the parent window
+        driver.close(); // Close new window
         driver.switchTo().window(parentHandle);
-        logger.info("Switched back to parent window");
+        logger.info("Switched back to parent window.");
+
     }
 
+    /** Switches to a newly opened window */
+    private void switchToNewWindow(String parentHandle) {
+        Set<String> allHandles = driver.getWindowHandles();
+        for (String handle : allHandles) {
+            if (!handle.equals(parentHandle)) {
+                driver.switchTo().window(handle);
+                logger.info("Switched to new window with handle: {}", handle);
+                return;
+            }
+        }
+        throw new IllegalStateException("No new window found to switch to!");
+    }
 
     //alert page interaction methods
     public void clickAlertButton(String btn) {
-        super.clickButton(String.format(alertButtonXpath,btn));
+        baseTest.dismissUnexpectedAlert();
+        clickButton(String.format(alertButtonXpath,btn));
     }
 
     public String getAlertMessageSafely() {
@@ -110,21 +118,25 @@ public class Alerts_Windows_FramesPage extends BasePage {
         }
     }
 
-    public void acceptAlertSafely() {
+    /** Handles alerts safely (accept, dismiss, send keys) */
+    private Alert getAlertSafely() {
         try {
-            Alert alert = waits.waitForAlertPresence();
-            alert.accept();
-            //TODO Chech that alert not present anymore
+            return waits.waitForAlertPresence();
         } catch (NoAlertPresentException e) {
-            logger.error("No alert present to accept.");
+            logger.error("No alert present.");
+            return null;
         }
+    }
+
+    public void acceptAlertSafely() {
+        Alert alert = getAlertSafely();
+        if (alert != null) alert.accept();
     }
 
     public void dismissAlertSafely() {
         try {
             Alert alert = waits.waitForAlertPresence();
             alert.dismiss();
-            //TODO Chech that alert not present anymore
         } catch (NoAlertPresentException e) {
             logger.error("No alert present to dismiss.");
         }
@@ -141,14 +153,17 @@ public class Alerts_Windows_FramesPage extends BasePage {
     }
 
     public String getConfirmationResult() {
-        By confirmResultLocator = By.id("confirmResult");
-        WebElement resultElement = waits.waitForVisiblityOfElement(confirmResultLocator);
-        return resultElement.getText();
+        return getResultText("confirmResult");
     }
 
     public String getPromptResult() {
-        By promptResultLocator = By.id("promptResult");
-        WebElement resultElement = waits.waitForVisiblityOfElement(promptResultLocator);
+        return getResultText("promptResult");
+    }
+
+    /** Gets confirmation result from UI */
+    private String getResultText(String resultId) {
+        By resultLocator = By.id(resultId);
+        WebElement resultElement = waits.waitForVisiblityOfElement(resultLocator);
         return resultElement.getText();
     }
 

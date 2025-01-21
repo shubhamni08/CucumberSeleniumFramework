@@ -52,7 +52,7 @@ public class WidgetsSteps extends BaseTest {
 
     @Then("I get progress bar value")
     public void i_get_progress_bar_value(){
-        logger.info("i_get_progress_bar_value: "+widgetsPage.getProgressBarValue());
+        logger.info("i_get_progress_bar_value: {}",widgetsPage.getProgressBarValue());
     }
 
     @When("I click on the {string} tab")

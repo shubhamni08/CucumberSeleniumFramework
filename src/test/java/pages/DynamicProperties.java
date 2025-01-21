@@ -13,12 +13,12 @@ public class DynamicProperties extends BasePage {
 
     public DynamicProperties(){
         super();
-        this.waits = new Waits();
+        this.waits = new Waits(driver);
     }
 
     private static final Logger logger = LoggerFactory.getLogger(DynamicProperties.class); // Logger initialization
     public static String dynamicButtonXpath = "//*[contains(text(),'%s')]";
-    private Waits waits;
+    private final Waits waits;
 
     public boolean buttonEnabledVisible(String btn){
         try {
@@ -50,15 +50,12 @@ public class DynamicProperties extends BasePage {
 
         // Get the initial color of the button
         String initialColor = button.getCssValue("color");
-        logger.info("Initial color: " + initialColor);
+        logger.info("Initial color of {}: {}", buttonName, initialColor);
 
-        waits.waitForCondition(driver -> { // ✅ Use waits instead of wait.until()
-            String currentColor = button.getCssValue("color");
-            return !currentColor.equals(initialColor);
-        });
+        waits.waitForCondition(driver -> !button.getCssValue("color").equals(initialColor));
 
         String newColor = button.getCssValue("color");
-        logger.info("New color: " + newColor);
+        logger.info("New color of {}: {}", buttonName, newColor);
 
         Assert.assertNotEquals(initialColor, newColor, buttonName + " button color did not change as expected.");
     }

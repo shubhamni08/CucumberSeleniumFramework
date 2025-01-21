@@ -4,6 +4,7 @@ import Base.BasePage;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebElement;
 import utility.*;
 
@@ -20,7 +21,7 @@ public class HomePage extends BasePage {
 
     public HomePage() {
         super();
-        this.waits = new Waits();
+        this.waits = new Waits(driver);
     }
 
     public void click_on_card_by_name(String cardName) {
@@ -31,7 +32,7 @@ public class HomePage extends BasePage {
 
     public void click_on_menu_items_from_cards(String menuName) {
         String menuItemXpath = String.format(MENULIST_XPATH, menuName);
-        logger.info("Clicking on menu item: " + menuName + " | XPath: " + menuItemXpath);
+        logger.info("Clicking on menu item: {} | XPath: {}", menuName, menuItemXpath);
 
         List<WebElement> menuItems = driver.findElements(By.xpath(menuItemXpath));
 
@@ -39,8 +40,14 @@ public class HomePage extends BasePage {
             logger.error("Menu item not found: " + menuName);
             throw new NoSuchElementException("Menu item not found: " + menuName);
         }
+        WebElement menuItem = menuItems.get(0);
 
-        clickButton(menuItemXpath);
+        if (menuItem.isDisplayed() && menuItem.isEnabled()) {
+            clickButton(menuItemXpath);
+        } else {
+            logger.error("Menu item '{}' is not clickable", menuName);
+            throw new ElementClickInterceptedException("Menu item not clickable: " + menuName);
+        }
 
 //        logger.info("Clicking on menu item: " + menuName);
 //        clickButton(String.format(MENULIST_XPATH, menuName));

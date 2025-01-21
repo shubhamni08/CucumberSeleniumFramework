@@ -1,6 +1,5 @@
 package stepDefinition;
 
-import Base.BasePage;
 import Base.BaseTest;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
@@ -24,7 +23,6 @@ public class ElementsSteps  extends BaseTest {
     public ElementsSteps(){
         super();
         homePage = new HomePage();
-        basePage = new BasePage();
         textBoxPage = new TextBoxPage();
         checkBoxPage = new CheckBoxPage();
         radioButtonPage = new RadioButtonPage();
@@ -36,7 +34,6 @@ public class ElementsSteps  extends BaseTest {
     }
 
     private final HomePage homePage;
-    private final BasePage basePage;
     private final TextBoxPage textBoxPage;
     private final CheckBoxPage checkBoxPage;
     private final RadioButtonPage radioButtonPage;
@@ -55,13 +52,13 @@ public class ElementsSteps  extends BaseTest {
 
     @When("I navigate to the {string} section")
     public void I_navigate_to_the_Elements_section(String cardName){
-        log.info("Clicking on card: " + cardName);
+        log.info("Clicking on card: {}" , cardName);
         homePage.click_on_card_by_name(cardName);
     }
 
     @And("I click on {string}")
     public void I_click_on_MenuItem(String menuItem){
-        log.info("I_click_on_MenuItem: " + menuItem);
+        log.info("I_click_on_MenuItem: {}", menuItem);
         homePage.click_on_menu_items_from_cards(menuItem);
     }
 
@@ -103,7 +100,7 @@ public class ElementsSteps  extends BaseTest {
                     actualValue = textBoxPage.getOutputText("permanentAddress");
                     break;
             }
-            System.out.println(actualValue);
+            log.info(actualValue);
             // Assert that the actual value matches the expected value
             Assert.assertEquals(actualValue, expectedValue, fieldName + " output mismatch.");
         }
@@ -130,26 +127,26 @@ public class ElementsSteps  extends BaseTest {
 
     @And("I select the {string} checkbox")
     public void I_select_the_checkbox(String checkboxName) throws InterruptedException{
-        log.info("I_select_the_checkbox: "+checkboxName);
+        log.info("I_select_the_checkbox: {}",checkboxName);
         checkBoxPage.selectCheckBox(checkboxName);
     }
 
     @When("I select the following checkboxes:")
     public void i_select_the_following_checkboxes(DataTable dataTable){
-        log.info("I_Select_the_following_checkboxes: "+dataTable);
+        log.info("I_Select_the_following_checkboxes: {}",dataTable);
         checkBoxPage.selectMultipleCheckBoxes(dataTable);
     }
 
     @Then("the success message {string} should be displayed")
     public void the_success_message_should_be_displayed(String expectedMessage) {
-        log.info("Validating success message: " + expectedMessage);
+        log.info("Validating success message: {}" , expectedMessage);
         String actualValues = checkBoxPage.successMessageActualResult(expectedMessage);
         Assert.assertEquals("You have selected : "+actualValues,expectedMessage,"Success message mismatch" );
     }
 
     @Then("all items in the tree structure should be {string}")
     public void all_items_in_the_tree_structure_should_be(String state) {
-        log.info("Verifying tree structure: " + state);
+        log.info("Verifying tree structure: {}", state);
         List<WebElement> items = driver.findElements(By.xpath("//span[@class='rct-title']"));
         if (state.equals("visible")) {
             Assert.assertFalse(items.isEmpty(), "Items should be visible");
@@ -162,13 +159,13 @@ public class ElementsSteps  extends BaseTest {
 
     @When("I select the {string} radio button")
     public void I_select_the_button_option(String optionName){
-        log.info("I_select_the_radio_button_option: "+optionName);
+        log.info("I_select_the_radio_button_option: {}",optionName);
         radioButtonPage.selectRadioButtonOption(optionName);
     }
 
     @Then("the message {string} should be displayed")
     public void the_Message_Should_Be_Displayed(String expectedMessage) {
-        log.info("Verifying message: " + expectedMessage);
+        log.info("Verifying message: {}", expectedMessage);
         String actualMessage = radioButtonPage.getClickMessage(expectedMessage); // Pass the expected message
         log.info(actualMessage);
         Assert.assertEquals(actualMessage, expectedMessage, "Message does not match!");
@@ -176,7 +173,7 @@ public class ElementsSteps  extends BaseTest {
 
     @Then("the message You have selected {string} should be displayed")
     public void the_Message_you_have_selected_Should_Be_Displayed(String expectedMessage) {
-        log.info("the_Message_Should_Be_Displayed: " + expectedMessage);
+        log.info("the_Message_Should_Be_Displayed: {}", expectedMessage);
         String actualMessage = radioButtonPage.getClickMessage(expectedMessage); // Pass the expected message
         log.info(actualMessage);
         Assert.assertEquals(actualMessage, expectedMessage, "Message does not match!");
@@ -191,7 +188,7 @@ public class ElementsSteps  extends BaseTest {
 
     @When("I click on {string} button")
     public void I_click_on_button(String buttonName) {
-        log.info("I_click_on_button: "+buttonName);
+        log.info("I_click_on_button: {}",buttonName);
         radioButtonPage.clickButton(buttonName);
     }
 
@@ -250,21 +247,21 @@ public class ElementsSteps  extends BaseTest {
 
     @When("I click on the {string} link")
     public void I_click_on_the_link(String link){
-        log.info("I_click_on_the_link: "+link);
+        log.info("I_click_on_the_link: {}",link);
         linksPage.clickLink(link);
     }
 
     @Then("I should be redirected to {string}")
     public void I_should_be_redirected_to(String expectedUrl){
-        log.info("I_should_be_redirected_to: "+expectedUrl);
+        log.info("I_should_be_redirected_to: {}",expectedUrl);
         Assert.assertEquals(expectedUrl, linksPage.getCurrentURL());
     }
 
     @Then("I should see the API response message {string}")
     public void I_should_see_the_API_response_message(String expectedMessage) {
-        log.info("I_should_see_the_API_response_message: "+expectedMessage);
+        log.info("I_should_see_the_API_response_message: {}",expectedMessage);
         String actualMessage = linksPage.getAPIResponseText();
-        log.info("Actual message: " + actualMessage);
+        log.info("Actual message: {}",actualMessage);
         String[] expectedStatusCodeRes = expectedMessage.split(" ");
 
         String actualStatusCode = driver.findElement(By.xpath("//p[@id='linkResponse']/b[1]")).getText();

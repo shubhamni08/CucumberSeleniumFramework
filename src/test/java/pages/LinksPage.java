@@ -11,13 +11,13 @@ import java.util.Set;
 public class LinksPage extends BasePage {
     public LinksPage() {
         super();
-        this.waits = new Waits();
+        this.waits = new Waits(driver);
     }
 
     public static String linksXpath = "//*[text()='%s']";
     public static String responseCodeXpath = "//*[@id='linkResponse']";
     private static final Logger logger = LoggerFactory.getLogger(LinksPage.class);
-    private Waits waits;
+    private final Waits waits;
 
     public String getCurrentURL(){
         // Store the parent window handle
@@ -46,7 +46,8 @@ public class LinksPage extends BasePage {
     public String getAPIResponseText() {
         WebElement element = waits.waitForVisiblityOfElement(By.xpath(responseCodeXpath));
         String response = element.getText();
-        logger.info("getAPIResponseText method successful: "+response);
+        logger.info("getAPIResponseText method successful: {}",response);
         return response;
     }
+
 }

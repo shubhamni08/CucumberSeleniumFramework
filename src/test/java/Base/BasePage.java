@@ -11,7 +11,7 @@ public class BasePage {
     protected WebDriver driver;
     protected JavascriptExecutor jsExecutor;
     private static final Logger logger = LoggerFactory.getLogger(BasePage.class);
-    private Waits waits;
+    private final Waits waits;
 
     public BasePage() {
         this.driver = DriverManager.getDriver(null);
@@ -23,23 +23,28 @@ public class BasePage {
     }
 
     public void clickButton(String locator) {
-//        waits.waitUntil(() -> {
-//            WebElement button = driver.findElement(By.xpath(locator));
-//            scrollToElement(button);
-//            button.click();
-//        });
         waits.waitUntil(() -> {
-            WebElement button = driver.findElement(By.xpath(locator));
-            if (button.isDisplayed() && button.isEnabled()) {
-                button.click();
-                return true;
+            try {
+                WebElement button = driver.findElement(By.xpath(locator));
+                if (button.isDisplayed() && button.isEnabled()) {
+                    waits.waitForElementToBeClickable(button); // Ensure element is clickable
+                    button.click();
+                    logger.info("Clicked button: {}", locator);
+                    return true;
+                } else {
+                    logger.error("Button not clickable: {}", locator);
+                    return false;
+                }
+            } catch (Exception e) {
+                logger.error("Error clicking button with locator: {}. Exception: {}", locator, e.getMessage());
+                return false; // retry or fail gracefully
             }
-            return false;
         }, "Timeout waiting for button: " + locator);
     }
 
     public void scrollToElement(WebElement element) {
         jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
     }
+
 
 }

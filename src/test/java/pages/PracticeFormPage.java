@@ -14,19 +14,17 @@ public class PracticeFormPage extends BasePage {
 
     public PracticeFormPage() {
         super();
-        this.waits = new Waits();
+        this.waits = new Waits(driver);
     }
     private static final String firstNameXpath = "//*[@id='firstName']";
     private static final String lastNameXpath = "//*[@id='lastName']";
     private static final String emailXpath = "//*[@id='userEmail']";
-    private static final String genderXpath = "//*[@id='genterWrapper']//*[@name='gender' and @value='Male']";
+//    private static final String genderXpath = "//*[@id='genterWrapper']//*[@name='gender' and @value='Male']";
     private static final String mobileNoXpath = "//*[@id='userNumber']";
-    private static final String dobXpath = "//*[@id='dateOfBirthInput']";
-    private static final String hobbiesXpath = "//*[@type='checkbox']";
     private static final String currentAddressXpath = "//*[@id='currentAddress']";
     private static final String submitButtonXpath = "//*[text()='Submit']";
     private static final Logger logger = LoggerFactory.getLogger(PracticeFormPage.class);
-    private Waits waits;
+    private final Waits waits;
 
     private WebElement getElementByXpath(String xpath) {
         WebElement element = waits.waitForVisiblityOfElement(By.xpath(xpath));
@@ -39,7 +37,7 @@ public class PracticeFormPage extends BasePage {
     public void fillPracticeForm(DataTable dataTable) {
         Map<String, String> formFields = dataTable.asMap(String.class, String.class);
         for (Map.Entry<String, String> entry : formFields.entrySet()) {
-            String field = entry.getKey().trim().toLowerCase().replace(" ", "");;
+            String field = entry.getKey().trim().toLowerCase().replace(" ", "");
             String value = entry.getValue().trim();
 
             switch (field) {

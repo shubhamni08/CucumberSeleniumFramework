@@ -18,7 +18,7 @@ public class BaseTest {
         this.wait = new WebDriverWait(driver, TIMEOUT);
     }
 
-    protected void dismissUnexpectedAlert() {
+    public void dismissUnexpectedAlert() {
         try {
             driver.switchTo().alert().dismiss();
         } catch (Exception ignored) {

@@ -13,9 +13,9 @@ import java.util.function.Supplier;
 
 public class Waits {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
-    private WebDriverWait wait;
+    private final WebDriverWait wait;
 
     public Waits() {
         WebDriver driver = DriverManager.getDriver(null);
@@ -115,7 +115,7 @@ public class Waits {
     }
 
     public void waitForNumberOfWindow(int expectedwindow){
-        wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+        wait.until(ExpectedConditions.numberOfWindowsToBe(expectedwindow));
     }
 
     public boolean waitForTextOfElementPresent(By locator, String text){
@@ -124,6 +124,16 @@ public class Waits {
 
     public boolean waitForAttributeToBe(WebElement element, String val1, String val2){
         return wait.until(ExpectedConditions.attributeToBe(element, val1, val2));
+    }
+
+    public void waitForElementToBeInvisible(WebElement element) {
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//        try {
+            wait.until(ExpectedConditions.invisibilityOf(element));
+//        } catch (Exception e) {
+//            // Log or handle timeout exception if necessary
+//            System.err.println("Element was not invisible in the specified time: " + e.getMessage());
+//        }
     }
 
 }

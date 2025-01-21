@@ -12,7 +12,7 @@ public class UploadDownloadPage extends BasePage {
 
     public UploadDownloadPage(){
         super();
-        this.waits = new Waits();
+        this.waits = new Waits(driver);
     }
 
     public static String downloadXpath = "//a[@id='downloadButton']";
@@ -21,7 +21,7 @@ public class UploadDownloadPage extends BasePage {
     public static String downloadPath = System.getProperty("user.home") + "/Downloads";
     public static String uploadFilePath = System.getProperty("user.dir") + "/src/test/resources/testUploadFile.txt";
     private static final Logger logger = LoggerFactory.getLogger(UploadDownloadPage.class);
-    private Waits waits;
+    private final Waits waits;
 
     public void clickDowloadLink(){
         By downloadLocator = By.xpath(downloadXpath);
@@ -45,7 +45,7 @@ public class UploadDownloadPage extends BasePage {
                 break;
             }
         }
-        logger.info("File not found after waiting: " + downloadedFile.getAbsolutePath());
+        logger.info("File not found after waiting: {}" , downloadedFile.getAbsolutePath());
         return downloadedFile;
 
     }

@@ -14,16 +14,16 @@ public class RadioButtonPage extends BasePage {
 
     public RadioButtonPage() {
         super();
-        this.waits = new Waits();
+        this.waits = new Waits(driver);
     }
 
     Actions action;
     public static String radioButtonXpath = "//*[@name='like']/following-sibling::label[text()='%s']";
     public static String noRadioButtonXpath = "//label[@for='noRadio']";
     public static String buttonXpath = "//*[@type='button' and text()='%s']";
-    private static final String SELECTED_MESSAGE_XPATH = "//span[@class='text-success']";
-    private static Logger logger = LoggerFactory.getLogger(RadioButtonPage.class);
-    private Waits waits;
+//    private static final String SELECTED_MESSAGE_XPATH = "//span[@class='text-success']";
+    private static final Logger logger = LoggerFactory.getLogger(RadioButtonPage.class);
+    private final Waits waits;
 
     public void selectRadioButtonOption(String option){
         // Define the XPath for the radio button based on the common XPath format
@@ -34,7 +34,7 @@ public class RadioButtonPage extends BasePage {
 
         // Check if the radio button is disabled
         if (radioButton.getAttribute("disabled") != null) {
-            logger.info("The '" + option + "' radio button is disabled and cannot be selected.");
+            logger.info("The '{}' radio button is disabled and cannot be selected.",option);
         } else {
             try {
                 // Wait for the radio button to be clickable
@@ -45,14 +45,14 @@ public class RadioButtonPage extends BasePage {
 
                 // Retry the click in case it was blocked by an overlay
                 radioButton.click();
-                logger.info(option + " radio button clicked successfully.");
+                logger.info(option ,"{} radio button clicked successfully.");
             } catch (ElementClickInterceptedException e) {
                 // If click is intercepted, try clicking via JavaScript
                 logger.info("Click intercepted, trying JavaScript click...");
                 scrollToElement(radioButton);
-                logger.error(option + " radio button clicked using JavaScript.");
+                logger.error(option, "{} radio button clicked using JavaScript.");
             } catch (TimeoutException e) {
-                logger.error("Timeout: The '" + option + "' radio button is not clickable.");
+                logger.error("Timeout: The '{}' radio button is not clickable.",option);
                 throw e; // Rethrow the exception after logging
             }
         }
@@ -64,7 +64,7 @@ public class RadioButtonPage extends BasePage {
     }
 
     public void clickButton(String buttonName) {
-        logger.info("click Button method:"+buttonName);
+        logger.info("click Button method: {}",buttonName);
         String buttonLocator = String.format(buttonXpath, buttonName);
         WebElement element = waits.waitForElementToBeClickable(By.xpath(buttonLocator));
         action = new Actions(driver);
@@ -128,7 +128,7 @@ public class RadioButtonPage extends BasePage {
         try {
             WebElement element = waits.waitForVisiblityOfElement(By.xpath(xpath));
             String message = element.getText();
-            logger.info("Expected: " + expectedMessage + " | Found: " + message);
+            logger.info("Expected: {} | message {}", expectedMessage,message);
             return message;
         } catch (TimeoutException e) {
             throw new NoSuchElementException("Message element not found for: " + expectedMessage);
