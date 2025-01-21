@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverManager {
 
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     private static final String DEFAULT_BROWSER = "chrome";
     private static final Logger logger = LoggerFactory.getLogger(DriverManager.class);
 
@@ -19,11 +19,15 @@ public class DriverManager {
     // Singleton method to get the driver instance
     public static WebDriver getDriver(String browser) {
         if (driver.get() == null) {
-            if (browser == null || browser.isEmpty()) {
-                browser = DEFAULT_BROWSER;
+            synchronized (DriverManager.class) { // Ensure thread safety
+                if (driver.get() == null) {
+                    if (browser == null || browser.isEmpty()) {
+                        browser = DEFAULT_BROWSER;
+                    }
+                    driver.set(createDriver(browser.toLowerCase()));
+                    driver.get().manage().window().maximize();
+                }
             }
-            driver.set(createDriver(browser.toLowerCase()));
-            driver.get().manage().window().maximize();
         }
         return driver.get();
     }
@@ -46,7 +50,7 @@ public class DriverManager {
 
     // Method to close the driver
     public static void quitDriver() {
-        if (driver != null) {
+        if (driver.get() != null) {
             driver.get().quit();
             driver.remove();
             logger.info("WebDriver session quit successfully.");

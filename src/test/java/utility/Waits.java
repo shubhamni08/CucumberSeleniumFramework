@@ -9,6 +9,7 @@ import org.testng.Assert;
 import java.time.Duration;
 import java.util.List;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class Waits {
 
@@ -17,8 +18,22 @@ public class Waits {
     private WebDriverWait wait;
 
     public Waits() {
-        this.wait = new WebDriverWait(DriverManager.getDriver(null), Duration.ofSeconds(20));
+        WebDriver driver = DriverManager.getDriver(null);
+        if (driver == null) {
+            throw new IllegalStateException("WebDriver is NULL in Waits default constructor! Ensure Hooks sets it up first.");
+        }
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
+
+    public Waits(WebDriver driver) {
+        if (driver == null) {
+            throw new IllegalArgumentException("WebDriver cannot be null in Waits class");
+        }
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+
 
     public void waitForElement(WebElement element) {
         //Generic wait script which can be used for all elements.
@@ -58,6 +73,17 @@ public class Waits {
             runnable.run();
             return true;
         });
+    }
+
+    public void waitUntil(Supplier<Boolean> condition, String errorMessage) {
+        if (driver == null) {
+            throw new IllegalStateException("WebDriver is null when calling waitUntil()");
+        }
+        try {
+            wait.until(driver -> condition.get());
+        } catch (Exception e) {
+            throw new AssertionError(errorMessage, e);
+        }
     }
 
     public WebElement waitForElementVisibility(WebElement element){

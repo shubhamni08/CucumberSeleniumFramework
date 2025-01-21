@@ -3,6 +3,7 @@ package hooks;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import utility.ConfigReader;
 import utility.DriverManager;
 import utility.LoggerFactory;
@@ -13,11 +14,17 @@ public class Hooks {
 
     @Before
     public void setUp() {
-        try{
+
+        try {
             String browser = ConfigReader.getInstance().getProperty("browser");
-            DriverManager.getDriver(browser);
+            WebDriver driver = DriverManager.getDriver(browser);
+
+            if (driver == null) {
+                throw new IllegalStateException("WebDriver is NULL after initialization! Check DriverManager.");
+            }
+
             logger.info("Test setup completed with browser: " + browser);
-        }catch(Exception e){
+        } catch (Exception e) {
             logger.error("Error during test setup: ", e);
             throw new RuntimeException("Setup failed: " + e.getMessage());
         }

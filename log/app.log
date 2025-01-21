@@ -612,3 +612,109 @@
 17:32:14.582 [main]INFO  pages.Alerts_Windows_FramesPage - DemoQA User
 17:32:14.945 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
 17:32:14.945 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+12:48:00.523 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+12:48:04.351 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+12:48:04.392 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+12:48:07.187 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+12:48:07.591 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Accordian
+12:48:07.592 [main]INFO  pages.HomePage - Clicking on menu item: Accordian
+12:48:07.947 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+12:48:07.947 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+12:49:06.524 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+12:49:08.285 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+12:49:08.332 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+12:49:11.842 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+12:49:12.178 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Progress Bar
+12:49:12.179 [main]INFO  pages.HomePage - Clicking on menu item: Progress Bar
+12:49:12.447 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+12:49:12.448 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:03:19.957 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:03:21.724 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:03:21.774 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:03:24.307 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+13:03:24.641 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Progress Bar
+13:03:24.642 [main]INFO  pages.HomePage - Clicking on menu item: Progress Bar | XPath: //*[@class='menu-list']/li/*[text()='Progress Bar']
+13:03:24.951 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:03:24.953 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:06:01.788 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:06:03.379 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:06:03.426 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:06:06.708 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+13:06:07.070 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Progress Bar
+13:06:07.071 [main]INFO  pages.HomePage - Clicking on menu item: Progress Bar | XPath: //*[@class='menu-list']/li/*[text()='Progress Bar']
+13:06:07.422 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:06:07.422 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:09:52.869 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:09:54.588 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:09:54.626 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:09:57.786 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+13:09:58.115 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Progress Bar
+13:09:58.116 [main]INFO  pages.HomePage - Clicking on menu item: Progress Bar | XPath: //*[@class='menu-list']/li/*[text()='Progress Bar']
+13:09:58.465 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:09:58.465 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:12:38.933 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:12:40.413 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:12:40.442 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:12:44.352 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+13:12:44.713 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Progress Bar
+13:12:44.713 [main]INFO  pages.HomePage - Clicking on menu item: Progress Bar | XPath: //*[@class='menu-list']/li/*[text()='Progress Bar']
+13:12:45.055 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:12:45.055 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:14:59.550 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:15:01.225 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:15:01.249 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:15:04.623 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+13:15:04.965 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Progress Bar
+13:15:04.965 [main]INFO  pages.HomePage - Clicking on menu item: Progress Bar | XPath: //*[@class='menu-list']/li/*[text()='Progress Bar']
+13:15:05.305 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:15:05.305 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:16:40.194 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:16:41.788 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:16:41.818 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:16:45.019 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+13:16:45.390 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Progress Bar
+13:16:45.395 [main]INFO  pages.HomePage - Clicking on menu item: Progress Bar | XPath: //*[@class='menu-list']/li/*[text()='Progress Bar']
+13:17:02.027 [main]INFO  stepDefinition.WidgetsSteps - i_get_progress_bar_value: 52%
+13:17:02.337 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:17:02.337 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:17:11.874 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:17:13.558 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:17:13.608 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:17:16.589 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+13:17:16.939 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Accordian
+13:17:16.939 [main]INFO  pages.HomePage - Clicking on menu item: Accordian | XPath: //*[@class='menu-list']/li/*[text()='Accordian']
+13:17:19.819 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:17:19.819 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:17:27.676 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:17:29.340 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:17:29.381 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:17:33.143 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+13:17:33.443 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Slider
+13:17:33.444 [main]INFO  pages.HomePage - Clicking on menu item: Slider | XPath: //*[@class='menu-list']/li/*[text()='Slider']
+13:17:33.803 [main]INFO  pages.WidgetsPage - Slider found: [[ChromeDriver: chrome on windows (35a301ccfd61072b88d778cbbb2a2860)] -> xpath: //*[@type='range']]
+13:17:33.839 [main]INFO  pages.WidgetsPage - Initial slider value: 25
+13:17:33.854 [main]INFO  pages.WidgetsPage - Min value: 0
+13:17:33.866 [main]INFO  pages.WidgetsPage - Max value: 100
+13:17:33.874 [main]INFO  pages.WidgetsPage - Attempted to set slider value to: 50
+13:17:34.909 [main]INFO  pages.WidgetsPage - Slider value successfully updated to: 50
+13:17:35.275 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:17:35.275 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:17:44.193 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:17:45.871 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:17:45.919 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:17:48.542 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+13:17:48.903 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Tabs
+13:17:48.903 [main]INFO  pages.HomePage - Clicking on menu item: Tabs | XPath: //*[@class='menu-list']/li/*[text()='Tabs']
+13:17:50.803 [main]INFO  pages.WidgetsPage - isMoreButtonDisabled
+13:17:50.898 [main]INFO  pages.WidgetsPage - true
+13:17:51.375 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:17:51.375 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:24:09.029 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:24:10.677 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:24:10.718 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:24:16.612 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+13:24:16.916 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+13:24:16.916 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:24:21.751 [main]INFO  pages.PracticeFormPage - Form submitted successfully, confirmation details displayed.
+13:24:22.220 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:24:22.220 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.

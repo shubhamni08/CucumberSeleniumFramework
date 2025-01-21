@@ -5,9 +5,10 @@ import Base.BasePage;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import utility.*;
-import java.time.Duration;
+
+import java.util.List;
+import java.util.NoSuchElementException;
 
 public class HomePage extends BasePage {
 
@@ -29,8 +30,20 @@ public class HomePage extends BasePage {
     }
 
     public void click_on_menu_items_from_cards(String menuName) {
-        logger.info("Clicking on menu item: " + menuName);
-        clickButton(String.format(MENULIST_XPATH, menuName));
+        String menuItemXpath = String.format(MENULIST_XPATH, menuName);
+        logger.info("Clicking on menu item: " + menuName + " | XPath: " + menuItemXpath);
+
+        List<WebElement> menuItems = driver.findElements(By.xpath(menuItemXpath));
+
+        if (menuItems.isEmpty()) {
+            logger.error("Menu item not found: " + menuName);
+            throw new NoSuchElementException("Menu item not found: " + menuName);
+        }
+
+        clickButton(menuItemXpath);
+
+//        logger.info("Clicking on menu item: " + menuName);
+//        clickButton(String.format(MENULIST_XPATH, menuName));
     }
 
 
