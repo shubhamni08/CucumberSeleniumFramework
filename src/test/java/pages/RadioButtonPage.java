@@ -4,8 +4,9 @@ import Base.BasePage;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import utility.LoggerFactory;
+import utility.Waits;
+
 import java.util.Map;
 import java.util.NoSuchElementException;
 
@@ -13,26 +14,23 @@ public class RadioButtonPage extends BasePage {
 
     public RadioButtonPage() {
         super();
+        this.waits = new Waits();
     }
 
     Actions action;
-
     public static String radioButtonXpath = "//*[@name='like']/following-sibling::label[text()='%s']";
-
     public static String noRadioButtonXpath = "//label[@for='noRadio']";
-
     public static String buttonXpath = "//*[@type='button' and text()='%s']";
-
     private static final String SELECTED_MESSAGE_XPATH = "//span[@class='text-success']";
-
     private static Logger logger = LoggerFactory.getLogger(RadioButtonPage.class);
+    private Waits waits;
 
     public void selectRadioButtonOption(String option){
         // Define the XPath for the radio button based on the common XPath format
         String optionXpath = String.format(radioButtonXpath, option);
 
         // Wait for the radio button to be visible first, then clickable
-        WebElement radioButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(optionXpath)));
+        WebElement radioButton = waits.waitForVisiblityOfElement(By.xpath(optionXpath));
 
         // Check if the radio button is disabled
         if (radioButton.getAttribute("disabled") != null) {
@@ -40,7 +38,7 @@ public class RadioButtonPage extends BasePage {
         } else {
             try {
                 // Wait for the radio button to be clickable
-                radioButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(optionXpath)));
+                radioButton = waits.waitForElementToBeClickable(By.xpath(optionXpath));
 
                 // Scroll the element into view if it's out of the viewport
                 scrollToElement(radioButton);
@@ -67,7 +65,8 @@ public class RadioButtonPage extends BasePage {
 
     public void clickButton(String buttonName) {
         logger.info("click Button method:"+buttonName);
-        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(String.format(buttonXpath, buttonName))));
+        String buttonLocator = String.format(buttonXpath, buttonName);
+        WebElement element = waits.waitForElementToBeClickable(By.xpath(buttonLocator));
         action = new Actions(driver);
         // Scroll element into view
         scrollToElement(element);
@@ -127,7 +126,7 @@ public class RadioButtonPage extends BasePage {
             throw new IllegalArgumentException("Invalid expected message: " + expectedMessage);
         }
         try {
-            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+            WebElement element = waits.waitForVisiblityOfElement(By.xpath(xpath));
             String message = element.getText();
             logger.info("Expected: " + expectedMessage + " | Found: " + message);
             return message;

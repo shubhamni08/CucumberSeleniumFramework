@@ -1,7 +1,6 @@
 package stepDefinition;
 
 import Base.BaseTest;
-import hooks.Hooks;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.logging.log4j.Logger;

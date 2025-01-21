@@ -6,14 +6,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import utility.LoggerFactory;
+import utility.Waits;
 
 public class WidgetsPage extends BasePage {
     private static final Logger logger = LoggerFactory.getLogger(WidgetsPage.class);
+    private Waits waits;
 
     public WidgetsPage() {
         super();
+        this.waits = new Waits();
     }
 
     public static String accordianSectionXpath = "//*[@class='card']//*[text()='%s']";
@@ -28,10 +30,14 @@ public class WidgetsPage extends BasePage {
 
     public static String tabContentXpath = "//*[@id='demo-tabpane-%s']";
 
+    public static String moreButtonXpath = "//*[@id='demo-tab-more' and text()='%s']";
+
+    public static String rangeXpath = "//*[@type='range']";
+
     public void expandAccordionSection(String sectionName) {
         String sectionXpath = String.format(accordianSectionXpath, sectionName);
         try {
-            WebElement section = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(sectionXpath)));
+            WebElement section = waits.waitForVisiblityOfElement(By.xpath(sectionXpath));
             scrollToElement(section);
             section.click();
         } catch (TimeoutException e) {
@@ -42,7 +48,7 @@ public class WidgetsPage extends BasePage {
     public boolean isAccordionContentDisplayed(String sectionName) {
         String contentXpath = String.format(accordianSectionContentXpath, sectionName);
         try {
-            WebElement cardContent = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(contentXpath)));
+            WebElement cardContent = waits.waitForVisiblityOfElement(By.xpath(contentXpath));
             scrollToElement(cardContent);
             return cardContent.isDisplayed();
         } catch (TimeoutException e) {
@@ -53,7 +59,7 @@ public class WidgetsPage extends BasePage {
     public void moveSliderToValue(String sliderValue){
         try {
             // Locate the slider element
-            WebElement slider = driver.findElement(By.xpath("//*[@type='range']"));
+            WebElement slider = driver.findElement(By.xpath(rangeXpath));
             logger.info("Slider found: " + slider);
 
             // Log slider attributes
@@ -70,7 +76,7 @@ public class WidgetsPage extends BasePage {
             logger.info("Attempted to set slider value to: " + sliderValue);
 
             // Wait for the slider to reflect the new value
-            boolean isValueSet = wait.until(ExpectedConditions.attributeToBe(slider, "value", sliderValue));
+            boolean isValueSet = waits.waitForAttributeToBe(slider,"value",sliderValue);
 
             // Wait for 2 seconds to ensure the slider value is updated
             Thread.sleep(1000);
@@ -94,7 +100,7 @@ public class WidgetsPage extends BasePage {
     }
 
     public String getSliderValue() {
-        WebElement slider = driver.findElement(By.xpath("//*[@type='range']"));
+        WebElement slider = driver.findElement(By.xpath(rangeXpath));
         return slider.getAttribute("value");
     }
 
@@ -107,8 +113,8 @@ public class WidgetsPage extends BasePage {
     }
 
     public boolean isProgressBarComplete(String percentage) {
-        return wait.until(ExpectedConditions.textToBePresentInElementLocated(
-                By.xpath("//*[@role='progressbar']"), percentage));
+        By precentageLocator = By.xpath(progressBarXpath);
+        return waits.waitForTextOfElementPresent(precentageLocator,percentage);
     }
 
     public String getProgressBarValue() {
@@ -119,7 +125,7 @@ public class WidgetsPage extends BasePage {
     public void clickOnTab(String tabName) {
         String tabXpath = String.format(tabNameXpath, tabName);
         try {
-            WebElement tab = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tabXpath)));
+            WebElement tab = waits.waitForVisiblityOfElement(By.xpath(tabXpath));
             scrollToElement(tab);
             tab.click();
         } catch (TimeoutException e) {
@@ -131,7 +137,7 @@ public class WidgetsPage extends BasePage {
     public boolean isTabContentDisplayed(String tabName) {
         String contentXpath = String.format(tabContentXpath, tabName);
         try {
-            WebElement tabContent = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(contentXpath)));
+            WebElement tabContent = waits.waitForVisiblityOfElement(By.xpath(contentXpath));
             scrollToElement(tabContent);
             return tabContent.isDisplayed();
         } catch (TimeoutException e) {
@@ -141,7 +147,8 @@ public class WidgetsPage extends BasePage {
 
     public boolean isMoreButtonDisabled(String tabName) {
         logger.info( "isMoreButtonDisabled");
-        WebElement moreTab = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='demo-tab-more' and text()='More']")));
+        By moreButtonLocator = By.xpath(String.format(moreButtonXpath,tabName));
+        WebElement moreTab = waits.waitForVisiblityOfElement(moreButtonLocator);
         logger.info(moreTab.getAttribute("aria-disabled").equals("true"));
         return moreTab.getAttribute("aria-disabled").equals("true");
     }

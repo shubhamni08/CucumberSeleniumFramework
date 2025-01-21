@@ -4,15 +4,15 @@ import Base.BasePage;
 import io.cucumber.datatable.DataTable;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import utility.LoggerFactory;
+import utility.Waits;
 import java.util.Map;
 
 public class WebTablesPage extends BasePage {
 
     public WebTablesPage(){
         super();
+        this.waits = new Waits();
     }
 
     private static final String webTableInputXpath = "//form[@id='userForm']/div/*/*[@id='%s']";
@@ -22,10 +22,11 @@ public class WebTablesPage extends BasePage {
     private static final String deleteButtonXpath = "//div[@role='row' and .//div[text()='%s']]/*/div[@class='action-buttons']/span[@title='Delete']";
     private static final String entryRowXpath = "//div[@role='row' and .//div[text()='%s']]";
     private static final Logger logger = LoggerFactory.getLogger(WebTablesPage.class);
-    private Actions actions;
+    private Waits waits;
 
     public void clickAddButton(){
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath(addButtonXpath))).click();
+        WebElement addButtonElement = waits.waitForElementToBeClickable(By.xpath(addButtonXpath));
+        addButtonElement.click();
     }
 
     public void fillTextBoxForm(DataTable dataTable) {
@@ -47,7 +48,7 @@ public class WebTablesPage extends BasePage {
 
             try {
                 By locator = By.xpath(String.format(webTableInputXpath, field));
-                WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+                WebElement element = waits.waitForVisiblityOfElement(locator);
                 element.clear();
                 element.sendKeys(value);
             } catch (IllegalArgumentException e) {
@@ -60,8 +61,8 @@ public class WebTablesPage extends BasePage {
 
     public void submitForm() {
         try {
-            WebElement submitButton = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(submitButtonXpath)));
-            wait.until(ExpectedConditions.elementToBeClickable(submitButton));
+            WebElement submitButton = waits.waitForElementToBePresence(By.xpath(submitButtonXpath));
+            waits.waitForElementToBeClickable(submitButton);
             // Scroll the submit button into view to ensure it's interactable
             scrollToElement(submitButton);
             submitButton.click();
@@ -75,8 +76,8 @@ public class WebTablesPage extends BasePage {
         try {
             By entryRow = By.xpath(String.format(entryRowXpath, identifier));
             // Wait for the element to be present and visible in the DOM
-            WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(entryRow));
-            wait.until(ExpectedConditions.visibilityOf(element));  // Wait for the element to be visible
+            WebElement element = waits.waitForElementToBePresence(entryRow);
+            waits.waitForElementVisibility(element);    // Wait for the element to be visible
             return true;
         } catch (TimeoutException e) {
             return false;
@@ -99,7 +100,7 @@ public class WebTablesPage extends BasePage {
 
                 // Fallback to JavaScript click
                 By editButtonLocator = By.xpath(String.format(editButtonXpath, identifier));
-                WebElement editButton = wait.until(ExpectedConditions.presenceOfElementLocated(editButtonLocator));
+                WebElement editButton = waits.waitForElementToBePresence(editButtonLocator);
                 scrollToElement(editButton);
 
                 // Re-fill the form with updated data
@@ -109,7 +110,7 @@ public class WebTablesPage extends BasePage {
 
     private WebElement locateAndClickEditButton(String identifier) {
         By editButtonLocator = By.xpath(String.format(editButtonXpath, identifier));
-        WebElement editButton = wait.until(ExpectedConditions.elementToBeClickable(editButtonLocator));
+        WebElement editButton = waits.waitForElementToBeClickable(editButtonLocator);
 
         // Scroll into view and click
         scrollToElement(editButton);
@@ -120,7 +121,7 @@ public class WebTablesPage extends BasePage {
 
     public void deleteEntry(String identifier) {
         By deleteButton = By.xpath(String.format(deleteButtonXpath, identifier));
-        WebElement deleteBtn = wait.until(ExpectedConditions.elementToBeClickable(deleteButton));
+        WebElement deleteBtn = waits.waitForElementToBeClickable(deleteButton);
         deleteBtn.click();
     }
 

@@ -4,15 +4,15 @@ import Base.BasePage;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.io.File;
 import utility.LoggerFactory;
-
+import utility.Waits;
 
 public class UploadDownloadPage extends BasePage {
 
     public UploadDownloadPage(){
         super();
+        this.waits = new Waits();
     }
 
     public static String downloadXpath = "//a[@id='downloadButton']";
@@ -21,10 +21,11 @@ public class UploadDownloadPage extends BasePage {
     public static String downloadPath = System.getProperty("user.home") + "/Downloads";
     public static String uploadFilePath = System.getProperty("user.dir") + "/src/test/resources/testUploadFile.txt";
     private static final Logger logger = LoggerFactory.getLogger(UploadDownloadPage.class);
+    private Waits waits;
 
     public void clickDowloadLink(){
-
-        WebElement downloadElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(downloadXpath)));
+        By downloadLocator = By.xpath(downloadXpath);
+        WebElement downloadElement = waits.waitForVisiblityOfElement(downloadLocator);
         downloadElement.click();
     }
 
@@ -51,7 +52,8 @@ public class UploadDownloadPage extends BasePage {
 
 
     public void uploadFile(){
-        WebElement uploadElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(uploadFileXpath)));
+        By uploadLocator = By.xpath(uploadFileXpath);
+        WebElement uploadElement = waits.waitForVisiblityOfElement(uploadLocator);
         uploadElement.sendKeys(uploadFilePath);
     }
 

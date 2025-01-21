@@ -6,14 +6,15 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import utility.LoggerFactory;
+import utility.Waits;
 import java.util.Map;
 
 public class PracticeFormPage extends BasePage {
 
     public PracticeFormPage() {
         super();
+        this.waits = new Waits();
     }
     private static final String firstNameXpath = "//*[@id='firstName']";
     private static final String lastNameXpath = "//*[@id='lastName']";
@@ -25,10 +26,10 @@ public class PracticeFormPage extends BasePage {
     private static final String currentAddressXpath = "//*[@id='currentAddress']";
     private static final String submitButtonXpath = "//*[text()='Submit']";
     private static final Logger logger = LoggerFactory.getLogger(PracticeFormPage.class);
+    private Waits waits;
 
     private WebElement getElementByXpath(String xpath) {
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
-
+        WebElement element = waits.waitForVisiblityOfElement(By.xpath(xpath));
         // Scroll the element into view using JavaScript
         scrollToElement(element);
         return element;
@@ -56,7 +57,7 @@ public class PracticeFormPage extends BasePage {
 
                 case "gender":
                     String genderXpath = String.format("//*[@id='genterWrapper']//input[@name='gender' and @value='%s']", value);
-                    WebElement genderElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(genderXpath)));
+                    WebElement genderElement = waits.waitForElementToBePresence(By.xpath(genderXpath));
                     scrollToElement(genderElement);
                     // Click using JavaScript to avoid interception issues
                     ((JavascriptExecutor) driver).executeScript("arguments[0].click();", genderElement);
@@ -75,7 +76,7 @@ public class PracticeFormPage extends BasePage {
                 case "hobbies":
                     for (String hobby : value.split(",")) {
                         String hobbyXpath = String.format("//*[@id='hobbiesWrapper']//*[text()='%s']/preceding-sibling::input", hobby.trim());
-                        WebElement hobbyElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(hobbyXpath)));
+                        WebElement hobbyElement = waits.waitForElementToBePresence(By.xpath(hobbyXpath));
 
                         // Scroll into view
                         scrollToElement(hobbyElement);
@@ -100,16 +101,14 @@ public class PracticeFormPage extends BasePage {
     }
 
     public void submitForm(){
-        WebElement submitButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(submitButtonXpath)));
+        WebElement submitButton = waits.waitForElementToBeClickable(By.xpath(submitButtonXpath));
         scrollToElement(submitButton);
         submitButton.click();
-
     }
 
     public void verifySubmission(){
         // Wait for confirmation dialog
-        WebElement confirmationDialog = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='modal-content']")));
-
+        WebElement confirmationDialog = waits.waitForVisiblityOfElement(By.xpath("//*[@class='modal-content']"));
         // Verify dialog content
         boolean isDialogVisible = confirmationDialog.isDisplayed();
         if (!isDialogVisible) {

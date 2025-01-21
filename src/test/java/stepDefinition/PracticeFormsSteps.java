@@ -14,6 +14,7 @@ public class PracticeFormsSteps extends BaseTest {
         super();
         practiceFormPage = new PracticeFormPage();
     }
+
     private static final Logger logger = LoggerFactory.getLogger(PracticeFormsSteps.class);
     private final PracticeFormPage practiceFormPage;
 

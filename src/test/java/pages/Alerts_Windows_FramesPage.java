@@ -3,9 +3,9 @@ package pages;
 import Base.BasePage;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import utility.LoggerFactory;
+import utility.Waits;
 import java.util.Set;
 
 public class Alerts_Windows_FramesPage extends BasePage {
@@ -14,13 +14,16 @@ public class Alerts_Windows_FramesPage extends BasePage {
     public static String browserWindowButtonXpath = "//*[text()='Browser Windows']/following-sibling::div/button[text()='%s']";
     public static String alertButtonXpath = "//*[@id='%s']";
     private static final Logger logger = LoggerFactory.getLogger(Alerts_Windows_FramesPage.class);
+    private Waits waits;
 
     public Alerts_Windows_FramesPage() {
         super();
+        this.waits = new Waits();
     }
 
     public void openModal(String modal){
-        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(String.format(modelDialogButtonXpath,modal))));
+        By modelLocator = By.xpath(String.format(modelDialogButtonXpath,modal));
+        WebElement element = waits.waitForElementToBeClickable(modelLocator);
         element.click();
     }
 
@@ -61,7 +64,7 @@ public class Alerts_Windows_FramesPage extends BasePage {
         newWindowButton.click();
 
         // Wait for the new window to appear
-        wait.until(driver->driver.getWindowHandles().size()>1);
+        waits.waitForCondition(driver->driver.getWindowHandles().size()>1);
 
         // Get all window handles and switch to the new window
         Set<String> allHandles = driver.getWindowHandles();
@@ -97,7 +100,7 @@ public class Alerts_Windows_FramesPage extends BasePage {
 
     public String getAlertMessageSafely() {
         try {
-            Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+            Alert alert = waits.waitForAlertPresence();
             String alertText = alert.getText();
             logger.info("Alert message: " + alertText);
             return alertText;
@@ -109,7 +112,7 @@ public class Alerts_Windows_FramesPage extends BasePage {
 
     public void acceptAlertSafely() {
         try {
-            Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+            Alert alert = waits.waitForAlertPresence();
             alert.accept();
             //TODO Chech that alert not present anymore
         } catch (NoAlertPresentException e) {
@@ -119,7 +122,7 @@ public class Alerts_Windows_FramesPage extends BasePage {
 
     public void dismissAlertSafely() {
         try {
-            Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+            Alert alert = waits.waitForAlertPresence();
             alert.dismiss();
             //TODO Chech that alert not present anymore
         } catch (NoAlertPresentException e) {
@@ -129,7 +132,7 @@ public class Alerts_Windows_FramesPage extends BasePage {
 
     public void enterTextInPromptAlertSafely(String text) {
         try {
-            Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+            Alert alert = waits.waitForAlertPresence();
             logger.info(text);
             alert.sendKeys(text);
         } catch (Exception e) {
@@ -138,12 +141,14 @@ public class Alerts_Windows_FramesPage extends BasePage {
     }
 
     public String getConfirmationResult() {
-        WebElement resultElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("confirmResult")));
+        By confirmResultLocator = By.id("confirmResult");
+        WebElement resultElement = waits.waitForVisiblityOfElement(confirmResultLocator);
         return resultElement.getText();
     }
 
     public String getPromptResult() {
-        WebElement resultElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("promptResult")));
+        By promptResultLocator = By.id("promptResult");
+        WebElement resultElement = waits.waitForVisiblityOfElement(promptResultLocator);
         return resultElement.getText();
     }
 

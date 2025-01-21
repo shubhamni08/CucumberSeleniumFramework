@@ -50,6 +50,7 @@ public class ElementsSteps  extends BaseTest {
     @Given( "I am on the DemoQA homepage")
     public void I_am_on_the_DemoQA_homepage(){
         log.info("I_am_on_the_DemoQA_homepage method");
+        driver.get("https://demoqa.com/");
     }
 
     @When("I navigate to the {string} section")
@@ -61,7 +62,7 @@ public class ElementsSteps  extends BaseTest {
     @And("I click on {string}")
     public void I_click_on_MenuItem(String menuItem){
         log.info("I_click_on_MenuItem: " + menuItem);
-        basePage.click_on_menu_items_from_cards(menuItem);
+        homePage.click_on_menu_items_from_cards(menuItem);
     }
 
     @When("I fill the form with:")
@@ -244,7 +245,7 @@ public class ElementsSteps  extends BaseTest {
     public void i_am_on_the_Links_page() {
         log.info("i_am_on_the_Links_page method");
         homePage.click_on_card_by_name("Elements");
-        basePage.click_on_menu_items_from_cards("Links");
+        homePage.click_on_menu_items_from_cards("Links");
     }
 
     @When("I click on the {string} link")

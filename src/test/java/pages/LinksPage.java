@@ -4,24 +4,25 @@ import Base.BasePage;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import utility.LoggerFactory;
-
+import utility.Waits;
 import java.util.Set;
 
 public class LinksPage extends BasePage {
     public LinksPage() {
         super();
+        this.waits = new Waits();
     }
 
     public static String linksXpath = "//*[text()='%s']";
     public static String responseCodeXpath = "//*[@id='linkResponse']";
     private static final Logger logger = LoggerFactory.getLogger(LinksPage.class);
+    private Waits waits;
 
     public String getCurrentURL(){
         // Store the parent window handle
         String parentWindow = driver.getWindowHandle();
-        wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+        waits.waitForNumberOfWindow(2);
 
         //switch to the new window
         Set<String> allWindows  = driver.getWindowHandles();
@@ -43,7 +44,7 @@ public class LinksPage extends BasePage {
     }
 
     public String getAPIResponseText() {
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(responseCodeXpath)));
+        WebElement element = waits.waitForVisiblityOfElement(By.xpath(responseCodeXpath));
         String response = element.getText();
         logger.info("getAPIResponseText method successful: "+response);
         return response;

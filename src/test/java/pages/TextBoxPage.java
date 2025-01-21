@@ -6,15 +6,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import utility.LoggerFactory;
-
+import utility.Waits;
 import java.util.Map;
 
 public class TextBoxPage extends BasePage {
 
+    private Waits waits;
+
     public TextBoxPage() {
         super();
+        this.waits = new Waits();
     }
 
     public WebElement getFieldByName(Fields fieldName){
@@ -43,7 +45,9 @@ public class TextBoxPage extends BasePage {
     public boolean isOutputSectionDisplayed() {
         try {
             // Wait for the output section to appear
-            WebElement outputSection = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("output")));
+            By outputLocator = By.id("output");
+            WebElement outputSection =  waits.waitForElementToBePresence(outputLocator);
+
             // Check if the content div with the "border" class exists
             return !outputSection.findElements(By.className("border")).isEmpty();
         } catch (TimeoutException e) {

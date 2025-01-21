@@ -5,18 +5,20 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import utility.LoggerFactory;
+import utility.Waits;
 
 public class DynamicProperties extends BasePage {
 
     public DynamicProperties(){
         super();
+        this.waits = new Waits();
     }
 
     private static final Logger logger = LoggerFactory.getLogger(DynamicProperties.class); // Logger initialization
     public static String dynamicButtonXpath = "//*[contains(text(),'%s')]";
+    private Waits waits;
 
     public boolean buttonEnabledVisible(String btn){
         try {
@@ -24,10 +26,10 @@ public class DynamicProperties extends BasePage {
             scrollToElement(button);
 
             if(btn.equals("Will enable 5 seconds")){
-                waitForElementToBeClickable(button);
+                waits.waitForElementToBeClickable(button);
                 return button.isEnabled();
             }else if(btn.equals("Visible After 5 Seconds")){
-                wait.until(ExpectedConditions.visibilityOf(button));
+                waits.waitForElementVisibility(button);
                 return button.isDisplayed();
             }
         } catch (TimeoutException e) {
@@ -50,7 +52,7 @@ public class DynamicProperties extends BasePage {
         String initialColor = button.getCssValue("color");
         logger.info("Initial color: " + initialColor);
 
-        wait.until(driver -> {
+        waits.waitForCondition(driver -> { // ✅ Use waits instead of wait.until()
             String currentColor = button.getCssValue("color");
             return !currentColor.equals(initialColor);
         });
@@ -60,4 +62,5 @@ public class DynamicProperties extends BasePage {
 
         Assert.assertNotEquals(initialColor, newColor, buttonName + " button color did not change as expected.");
     }
+
 }
