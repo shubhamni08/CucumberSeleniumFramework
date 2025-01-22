@@ -12,27 +12,29 @@ import java.util.Map;
 
 public class TextBoxPage extends BasePage {
 
-    private Waits waits;
+    private final Waits waits;
 
     public TextBoxPage() {
         super();
         this.waits = new Waits(driver);
     }
 
-    public WebElement getFieldByName(Fields fieldName){
-        return driver.findElement(By.xpath(String.format("//*[@id='userForm']/div/div[2]/*[@id='%s']",fieldName.getLocator())));
-    }
-
     private static final Logger logger = LoggerFactory.getLogger(TextBoxPage.class);
     public static String submitButtonXpath = "//*[@id='userForm']/*/*/button[text()='Submit']";
-//    public static String inputSelectionXpath = "//*[@class='menu-list']/li/*[text()='%s']";
+    public static String userInputXpath = "//*[@id='userForm']/div/div[2]/*[@id='%s']";
     public static String outputSectionXpath = "//div[contains(@class,'border')]/*[@id='%s']";
     public static Map<String,String> formFields;
     public Actions actions;
 
     public void fillTextBoxForm(String field, String value) {
-        getFieldByName(Fields.valueOf(field)).sendKeys(value);
-        logger.info("Entered '" + value + "' in field: " + field);
+        Fields fieldEnum = Fields.getLocatorByFieldName(field);
+        WebElement ele = getFieldByName(Fields.getLocatorByFieldName(field));
+        ele.sendKeys(value);
+        logger.info("Entered '{}' in field: {}",value,field);
+    }
+
+    public WebElement getFieldByName(Fields fieldName){
+        return driver.findElement(By.xpath(String.format(userInputXpath,fieldName.getLocator())));
     }
 
     public void clickSubmitButton() {
@@ -45,8 +47,7 @@ public class TextBoxPage extends BasePage {
     public boolean isOutputSectionDisplayed() {
         try {
             // Wait for the output section to appear
-            By outputLocator = By.id("output");
-            WebElement outputSection =  waits.waitForElementToBePresence(outputLocator);
+            WebElement outputSection =  waits.waitForElementToBePresence(By.id("output"));
 
             // Check if the content div with the "border" class exists
             return !outputSection.findElements(By.className("border")).isEmpty();
@@ -64,7 +65,10 @@ public class TextBoxPage extends BasePage {
     }
 
     public String getOutputText(String fieldId){
-        WebElement field = driver.findElement(By.xpath(String.format(outputSectionXpath,fieldId)));
+        By locator = By.xpath(String.format(outputSectionXpath,fieldId));
+        waits.waitForVisiblityOfElement(locator);
+        WebElement field = driver.findElement(locator);
+        scrollToElement(field);
         return field.getText();
     }
 

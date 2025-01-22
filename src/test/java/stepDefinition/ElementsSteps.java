@@ -12,8 +12,10 @@ import org.testng.Assert;
 import pages.*;
 
 import java.io.File;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.NoSuchElementException;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.apache.logging.log4j.Logger;
 import utility.LoggerFactory;
@@ -81,26 +83,18 @@ public class ElementsSteps  extends BaseTest {
     @Then("the output should display:")
     public void the_output_should_display(DataTable expectedOutput) {
         List<Map<String, String>> expectedData = expectedOutput.asMaps(String.class, String.class);
+
         for (Map<String, String> field : expectedData) {
             String fieldName = field.get("Field");
             String expectedValue = field.get("Value");
 
-            String actualValue = null;
-            switch (fieldName) {
-                case "Name":
-                    actualValue = textBoxPage.getOutputText("name");
-                    break;
-                case "Email":
-                    actualValue = textBoxPage.getOutputText("email");
-                    break;
-                case "Current Address":
-                    actualValue = textBoxPage.getOutputText("currentAddress");
-                    break;
-                case "Permanent Address":
-                    actualValue = textBoxPage.getOutputText("permanentAddress");
-                    break;
-            }
-            log.info(actualValue);
+            // Get the locator from the Fields enum
+            Fields fieldEnum = Fields.getLocatorByFieldName(fieldName);
+
+            // Fetch actual value using the locator
+            String actualValue = textBoxPage.getOutputText(fieldEnum.getLocator());
+
+            log.info("Validating field: {} | Expected: {} | Actual: {}", fieldName, expectedValue, actualValue);
             // Assert that the actual value matches the expected value
             Assert.assertEquals(actualValue, expectedValue, fieldName + " output mismatch.");
         }

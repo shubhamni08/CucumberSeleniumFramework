@@ -11,10 +11,10 @@ Feature: Validate TextBox Section
       | Permanent Address | 456 Side Street |
     Then I click on submit button
     Then the output should display:
-      | Field             | Value               |
-      | Name              | Name:Shubham Nikam  |
-      | Email             | Email:nikam@yahoo.com |
-      | Current Address   | Current Address :123 Main Street |
+      | Field             | Value                               |
+      | name              | Name:Shubham Nikam                  |
+      | email             | Email:nikam@yahoo.com               |
+      | Current Address   | Current Address :123 Main Street    |
       | Permanent Address | Permananet Address :456 Side Street |
 
   Scenario: Verify TextBox negative functionality

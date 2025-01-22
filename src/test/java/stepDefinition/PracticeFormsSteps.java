@@ -8,6 +8,9 @@ import org.apache.logging.log4j.Logger;
 import pages.PracticeFormPage;
 import utility.LoggerFactory;
 
+import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class PracticeFormsSteps extends BaseTest {
 
     public PracticeFormsSteps() {
@@ -20,7 +23,12 @@ public class PracticeFormsSteps extends BaseTest {
 
     @When("I fill out the form with valid details:")
     public void i_fill_out_the_form_with_valid_details(DataTable dataTable) {
-        practiceFormPage.fillPracticeForm(dataTable);
+        List<String> fields = dataTable.column(0);
+        List<String> values = dataTable.column(1);
+        AtomicInteger index = new AtomicInteger(0);
+        fields.forEach( field ->
+                practiceFormPage.fillStudentRegistrationForm(field, values.get(index.getAndIncrement()))
+        );
     }
 
     @When("I submit the form")

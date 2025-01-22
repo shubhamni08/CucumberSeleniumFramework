@@ -46,5 +46,9 @@ public class BasePage {
         jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
+    public void clickUsingJS(WebElement element){
+        jsExecutor.executeScript(("arguments[0].click();"), element);
+    }
+
 
 }

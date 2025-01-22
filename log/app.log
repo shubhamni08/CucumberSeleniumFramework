@@ -718,3 +718,1828 @@
 13:24:21.751 [main]INFO  pages.PracticeFormPage - Form submitted successfully, confirmation details displayed.
 13:24:22.220 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
 13:24:22.220 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:44:31.148 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:44:32.762 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:44:32.806 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:44:35.924 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+13:44:36.223 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+13:44:36.224 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+13:44:36.779 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: You clicked a button
+13:44:37.044 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:44:37.044 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:44:38.108 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:44:38.109 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:44:42.604 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+13:44:42.929 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+13:44:42.930 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+13:44:48.405 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: This alert appeared after 5 seconds
+13:44:49.631 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:44:49.632 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:44:50.615 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:44:50.617 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:44:58.269 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+13:44:58.565 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+13:44:58.565 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+13:44:59.117 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: Do you confirm action?
+13:44:59.799 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: Do you confirm action?
+13:45:00.419 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:45:00.420 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:45:01.535 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:45:01.536 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:45:05.420 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+13:45:05.727 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+13:45:05.728 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+13:45:06.130 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: Please enter your name
+13:45:06.134 [main]INFO  pages.Alerts_Windows_FramesPage - DemoQA User
+13:45:06.722 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:45:06.723 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:45:56.711 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:45:58.515 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:45:58.559 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:46:01.105 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+13:46:01.479 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Dynamic Properties
+13:46:01.480 [main]INFO  pages.HomePage - Clicking on menu item: Dynamic Properties | XPath: //*[@class='menu-list']/li/*[text()='Dynamic Properties']
+13:46:07.573 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:46:07.574 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:49:52.202 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:49:54.652 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:49:54.703 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:49:57.704 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+13:49:58.073 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+13:49:58.075 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+13:49:58.507 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Home
+13:49:59.136 [main]INFO  stepDefinition.ElementsSteps - I_should_be_redirected_to: https://demoqa.com/
+13:50:00.232 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:50:00.232 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:50:01.267 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:50:01.269 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:50:04.471 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+13:50:04.755 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+13:50:04.755 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+13:50:05.241 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Created
+13:50:05.538 [main]INFO  stepDefinition.ElementsSteps - I_should_see_the_API_response_message: 201 Created
+13:50:06.272 [main]INFO  pages.LinksPage - getAPIResponseText method successful: Link has responded with staus 201 and status text Created
+13:50:06.273 [main]INFO  stepDefinition.ElementsSteps - Actual message: Link has responded with staus 201 and status text Created
+13:50:06.867 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:50:06.867 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:50:07.961 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:50:07.963 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:50:10.763 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+13:50:11.140 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+13:50:11.141 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+13:50:11.636 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Forbidden
+13:50:14.277 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:50:14.278 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:50:40.840 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:50:42.739 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:50:42.789 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:50:45.833 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+13:50:46.187 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+13:50:46.188 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+13:50:46.495 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Forbidden
+13:50:46.835 [main]INFO  stepDefinition.ElementsSteps - I_should_see_the_API_response_message: 403 Forbidden
+13:50:47.593 [main]INFO  pages.LinksPage - getAPIResponseText method successful: Link has responded with staus 403 and status text Forbidden
+13:50:47.593 [main]INFO  stepDefinition.ElementsSteps - Actual message: Link has responded with staus 403 and status text Forbidden
+13:50:48.128 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:50:48.128 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+15:42:47.519 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+15:42:49.792 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+15:42:49.835 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+15:42:52.701 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+15:42:53.060 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Web Tables
+15:42:53.060 [main]INFO  pages.HomePage - Clicking on menu item: Web Tables | XPath: //*[@class='menu-list']/li/*[text()='Web Tables']
+15:42:53.815 [main]INFO  pages.WebTablesPage - Raw Table Data:
+15:42:53.816 [main]INFO  pages.WebTablesPage - Processing field: 'firstName', value: 'Test'
+15:42:54.360 [main]INFO  pages.WebTablesPage - Processing field: 'lastName', value: 'User'
+15:42:54.825 [main]INFO  pages.WebTablesPage - Processing field: 'userEmail', value: 'test.usr@example.com'
+15:42:55.166 [main]INFO  pages.WebTablesPage - Processing field: 'age', value: '30'
+15:42:55.427 [main]INFO  pages.WebTablesPage - Processing field: 'salary', value: '50000'
+15:42:55.806 [main]INFO  pages.WebTablesPage - Processing field: 'department', value: 'Finance'
+15:42:56.422 [main]INFO  stepDefinition.ElementsSteps - true
+15:42:56.755 [main]INFO  pages.WebTablesPage - Raw Table Data:
+15:42:56.756 [main]INFO  pages.WebTablesPage - Processing field: 'firstName', value: 'Test121'
+15:42:57.027 [main]INFO  pages.WebTablesPage - Processing field: 'department', value: 'AQA'
+15:42:57.719 [main]INFO  stepDefinition.ElementsSteps - true
+15:43:08.836 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+15:43:08.836 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+15:44:53.659 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+15:44:55.346 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+15:44:55.387 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+15:44:57.860 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+15:44:58.193 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Web Tables
+15:44:58.194 [main]INFO  pages.HomePage - Clicking on menu item: Web Tables | XPath: //*[@class='menu-list']/li/*[text()='Web Tables']
+15:44:59.134 [main]INFO  pages.WebTablesPage - Raw Table Data:
+15:44:59.135 [main]INFO  pages.WebTablesPage - Processing field: 'firstName', value: 'Test'
+15:44:59.901 [main]INFO  pages.WebTablesPage - Processing field: 'lastName', value: 'User'
+15:45:00.146 [main]INFO  pages.WebTablesPage - Processing field: 'userEmail', value: 'test.usr@example.com'
+15:45:00.719 [main]INFO  pages.WebTablesPage - Processing field: 'age', value: '30'
+15:45:01.110 [main]INFO  pages.WebTablesPage - Processing field: 'salary', value: '50000'
+15:45:01.524 [main]INFO  pages.WebTablesPage - Processing field: 'department', value: 'Finance'
+15:45:02.320 [main]INFO  stepDefinition.ElementsSteps - true
+15:45:02.793 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+15:45:02.794 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+15:48:08.051 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+15:48:09.652 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+15:48:09.687 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+15:48:12.495 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+15:48:12.894 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Web Tables
+15:48:12.895 [main]INFO  pages.HomePage - Clicking on menu item: Web Tables | XPath: //*[@class='menu-list']/li/*[text()='Web Tables']
+15:48:13.843 [main]INFO  pages.WebTablesPage - Raw Table Data:
+15:48:13.845 [main]INFO  pages.WebTablesPage - Processing field: 'firstName', value: 'Test'
+15:48:14.462 [main]INFO  pages.WebTablesPage - Processing field: 'lastName', value: 'User'
+15:48:14.938 [main]INFO  pages.WebTablesPage - Processing field: 'userEmail', value: 'test.usr@example.com'
+15:48:15.264 [main]INFO  pages.WebTablesPage - Processing field: 'age', value: '30'
+15:48:15.539 [main]INFO  pages.WebTablesPage - Processing field: 'salary', value: '50000'
+15:48:15.888 [main]INFO  pages.WebTablesPage - Processing field: 'department', value: 'Finance'
+15:48:17.038 [main]INFO  stepDefinition.ElementsSteps - true
+15:48:18.761 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+15:48:18.761 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+15:49:31.358 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+15:49:33.059 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+15:49:33.094 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+15:49:36.568 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+15:49:36.909 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Web Tables
+15:49:36.910 [main]INFO  pages.HomePage - Clicking on menu item: Web Tables | XPath: //*[@class='menu-list']/li/*[text()='Web Tables']
+15:49:37.520 [main]INFO  pages.WebTablesPage - Raw Table Data:
+15:49:37.522 [main]INFO  pages.WebTablesPage - Processing field: 'firstName', value: 'Test'
+15:49:37.836 [main]INFO  pages.WebTablesPage - Processing field: 'lastName', value: 'User'
+15:49:38.273 [main]INFO  pages.WebTablesPage - Processing field: 'userEmail', value: 'test.usr@example.com'
+15:49:38.787 [main]INFO  pages.WebTablesPage - Processing field: 'age', value: '30'
+15:49:38.993 [main]INFO  pages.WebTablesPage - Processing field: 'salary', value: '50000'
+15:49:39.319 [main]INFO  pages.WebTablesPage - Processing field: 'department', value: 'Finance'
+15:49:40.028 [main]INFO  stepDefinition.ElementsSteps - true
+15:49:41.975 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+15:49:41.976 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:00:05.227 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:00:06.958 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:00:06.989 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:00:09.888 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:00:10.176 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Web Tables
+16:00:10.177 [main]INFO  pages.HomePage - Clicking on menu item: Web Tables | XPath: //*[@class='menu-list']/li/*[text()='Web Tables']
+16:00:10.945 [main]INFO  pages.WebTablesPage - Raw Table Data:
+16:00:10.946 [main]INFO  pages.WebTablesPage - Processing field: 'firstName', value: 'Test'
+16:00:11.458 [main]INFO  pages.WebTablesPage - Processing field: 'lastName', value: 'User'
+16:00:11.922 [main]INFO  pages.WebTablesPage - Processing field: 'userEmail', value: 'test.usr@example.com'
+16:00:12.340 [main]INFO  pages.WebTablesPage - Processing field: 'age', value: '30'
+16:00:12.655 [main]INFO  pages.WebTablesPage - Processing field: 'salary', value: '50000'
+16:00:13.038 [main]INFO  pages.WebTablesPage - Processing field: 'department', value: 'Finance'
+16:00:13.869 [main]INFO  stepDefinition.ElementsSteps - true
+16:00:14.400 [main]INFO  pages.WebTablesPage - Raw Table Data:
+16:00:14.401 [main]INFO  pages.WebTablesPage - Processing field: 'firstName', value: 'Test121'
+16:00:15.030 [main]INFO  pages.WebTablesPage - Processing field: 'department', value: 'AQA'
+16:00:15.922 [main]INFO  stepDefinition.ElementsSteps - true
+16:00:27.121 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:00:27.121 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:02:57.904 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:02:59.527 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:02:59.557 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:03:02.571 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:03:02.978 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:03:02.979 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:03:03.441 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Home
+16:03:04.119 [main]INFO  stepDefinition.ElementsSteps - I_should_be_redirected_to: https://demoqa.com/
+16:03:05.198 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:03:05.198 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:03:06.389 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:03:06.393 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:03:09.382 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:03:09.773 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:03:09.773 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:03:10.067 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Created
+16:03:10.281 [main]INFO  stepDefinition.ElementsSteps - I_should_see_the_API_response_message: 201 Created
+16:03:10.954 [main]INFO  pages.LinksPage - getAPIResponseText method successful: Link has responded with staus 201 and status text Created
+16:03:10.955 [main]INFO  stepDefinition.ElementsSteps - Actual message: Link has responded with staus 201 and status text Created
+16:03:11.425 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:03:11.426 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:03:12.553 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:03:12.557 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:03:15.316 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:03:15.603 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:03:15.603 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:03:15.989 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Forbidden
+16:03:17.679 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:03:17.679 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:04:21.621 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:04:23.332 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:04:23.384 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:04:26.345 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:04:26.744 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:04:26.745 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:04:27.104 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Home
+16:04:27.946 [main]INFO  stepDefinition.ElementsSteps - I_should_be_redirected_to: https://demoqa.com/
+16:04:28.551 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:04:28.551 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:04:29.636 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:04:29.638 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:04:32.436 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:04:32.873 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:04:32.874 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:04:33.264 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Created
+16:04:33.642 [main]INFO  stepDefinition.ElementsSteps - I_should_see_the_API_response_message: 201 Created
+16:04:33.808 [main]INFO  pages.LinksPage - getAPIResponseText method successful: Link has responded with staus 201 and status text Created
+16:04:33.808 [main]INFO  stepDefinition.ElementsSteps - Actual message: Link has responded with staus 201 and status text Created
+16:04:34.162 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:04:34.163 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:04:35.277 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:04:35.278 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:04:38.193 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:04:38.542 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:04:38.544 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:04:38.964 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Unauthorized
+16:04:40.637 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:04:40.639 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:04:50.083 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:04:51.870 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:04:51.916 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:04:54.673 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:04:55.084 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:04:55.086 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:04:55.458 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Unauthorized
+16:04:57.620 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:04:57.620 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:05:13.343 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:05:15.060 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:05:15.095 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:05:17.901 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:05:18.243 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:05:18.244 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:05:18.589 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Forbidden
+16:05:20.565 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:05:20.565 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:06:15.915 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:06:17.705 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:06:17.745 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:06:20.681 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:06:21.059 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:06:21.060 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:06:21.522 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Forbidden
+16:06:23.227 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:06:23.227 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:14:51.800 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:14:53.399 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:14:53.422 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:14:57.430 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:14:57.738 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:14:57.739 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:14:58.000 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Forbidden
+16:15:08.737 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:15:08.737 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:15:43.289 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:15:44.875 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:15:44.921 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:15:47.859 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:15:48.208 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:15:48.209 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:15:48.525 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Forbidden
+16:15:59.350 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:15:59.350 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:16:56.279 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:16:57.967 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:16:58.008 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:17:00.993 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:17:01.304 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:17:01.305 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:17:01.655 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Created
+16:17:12.398 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:17:12.398 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:19:22.778 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:19:24.386 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:19:24.416 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:19:27.120 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:19:27.475 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:19:27.476 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:19:27.922 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Created
+16:19:28.150 [main]INFO  stepDefinition.ElementsSteps - I_should_see_the_API_response_message: 201 Created
+16:19:28.808 [main]INFO  pages.LinksPage - getAPIResponseText method successful: Link has responded with staus 201 and status text Created
+16:19:28.809 [main]INFO  stepDefinition.ElementsSteps - Actual message: Link has responded with staus 201 and status text Created
+16:19:29.815 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:19:29.816 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:19:35.855 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:19:37.534 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:19:37.564 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:19:40.357 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:19:40.762 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Links
+16:19:40.763 [main]INFO  pages.HomePage - Clicking on menu item: Links | XPath: //*[@class='menu-list']/li/*[text()='Links']
+16:19:41.144 [main]INFO  stepDefinition.ElementsSteps - I_click_on_the_link: Forbidden
+16:19:42.847 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:19:42.847 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:29:22.012 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:29:24.761 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:29:25.108 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:29:25.109 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:29:25.735 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: You clicked a button
+16:29:25.792 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:29:26.527 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:29:26.956 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:29:26.956 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:29:28.969 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:29:29.600 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:29:30.032 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:29:30.033 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:29:31.997 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:29:32.624 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:29:33.069 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:29:33.069 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:29:35.167 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:29:36.103 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:29:36.429 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Browser Windows
+16:29:36.429 [main]INFO  pages.HomePage - Clicking on menu item: Browser Windows | XPath: //*[@class='menu-list']/li/*[text()='Browser Windows']
+16:29:36.734 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:31:18.051 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:31:20.919 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:31:21.289 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:31:21.290 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:31:21.912 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: You clicked a button
+16:31:21.954 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:31:22.513 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:31:22.929 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:31:22.929 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:31:29.009 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: This alert appeared after 5 seconds
+16:31:29.065 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:31:29.643 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:31:29.967 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:31:29.968 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:31:31.272 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: Do you confirm action?
+16:31:31.758 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: Do you confirm action?
+16:31:31.897 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:31:32.429 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:31:32.825 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:31:32.826 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:31:34.931 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:31:35.511 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:31:35.866 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Browser Windows
+16:31:35.867 [main]INFO  pages.HomePage - Clicking on menu item: Browser Windows | XPath: //*[@class='menu-list']/li/*[text()='Browser Windows']
+16:31:36.513 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:34:36.568 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:38:00.025 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:38:01.693 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:38:01.742 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:38:04.652 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:38:05.080 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:38:05.081 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:38:07.731 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:38:07.731 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:39:04.080 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:39:05.990 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:39:06.026 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:39:08.582 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:39:08.949 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Modal Dialogs
+16:39:08.950 [main]INFO  pages.HomePage - Clicking on menu item: Modal Dialogs | XPath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']
+16:39:10.610 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:39:10.610 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:39:11.636 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:39:11.637 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:39:14.438 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:39:14.823 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Modal Dialogs
+16:39:14.824 [main]INFO  pages.HomePage - Clicking on menu item: Modal Dialogs | XPath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']
+16:39:16.551 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:39:16.551 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:39:17.465 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:39:17.466 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:39:20.255 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:39:20.592 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Modal Dialogs
+16:39:20.593 [main]INFO  pages.HomePage - Clicking on menu item: Modal Dialogs | XPath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']
+16:39:21.320 [main]INFO  pages.Alerts_Windows_FramesPage - Opened modal: Large modal
+16:39:21.605 [main]INFO  pages.Alerts_Windows_FramesPage - Closed modal using button: Close
+16:39:21.626 [main]INFO  pages.Alerts_Windows_FramesPage - Is modal visible: true
+16:39:21.875 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:39:21.875 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:41:03.563 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:41:05.309 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:41:05.337 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:41:08.004 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+16:41:08.383 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Buttons
+16:41:08.384 [main]INFO  pages.HomePage - Clicking on menu item: Buttons | XPath: //*[@class='menu-list']/li/*[text()='Buttons']
+16:41:08.878 [main]INFO  stepDefinition.ElementsSteps - I_click_on_button: Double Click Me
+16:41:08.879 [main]INFO  pages.RadioButtonPage - click Button method: Double Click Me
+16:41:09.460 [main]INFO  pages.RadioButtonPage - Expected: You have done a double click | message You have done a double click
+16:41:09.460 [main]INFO  stepDefinition.ElementsSteps - Verifying message: You have done a double click
+16:41:09.528 [main]INFO  pages.RadioButtonPage - Expected: You have done a double click | message You have done a double click
+16:41:09.528 [main]INFO  stepDefinition.ElementsSteps - You have done a double click
+16:41:09.533 [main]INFO  stepDefinition.ElementsSteps - I_click_on_button: Right Click Me
+16:41:09.534 [main]INFO  pages.RadioButtonPage - click Button method: Right Click Me
+16:41:09.981 [main]INFO  pages.RadioButtonPage - Expected: You have done a right click | message You have done a right click
+16:41:09.982 [main]INFO  stepDefinition.ElementsSteps - Verifying message: You have done a right click
+16:41:10.115 [main]INFO  pages.RadioButtonPage - Expected: You have done a right click | message You have done a right click
+16:41:10.116 [main]INFO  stepDefinition.ElementsSteps - You have done a right click
+16:41:10.119 [main]INFO  stepDefinition.ElementsSteps - I_click_on_button: Click Me
+16:41:10.119 [main]INFO  pages.RadioButtonPage - click Button method: Click Me
+16:41:10.443 [main]INFO  pages.RadioButtonPage - Expected: You have done a dynamic click | message You have done a dynamic click
+16:41:10.444 [main]INFO  stepDefinition.ElementsSteps - Verifying message: You have done a dynamic click
+16:41:10.574 [main]INFO  pages.RadioButtonPage - Expected: You have done a dynamic click | message You have done a dynamic click
+16:41:10.575 [main]INFO  stepDefinition.ElementsSteps - You have done a dynamic click
+16:41:10.889 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:41:10.890 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:42:12.682 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:42:14.319 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:42:14.348 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:42:17.329 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:42:17.558 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Modal Dialogs
+16:42:17.559 [main]INFO  pages.HomePage - Clicking on menu item: Modal Dialogs | XPath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']
+16:42:18.065 [main]INFO  pages.Alerts_Windows_FramesPage - Opened modal: Small modal
+16:42:18.485 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:42:18.485 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:42:19.613 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:42:19.615 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:42:22.543 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:42:22.931 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Modal Dialogs
+16:42:22.931 [main]INFO  pages.HomePage - Clicking on menu item: Modal Dialogs | XPath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']
+16:42:24.734 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:42:24.734 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:42:25.859 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:42:25.860 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:42:28.356 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:42:28.569 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Modal Dialogs
+16:42:28.570 [main]INFO  pages.HomePage - Clicking on menu item: Modal Dialogs | XPath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']
+16:42:29.163 [main]INFO  pages.Alerts_Windows_FramesPage - Opened modal: Large modal
+16:42:29.731 [main]INFO  pages.Alerts_Windows_FramesPage - Closed modal using button: Close
+16:42:29.773 [main]INFO  pages.Alerts_Windows_FramesPage - Is modal visible: true
+16:42:30.208 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:42:30.209 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:47:21.126 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+16:47:23.408 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:47:23.466 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:47:26.406 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:47:26.788 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:47:26.789 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:47:27.598 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: You clicked a button
+16:47:27.975 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:47:27.975 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:47:28.850 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:47:28.851 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:47:31.619 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:47:32.032 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:47:32.032 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:47:34.502 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:47:34.502 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:47:35.442 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:47:35.443 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:47:38.345 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:47:38.663 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:47:38.663 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:47:40.795 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:47:40.795 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+16:47:41.786 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+16:47:41.788 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+16:47:44.387 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+16:47:44.584 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+16:47:44.584 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+16:47:46.829 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+16:47:46.830 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:01:24.133 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:01:25.744 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:01:25.794 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:01:28.980 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:01:29.313 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+17:01:29.314 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+17:01:29.623 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Alerts']
+17:01:29.971 [main]INFO  Base.BasePage - Clicked button: //*[@id='alertButton']
+17:01:29.984 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: You clicked a button
+17:01:30.321 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:01:30.322 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:01:31.374 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:01:31.375 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:01:34.321 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:01:34.670 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+17:01:34.670 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+17:01:35.167 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Alerts']
+17:01:35.455 [main]INFO  Base.BasePage - Clicked button: //*[@id='timerAlertButton']
+17:01:40.664 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: This alert appeared after 5 seconds
+17:01:40.937 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:01:40.937 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:01:41.863 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:01:41.864 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:01:44.806 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:01:45.134 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+17:01:45.134 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+17:01:45.611 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Alerts']
+17:01:47.661 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:01:47.662 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:01:48.705 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:01:48.707 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:01:51.175 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:01:51.413 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+17:01:51.414 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+17:01:51.867 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Alerts']
+17:01:53.792 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:01:53.793 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:02:25.411 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:02:27.173 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:02:27.210 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:02:30.071 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:02:30.452 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+17:02:30.453 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+17:02:30.956 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Alerts']
+17:02:32.657 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:02:32.659 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:08:13.870 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:08:15.549 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:08:15.577 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:08:18.125 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:08:18.441 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Accordian
+17:08:18.442 [main]INFO  pages.HomePage - Clicking on menu item: Accordian | XPath: //*[@class='menu-list']/li/*[text()='Accordian']
+17:08:18.873 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Accordian']
+17:08:21.183 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:08:21.183 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:08:29.436 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:08:31.013 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:08:31.048 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:08:34.792 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:08:35.022 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Progress Bar
+17:08:35.023 [main]INFO  pages.HomePage - Clicking on menu item: Progress Bar | XPath: //*[@class='menu-list']/li/*[text()='Progress Bar']
+17:08:35.281 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Progress Bar']
+17:08:51.245 [main]INFO  stepDefinition.WidgetsSteps - i_get_progress_bar_value: 52%
+17:08:51.688 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:08:51.688 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:09:00.742 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:09:02.581 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:09:02.624 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:09:06.306 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:09:06.603 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Tabs
+17:09:06.604 [main]INFO  pages.HomePage - Clicking on menu item: Tabs | XPath: //*[@class='menu-list']/li/*[text()='Tabs']
+17:09:06.947 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Tabs']
+17:09:08.740 [main]INFO  pages.WidgetsPage - isMoreButtonDisabled
+17:09:09.043 [main]INFO  pages.WidgetsPage - true
+17:09:09.373 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:09:09.374 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:09:36.016 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:09:37.931 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:09:37.981 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:09:41.232 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:09:41.610 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Slider
+17:09:41.611 [main]INFO  pages.HomePage - Clicking on menu item: Slider | XPath: //*[@class='menu-list']/li/*[text()='Slider']
+17:09:44.103 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:09:44.103 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:10:13.123 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:10:14.970 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:10:15.018 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:10:18.743 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:10:19.138 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Slider
+17:10:19.139 [main]INFO  pages.HomePage - Clicking on menu item: Slider | XPath: //*[@class='menu-list']/li/*[text()='Slider']
+17:10:21.183 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:10:21.183 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:11:30.755 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:11:32.796 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:11:32.842 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:11:35.710 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:11:36.123 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Slider
+17:12:13.028 [main]INFO  pages.HomePage - Clicking on menu item: Slider | XPath: //*[@class='menu-list']/li/*[text()='Slider']
+17:13:05.997 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:13:05.997 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:13:28.112 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:13:30.322 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:13:30.359 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:13:39.473 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:13:39.861 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:13:39.862 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:14:14.405 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:14:16.371 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:14:16.409 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:14:27.418 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:14:27.762 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Slider
+17:14:35.465 [main]INFO  pages.HomePage - Clicking on menu item: Slider | XPath: //*[@class='menu-list']/li/*[text()='Slider']
+17:24:30.018 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:24:31.352 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:24:31.382 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:24:38.753 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Widgets
+17:24:39.047 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Slider
+17:24:39.047 [main]INFO  pages.HomePage - Clicking on menu item: Slider | XPath: //*[@class='menu-list']/li/*[text()='Slider']
+17:24:39.459 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Slider']
+17:24:39.529 [main]INFO  pages.WidgetsPage - Slider found: [[ChromeDriver: chrome on windows (10a87b7c9b7d81ac3325f3c31757f4c0)] -> xpath: //*[@type='range']]
+17:24:39.567 [main]INFO  pages.WidgetsPage - Initial slider value: 25
+17:24:39.606 [main]INFO  pages.WidgetsPage - Min value: 0
+17:24:39.629 [main]INFO  pages.WidgetsPage - Max value: 100
+17:24:39.651 [main]INFO  pages.WidgetsPage - Attempted to set slider value to: 50
+17:24:40.669 [main]INFO  pages.WidgetsPage - Slider value successfully updated to: 50
+17:24:41.068 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:24:41.069 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:26:18.575 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:26:19.873 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:26:19.896 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:26:33.938 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:26:34.212 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Radio Button
+17:26:34.213 [main]INFO  pages.HomePage - Clicking on menu item: Radio Button | XPath: //*[@class='menu-list']/li/*[text()='Radio Button']
+17:26:34.755 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Radio Button']
+17:26:34.756 [main]INFO  stepDefinition.ElementsSteps - I_select_the_radio_button_option: Yes
+17:26:35.244 [main]INFO  pages.RadioButtonPage - Yes
+17:26:35.246 [main]INFO  stepDefinition.ElementsSteps - the_Message_Should_Be_Displayed: Yes
+17:26:35.428 [main]INFO  pages.RadioButtonPage - Expected: Yes | message Yes
+17:26:35.429 [main]INFO  stepDefinition.ElementsSteps - Yes
+17:26:35.432 [main]INFO  stepDefinition.ElementsSteps - I_select_the_radio_button_option: Impressive
+17:26:35.676 [main]INFO  pages.RadioButtonPage - Impressive
+17:26:35.677 [main]INFO  stepDefinition.ElementsSteps - the_Message_Should_Be_Displayed: Impressive
+17:26:35.849 [main]INFO  pages.RadioButtonPage - Expected: Impressive | message Impressive
+17:26:35.849 [main]INFO  stepDefinition.ElementsSteps - Impressive
+17:26:35.851 [main]INFO  stepDefinition.ElementsSteps - I_select_the_radio_button_option: No
+17:26:36.183 [main]INFO  pages.RadioButtonPage - No
+17:26:36.185 [main]INFO  pages.RadioButtonPage - No Radio Button is disabled
+17:26:36.591 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:26:36.592 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:26:45.368 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:26:46.697 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:26:46.716 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:26:54.018 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:26:54.307 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Upload and Download
+17:26:54.308 [main]INFO  pages.HomePage - Clicking on menu item: Upload and Download | XPath: //*[@class='menu-list']/li/*[text()='Upload and Download']
+17:26:55.737 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@class='menu-list']/li/*[text()='Upload and Download']. Exception: element click intercepted: Element <span class="text">...</span> is not clickable at point (167, 653). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1faf722bd990d8622248202fb840a766, clickElement {id=f.1359EA82AE8E8B7984DA0CC32B08D30C.d.3B6A1A0234A647C3874A68E77DAE1AD5.e.573}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49214/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1faf722bd990d8622248202fb840a766)] -> xpath: //*[@class='menu-list']/li/*[text()='Upload and Download']]
+Session ID: 1faf722bd990d8622248202fb840a766
+17:26:57.491 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@class='menu-list']/li/*[text()='Upload and Download']. Exception: element click intercepted: Element <span class="text">...</span> is not clickable at point (167, 653). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1faf722bd990d8622248202fb840a766, clickElement {id=f.1359EA82AE8E8B7984DA0CC32B08D30C.d.3B6A1A0234A647C3874A68E77DAE1AD5.e.573}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49214/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1faf722bd990d8622248202fb840a766)] -> xpath: //*[@class='menu-list']/li/*[text()='Upload and Download']]
+Session ID: 1faf722bd990d8622248202fb840a766
+17:26:59.271 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@class='menu-list']/li/*[text()='Upload and Download']. Exception: element click intercepted: Element <span class="text">...</span> is not clickable at point (167, 653). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1faf722bd990d8622248202fb840a766, clickElement {id=f.1359EA82AE8E8B7984DA0CC32B08D30C.d.3B6A1A0234A647C3874A68E77DAE1AD5.e.573}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49214/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1faf722bd990d8622248202fb840a766)] -> xpath: //*[@class='menu-list']/li/*[text()='Upload and Download']]
+Session ID: 1faf722bd990d8622248202fb840a766
+17:27:01.057 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@class='menu-list']/li/*[text()='Upload and Download']. Exception: element click intercepted: Element <span class="text">...</span> is not clickable at point (167, 653). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1faf722bd990d8622248202fb840a766, clickElement {id=f.1359EA82AE8E8B7984DA0CC32B08D30C.d.3B6A1A0234A647C3874A68E77DAE1AD5.e.573}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49214/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1faf722bd990d8622248202fb840a766)] -> xpath: //*[@class='menu-list']/li/*[text()='Upload and Download']]
+Session ID: 1faf722bd990d8622248202fb840a766
+17:27:02.758 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@class='menu-list']/li/*[text()='Upload and Download']. Exception: element click intercepted: Element <span class="text">...</span> is not clickable at point (167, 653). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1faf722bd990d8622248202fb840a766, clickElement {id=f.1359EA82AE8E8B7984DA0CC32B08D30C.d.3B6A1A0234A647C3874A68E77DAE1AD5.e.573}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49214}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49214/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1faf722bd990d8622248202fb840a766)] -> xpath: //*[@class='menu-list']/li/*[text()='Upload and Download']]
+Session ID: 1faf722bd990d8622248202fb840a766
+17:27:03.530 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Upload and Download']
+17:27:03.531 [main]INFO  stepDefinition.ElementsSteps - I download a file
+17:27:03.907 [main]INFO  stepDefinition.ElementsSteps - The File Should be downloaded in the Local Folder
+17:27:04.922 [main]INFO  stepDefinition.ElementsSteps - I upload a file
+17:27:05.479 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:27:05.479 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:27:25.221 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:27:26.470 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:27:26.488 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:27:33.666 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:27:33.918 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+17:27:33.919 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+17:27:34.319 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Alerts']
+17:27:34.614 [main]INFO  Base.BasePage - Clicked button: //*[@id='alertButton']
+17:27:34.628 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: You clicked a button
+17:27:34.907 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:27:34.907 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:27:35.837 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:27:35.840 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:27:43.039 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:27:43.171 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+17:27:43.171 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+17:27:43.605 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Alerts']
+17:27:43.794 [main]INFO  Base.BasePage - Clicked button: //*[@id='timerAlertButton']
+17:27:49.066 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: This alert appeared after 5 seconds
+17:27:49.386 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:27:49.386 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:27:50.185 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:27:50.188 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:27:56.697 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:27:56.859 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Alerts
+17:27:56.859 [main]INFO  pages.HomePage - Clicking on menu item: Alerts | XPath: //*[@class='menu-list']/li/*[text()='Alerts']
+17:27:57.092 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Alerts']
+17:27:57.298 [main]INFO  Base.BasePage - Clicked button: //*[@id='confirmButton']
+17:27:57.308 [main]INFO  pages.Alerts_Windows_FramesPage - Alert message: Do you confirm action?
+17:27:58.662 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@id='confirmButton']. Exception: element click intercepted: Element <button id="confirmButton" type="button" class="btn btn-primary">...</button> is not clickable at point (817, 592). Other element would receive the click: <iframe id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" name="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" width="970" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="1"></iframe>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6def70bd9e0c21b4be4fe0f49146f1e, clickElement {id=f.E5D2731498E5BFB8F3101D5372397067.d.C54DF1F75C4824F33D986B5349185F86.e.852}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49955}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49955/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f6def70bd9e0c21b4be4fe0f49146f1e)] -> xpath: //*[@id='confirmButton']]
+Session ID: f6def70bd9e0c21b4be4fe0f49146f1e
+17:28:00.356 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@id='confirmButton']. Exception: element click intercepted: Element <button id="confirmButton" type="button" class="btn btn-primary">...</button> is not clickable at point (817, 592). Other element would receive the click: <iframe id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" name="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" width="970" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="1"></iframe>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6def70bd9e0c21b4be4fe0f49146f1e, clickElement {id=f.E5D2731498E5BFB8F3101D5372397067.d.C54DF1F75C4824F33D986B5349185F86.e.852}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49955}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49955/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f6def70bd9e0c21b4be4fe0f49146f1e)] -> xpath: //*[@id='confirmButton']]
+Session ID: f6def70bd9e0c21b4be4fe0f49146f1e
+17:28:02.023 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@id='confirmButton']. Exception: element click intercepted: Element <button id="confirmButton" type="button" class="btn btn-primary">...</button> is not clickable at point (817, 592). Other element would receive the click: <iframe id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" name="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" width="970" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="1"></iframe>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6def70bd9e0c21b4be4fe0f49146f1e, clickElement {id=f.E5D2731498E5BFB8F3101D5372397067.d.C54DF1F75C4824F33D986B5349185F86.e.852}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49955}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49955/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f6def70bd9e0c21b4be4fe0f49146f1e)] -> xpath: //*[@id='confirmButton']]
+Session ID: f6def70bd9e0c21b4be4fe0f49146f1e
+17:28:03.835 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@id='confirmButton']. Exception: element click intercepted: Element <button id="confirmButton" type="button" class="btn btn-primary">...</button> is not clickable at point (817, 592). Other element would receive the click: <iframe id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" name="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" width="970" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="1"></iframe>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6def70bd9e0c21b4be4fe0f49146f1e, clickElement {id=f.E5D2731498E5BFB8F3101D5372397067.d.C54DF1F75C4824F33D986B5349185F86.e.852}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49955}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49955/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f6def70bd9e0c21b4be4fe0f49146f1e)] -> xpath: //*[@id='confirmButton']]
+Session ID: f6def70bd9e0c21b4be4fe0f49146f1e
+17:28:05.614 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@id='confirmButton']. Exception: element click intercepted: Element <button id="confirmButton" type="button" class="btn btn-primary">...</button> is not clickable at point (817, 592). Other element would receive the click: <iframe id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" name="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" width="970" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="1"></iframe>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6def70bd9e0c21b4be4fe0f49146f1e, clickElement {id=f.E5D2731498E5BFB8F3101D5372397067.d.C54DF1F75C4824F33D986B5349185F86.e.852}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49955}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49955/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f6def70bd9e0c21b4be4fe0f49146f1e)] -> xpath: //*[@id='confirmButton']]
+Session ID: f6def70bd9e0c21b4be4fe0f49146f1e
+17:28:07.358 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@id='confirmButton']. Exception: element click intercepted: Element <button id="confirmButton" type="button" class="btn btn-primary">...</button> is not clickable at point (817, 592). Other element would receive the click: <iframe id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" name="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" width="970" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="1"></iframe>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6def70bd9e0c21b4be4fe0f49146f1e, clickElement {id=f.E5D2731498E5BFB8F3101D5372397067.d.C54DF1F75C4824F33D986B5349185F86.e.852}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49955}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49955/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f6def70bd9e0c21b4be4fe0f49146f1e)] -> xpath: //*[@id='confirmButton']]
+Session ID: f6def70bd9e0c21b4be4fe0f49146f1e
+17:28:09.102 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@id='confirmButton']. Exception: element click intercepted: Element <button id="confirmButton" type="button" class="btn btn-primary">...</button> is not clickable at point (817, 592). Other element would receive the click: <iframe id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" name="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" width="970" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="1"></iframe>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6def70bd9e0c21b4be4fe0f49146f1e, clickElement {id=f.E5D2731498E5BFB8F3101D5372397067.d.C54DF1F75C4824F33D986B5349185F86.e.852}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49955}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49955/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f6def70bd9e0c21b4be4fe0f49146f1e)] -> xpath: //*[@id='confirmButton']]
+Session ID: f6def70bd9e0c21b4be4fe0f49146f1e
+17:28:09.440 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:28:09.440 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:28:10.309 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:28:10.310 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:28:10.785 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:28:11.026 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:28:11.026 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:28:36.188 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:28:37.439 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:28:37.464 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:28:44.863 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:28:45.086 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Modal Dialogs
+17:28:45.086 [main]INFO  pages.HomePage - Clicking on menu item: Modal Dialogs | XPath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']
+17:28:46.670 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@class='menu-list']/li/*[text()='Modal Dialogs']. Exception: element click intercepted: Element <span class="text">...</span> is not clickable at point (137, 666). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dca88805f3051bf6ce3893bc251c7b1e, clickElement {id=f.30E2C5D0A296196751EF8052F200E654.d.F1A4DC69B2582FFCDEB443B317CDA51C.e.644}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50141/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dca88805f3051bf6ce3893bc251c7b1e)] -> xpath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']]
+Session ID: dca88805f3051bf6ce3893bc251c7b1e
+17:28:48.467 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@class='menu-list']/li/*[text()='Modal Dialogs']. Exception: element click intercepted: Element <span class="text">...</span> is not clickable at point (137, 666). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dca88805f3051bf6ce3893bc251c7b1e, clickElement {id=f.30E2C5D0A296196751EF8052F200E654.d.F1A4DC69B2582FFCDEB443B317CDA51C.e.644}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50141/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dca88805f3051bf6ce3893bc251c7b1e)] -> xpath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']]
+Session ID: dca88805f3051bf6ce3893bc251c7b1e
+17:28:50.177 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@class='menu-list']/li/*[text()='Modal Dialogs']. Exception: element click intercepted: Element <span class="text">...</span> is not clickable at point (137, 666). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dca88805f3051bf6ce3893bc251c7b1e, clickElement {id=f.30E2C5D0A296196751EF8052F200E654.d.F1A4DC69B2582FFCDEB443B317CDA51C.e.644}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50141/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dca88805f3051bf6ce3893bc251c7b1e)] -> xpath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']]
+Session ID: dca88805f3051bf6ce3893bc251c7b1e
+17:28:51.908 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@class='menu-list']/li/*[text()='Modal Dialogs']. Exception: element click intercepted: Element <span class="text">...</span> is not clickable at point (137, 666). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dca88805f3051bf6ce3893bc251c7b1e, clickElement {id=f.30E2C5D0A296196751EF8052F200E654.d.F1A4DC69B2582FFCDEB443B317CDA51C.e.644}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50141/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dca88805f3051bf6ce3893bc251c7b1e)] -> xpath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']]
+Session ID: dca88805f3051bf6ce3893bc251c7b1e
+17:28:53.620 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@class='menu-list']/li/*[text()='Modal Dialogs']. Exception: element click intercepted: Element <span class="text">...</span> is not clickable at point (137, 666). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dca88805f3051bf6ce3893bc251c7b1e, clickElement {id=f.30E2C5D0A296196751EF8052F200E654.d.F1A4DC69B2582FFCDEB443B317CDA51C.e.644}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50141/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dca88805f3051bf6ce3893bc251c7b1e)] -> xpath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']]
+Session ID: dca88805f3051bf6ce3893bc251c7b1e
+17:28:55.320 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@class='menu-list']/li/*[text()='Modal Dialogs']. Exception: element click intercepted: Element <span class="text">...</span> is not clickable at point (137, 666). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dca88805f3051bf6ce3893bc251c7b1e, clickElement {id=f.30E2C5D0A296196751EF8052F200E654.d.F1A4DC69B2582FFCDEB443B317CDA51C.e.644}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50141/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (dca88805f3051bf6ce3893bc251c7b1e)] -> xpath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']]
+Session ID: dca88805f3051bf6ce3893bc251c7b1e
+17:28:55.674 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:28:55.674 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:28:56.526 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:28:56.527 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:29:03.585 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:29:03.724 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Modal Dialogs
+17:29:03.724 [main]INFO  pages.HomePage - Clicking on menu item: Modal Dialogs | XPath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']
+17:29:03.993 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Modal Dialogs']
+17:29:04.199 [main]INFO  pages.Alerts_Windows_FramesPage - Opened modal: Large modal
+17:29:04.451 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:29:04.451 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:29:05.224 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:29:05.225 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:29:12.217 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Alerts, Frame & Windows
+17:29:12.342 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Modal Dialogs
+17:29:12.342 [main]INFO  pages.HomePage - Clicking on menu item: Modal Dialogs | XPath: //*[@class='menu-list']/li/*[text()='Modal Dialogs']
+17:29:12.634 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Modal Dialogs']
+17:29:12.877 [main]INFO  pages.Alerts_Windows_FramesPage - Opened modal: Large modal
+17:29:13.289 [main]INFO  Base.BasePage - Clicked button: //button[text()='Close']
+17:29:13.289 [main]INFO  pages.Alerts_Windows_FramesPage - Closed modal using button: Close
+17:29:13.312 [main]INFO  pages.Alerts_Windows_FramesPage - Is modal visible: true
+17:29:13.507 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:29:13.507 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:30:06.177 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:30:07.402 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:30:07.429 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:30:14.578 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:30:14.779 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Web Tables
+17:30:14.779 [main]INFO  pages.HomePage - Clicking on menu item: Web Tables | XPath: //*[@class='menu-list']/li/*[text()='Web Tables']
+17:30:15.448 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Web Tables']
+17:30:15.910 [main]INFO  Base.BasePage - Clicked button: //*[text()='Add']
+17:30:15.924 [main]INFO  pages.WebTablesPage - Raw Table Data:
+17:30:15.926 [main]INFO  pages.WebTablesPage - Processing field: 'firstName', value: 'Test'
+17:30:16.216 [main]INFO  pages.WebTablesPage - Processing field: 'lastName', value: 'User'
+17:30:16.456 [main]INFO  pages.WebTablesPage - Processing field: 'userEmail', value: 'test.usr@example.com'
+17:30:16.765 [main]INFO  pages.WebTablesPage - Processing field: 'age', value: '30'
+17:30:16.938 [main]INFO  pages.WebTablesPage - Processing field: 'salary', value: '50000'
+17:30:17.140 [main]INFO  pages.WebTablesPage - Processing field: 'department', value: 'Finance'
+17:30:17.583 [main]INFO  Base.BasePage - Clicked button: //button[@id='submit' and contains(text(), 'Submit')]
+17:30:18.193 [main]INFO  stepDefinition.ElementsSteps - true
+17:30:19.449 [main]ERROR pages.WebTablesPage - ElementClickInterceptedException encountered. Retrying with JavaScript click...
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="mr-2" data-toggle="tooltip" title="Edit" id="edit-record-4">...</span> is not clickable at point (1052, 668). Other element would receive the click: <iframe id="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" name="google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0" title="3rd party ad content" width="970" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="1"></iframe>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb032cfb03e18b48f619d0846713dcac, clickElement {id=f.3CF421AD19F84A49F7D6A75D3762976D.d.D917BF07E00B6DB72500BA6106FE5D91.e.2345}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50603}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50603/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cb032cfb03e18b48f619d0846713dcac)] -> xpath: //div[@role='row' and .//div[text()='Test']]/*/div[@class='action-buttons']/span[@title='Edit']]
+Session ID: cb032cfb03e18b48f619d0846713dcac
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185) ~[selenium-remote-driver-4.17.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134) ~[selenium-remote-driver-4.17.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51) ~[selenium-remote-driver-4.17.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.17.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.17.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.17.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519) ~[selenium-remote-driver-4.17.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.17.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.17.0.jar:?]
+	at pages.WebTablesPage.editEntry(WebTablesPage.java:87) ~[test-classes/:?]
+	at stepDefinition.ElementsSteps.editEntry(ElementsSteps.java:225) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-6.11.0.jar:6.11.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-6.11.0.jar:6.11.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-6.11.0.jar:6.11.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-6.11.0.jar:6.11.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at io.cucumber.core.runtime.Runtime.lambda$execute$5(Runtime.java:110) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at io.cucumber.core.runtime.Runtime.lambda$execute$6(Runtime.java:110) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:233) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118) ~[?:?]
+	at io.cucumber.core.runtime.Runtime.lambda$run$2(Runtime.java:86) ~[cucumber-core-6.11.0.jar:6.11.0]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) [?:?]
+	at java.base/java.util.stream.SliceOps$1$1.accept(SliceOps.java:199) [?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1632) [?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) [?:?]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) [?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) [?:?]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578) [?:?]
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:87) [cucumber-core-6.11.0.jar:6.11.0]
+	at io.cucumber.core.cli.Main.run(Main.java:92) [cucumber-core-6.11.0.jar:6.11.0]
+	at io.cucumber.core.cli.Main.main(Main.java:34) [cucumber-core-6.11.0.jar:6.11.0]
+17:30:19.642 [main]INFO  pages.WebTablesPage - Raw Table Data:
+17:30:19.643 [main]INFO  pages.WebTablesPage - Processing field: 'firstName', value: 'Test121'
+17:30:19.988 [main]INFO  pages.WebTablesPage - Processing field: 'department', value: 'AQA'
+17:30:20.372 [main]INFO  Base.BasePage - Clicked button: //button[@id='submit' and contains(text(), 'Submit')]
+17:30:20.418 [main]INFO  stepDefinition.ElementsSteps - true
+17:30:20.654 [main]INFO  Base.BasePage - Clicked button: //div[@role='row' and .//div[text()='Test121']]/*/div[@class='action-buttons']/span[@title='Delete']
+17:30:31.131 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:30:31.131 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:30:41.083 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:30:42.343 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:30:42.376 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:30:49.792 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+17:30:50.079 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+17:30:50.079 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+17:30:50.531 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+17:30:53.211 [main]INFO  pages.PracticeFormPage - Form submitted successfully, confirmation details displayed.
+17:30:53.546 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:30:53.547 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:31:07.214 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:31:08.532 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:31:08.555 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:31:15.802 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:31:16.096 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+17:31:16.097 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+17:31:16.613 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+17:31:16.841 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:31:16.842 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:31:17.760 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:31:17.762 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:31:24.682 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:31:24.856 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+17:31:24.856 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+17:31:25.255 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+17:31:25.256 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+17:31:25.433 [main]INFO  stepDefinition.ElementsSteps - no_output_should_be_displayed method
+17:31:25.824 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:31:25.824 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:45:36.896 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:45:46.358 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:45:46.399 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:46:40.080 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:46:40.080 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:46:41.028 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:46:41.029 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:46:49.133 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:46:49.408 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+17:46:49.409 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+17:46:49.840 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+17:46:49.841 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+17:46:50.331 [main]INFO  stepDefinition.ElementsSteps - no_output_should_be_displayed method
+17:46:50.810 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:46:50.810 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:52:05.777 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+17:52:07.723 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:52:07.748 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:52:12.243 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:52:12.436 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+17:52:12.437 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+17:52:13.846 [main]ERROR Base.BasePage - Error clicking button with locator: //*[@class='menu-list']/li/*[text()='Text Box']. Exception: element click intercepted: Element <span class="text">...</span> is not clickable at point (115, 99). Other element would receive the click: <div class="header-text">...</div>
+  (Session info: chrome=132.0.6834.83)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c18d9961d5c88ea73dffabab0884c72f, clickElement {id=f.CB01E71658B9EC7102808BDBC7F9FEA9.d.A756886C165151FA08C4A76BF2072F6C.e.551}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.83, chrome: {chromedriverVersion: 132.0.6834.83 (03d59cf5ecf1..., userDataDir: C:\Users\Shubham Nikam\AppD...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63644}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63644/devtoo..., se:cdpVersion: 132.0.6834.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c18d9961d5c88ea73dffabab0884c72f)] -> xpath: //*[@class='menu-list']/li/*[text()='Text Box']]
+Session ID: c18d9961d5c88ea73dffabab0884c72f
+17:52:14.539 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+17:52:14.875 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:52:14.875 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+17:52:15.783 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+17:52:15.784 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+17:52:20.847 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+17:52:21.094 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+17:52:21.095 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+17:52:21.433 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+17:52:21.434 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+17:52:22.065 [main]INFO  stepDefinition.ElementsSteps - no_output_should_be_displayed method
+17:52:22.330 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+17:52:22.332 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:01:58.604 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+18:02:00.219 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:02:00.283 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:02:06.942 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+18:02:07.115 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+18:02:07.116 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+18:02:07.549 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+18:02:08.252 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:02:08.252 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:04:30.301 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+18:04:31.644 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:04:31.676 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:04:36.279 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+18:04:36.438 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+18:04:36.439 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+18:04:36.834 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+18:04:37.211 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+18:04:37.454 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+18:04:37.598 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+18:04:37.694 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+18:04:37.695 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+18:04:38.295 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:04:38.296 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:27:38.019 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+18:27:39.261 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:27:39.290 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:27:43.084 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+18:27:43.225 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+18:27:43.225 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+18:27:43.419 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+18:27:43.692 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+18:27:43.901 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:27:43.901 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:28:02.390 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+18:28:03.860 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:28:03.924 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:28:07.820 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+18:28:07.980 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+18:28:07.980 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+18:28:08.281 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+18:28:45.289 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+18:29:01.514 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:29:01.515 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:29:44.883 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+18:29:46.213 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:29:46.268 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:29:50.064 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+18:29:50.206 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+18:29:50.206 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+18:29:50.496 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+18:31:36.714 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+18:32:34.122 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:32:34.122 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+18:39:39.696 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+18:39:41.160 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+18:39:41.223 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+18:39:44.675 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+18:39:44.835 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+18:39:44.835 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+18:39:45.176 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+18:39:45.623 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+18:39:45.972 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+18:39:46.152 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+18:39:46.513 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+18:39:46.514 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+18:39:46.913 [main]INFO  stepDefinition.ElementsSteps - Name:Shubham Nikam
+18:39:46.986 [main]INFO  stepDefinition.ElementsSteps - Email:nikam@yahoo.com
+18:39:47.027 [main]INFO  stepDefinition.ElementsSteps - Current Address :123 Main Street
+18:39:47.066 [main]INFO  stepDefinition.ElementsSteps - Permananet Address :456 Side Street
+18:39:47.338 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+18:39:47.339 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+19:45:37.122 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+19:45:39.992 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+19:45:40.030 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+19:45:42.935 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+19:45:43.324 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+19:45:43.325 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+19:45:43.928 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+19:45:44.396 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+19:45:44.858 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+19:45:45.198 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+19:45:45.523 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+19:45:45.525 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+19:45:46.152 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+19:45:46.153 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+19:50:57.769 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+19:50:59.528 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+19:50:59.560 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+19:51:02.405 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+19:51:02.847 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+19:51:02.848 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+19:51:03.438 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+19:51:03.893 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+19:51:04.905 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+19:51:05.535 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+19:51:05.928 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+19:51:05.930 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+19:51:06.701 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+19:51:06.702 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+19:52:46.042 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+19:52:47.857 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+19:52:47.894 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+19:52:50.952 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+19:52:51.352 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+19:52:51.353 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+19:52:51.959 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+19:52:52.237 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+19:52:52.711 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+19:52:53.298 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+19:52:53.698 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+19:52:53.700 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+19:52:54.460 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+19:52:54.460 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+19:53:07.131 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+19:53:08.886 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+19:53:08.942 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+19:53:11.850 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+19:53:12.204 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+19:53:12.204 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+19:53:12.727 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+19:53:13.214 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+19:53:13.626 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+19:53:14.120 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+19:53:14.377 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+19:53:14.378 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+19:53:15.056 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+19:53:15.057 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+19:56:24.958 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+19:56:26.544 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+19:56:26.577 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+19:56:29.593 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+19:56:29.976 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+19:56:29.977 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+19:56:30.514 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+19:56:31.146 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+19:56:31.602 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+19:56:31.896 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+19:56:32.191 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+19:56:32.191 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+19:56:43.286 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+19:56:43.286 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+20:00:54.107 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+20:00:56.080 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+20:00:56.119 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+20:00:59.186 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+20:00:59.562 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+20:00:59.563 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+20:01:00.212 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+20:01:00.729 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+20:01:01.107 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+20:01:01.582 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+20:01:01.951 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+20:01:01.952 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+20:01:02.602 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+20:01:02.602 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+20:02:55.490 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+20:02:57.167 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+20:02:57.203 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+20:03:00.080 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+20:03:00.471 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+20:03:00.472 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+20:03:01.072 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+20:03:01.569 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+20:03:02.247 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+20:03:02.660 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+20:03:03.041 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+20:03:03.042 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+20:03:03.750 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+20:03:03.750 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+20:33:58.893 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+20:34:00.943 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+20:34:00.980 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+20:34:03.873 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+20:34:04.257 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+20:34:04.258 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+20:34:04.691 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+20:34:05.318 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+20:34:05.848 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+20:34:06.507 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+20:34:07.075 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+20:34:07.077 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+20:34:07.983 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+20:34:07.983 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+20:38:00.834 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+20:38:02.580 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+20:38:02.633 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+20:38:05.595 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+20:38:05.937 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+20:38:05.938 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+20:38:06.823 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+20:38:07.085 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+20:38:07.402 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+20:38:07.870 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+20:38:08.251 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+20:38:08.253 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+20:38:08.941 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+20:38:08.941 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+20:39:59.633 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+20:40:01.354 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+20:40:01.409 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+20:40:04.493 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+20:40:04.855 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+20:40:04.855 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+20:40:05.429 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+20:40:06.004 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+20:40:06.693 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+20:40:07.109 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+20:40:07.443 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+20:40:07.444 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+20:41:13.639 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+20:41:15.493 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+20:41:15.573 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+20:41:18.092 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+20:41:18.458 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+20:41:18.458 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+20:41:18.999 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+20:41:19.544 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+20:41:19.861 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+20:41:20.370 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+20:41:20.649 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+20:41:20.651 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+20:45:18.869 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+20:45:20.481 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+20:45:20.515 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+20:45:21.230 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+20:45:21.577 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+20:45:21.577 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+20:45:29.246 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+20:45:31.097 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+20:45:31.174 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+20:45:34.330 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+20:45:34.673 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+20:45:34.674 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+20:45:35.231 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+20:45:35.702 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+20:45:36.028 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+20:45:36.513 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+20:45:36.794 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+20:45:36.795 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+20:45:58.344 [main]INFO  stepDefinition.ElementsSteps - Validating field: Name | Expected: Name:Shubham Nikam | Actual: Name:Shubham Nikam
+20:47:58.103 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+20:48:00.626 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+20:48:00.669 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+20:48:03.334 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+20:48:03.635 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+20:48:03.635 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+20:48:04.092 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+20:48:04.429 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+20:48:05.022 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+20:48:05.576 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+20:48:05.892 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+20:48:05.893 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+20:48:06.333 [main]INFO  stepDefinition.ElementsSteps - Validating field: Name | Expected: Shubham Nikam | Actual: Name:Shubham Nikam
+20:48:06.748 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+20:48:06.749 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+20:49:12.188 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+20:49:13.824 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+20:49:13.871 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+20:49:17.952 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+20:49:18.316 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+20:49:18.317 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+20:49:18.737 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+20:49:19.084 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+20:49:19.309 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+20:49:19.963 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+20:49:20.539 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+20:49:20.543 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+20:49:20.991 [main]INFO  stepDefinition.ElementsSteps - Validating field: Name | Expected: Name:Shubham Nikam | Actual: Name:Shubham Nikam
+20:49:31.780 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+20:49:31.781 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+20:50:30.013 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+20:50:31.790 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+20:50:31.825 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+20:50:34.492 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+20:50:34.804 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+20:50:34.806 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+20:50:35.390 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+20:50:35.739 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+20:50:36.434 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+20:50:37.395 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+20:50:37.943 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+20:50:37.944 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+20:50:38.606 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+20:50:38.607 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+11:29:25.008 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+11:29:27.916 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+11:29:27.956 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+11:29:30.378 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+11:29:30.680 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+11:29:30.680 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+11:29:31.137 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+11:29:31.139 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+11:29:31.382 [main]INFO  stepDefinition.ElementsSteps - no_output_should_be_displayed method
+11:29:31.971 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+11:29:31.972 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+11:29:40.043 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+11:29:41.737 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+11:29:41.786 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+11:29:52.996 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+11:29:53.327 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+11:29:53.328 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+11:29:53.802 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+11:29:54.380 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+11:29:54.910 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+11:29:55.145 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+11:29:55.523 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+11:29:55.524 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+11:29:56.303 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+11:29:56.303 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+11:34:13.332 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+11:34:15.059 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+11:34:15.131 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+11:34:17.589 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+11:34:17.907 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+11:34:17.908 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+11:34:18.405 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+11:34:18.975 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+11:34:19.293 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+11:34:19.690 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+11:34:20.034 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+11:34:20.036 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+11:36:00.925 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+11:36:02.800 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+11:36:02.858 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+11:36:05.752 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+11:36:06.137 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+11:36:06.138 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+11:36:06.668 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+11:36:07.100 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+11:36:07.540 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+11:36:07.910 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+11:36:08.164 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+11:36:08.165 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+11:37:16.941 [main]INFO  stepDefinition.ElementsSteps - Validating field: name | Expected: Name:Shubham Nikam | Actual: Name:Shubham Nikam
+11:39:13.137 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+11:39:14.934 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+11:39:14.990 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+11:39:17.785 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+11:39:18.180 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+11:39:18.181 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+11:39:18.835 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+11:39:19.376 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+11:39:19.737 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+11:39:20.333 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+11:39:20.672 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+11:39:20.674 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+11:40:27.203 [main]INFO  stepDefinition.ElementsSteps - Validating field: name | Expected: Name:Shubham Nikam | Actual: Name:Shubham Nikam
+11:41:11.426 [main]INFO  stepDefinition.ElementsSteps - Validating field: email | Expected: Email:nikam@yahoo.com | Actual: Email:nikam@yahoo.com
+11:42:12.137 [main]INFO  stepDefinition.ElementsSteps - Validating field: Current Address | Expected: Current Address :123 Main Street | Actual: Current Address :123 Main Street
+11:42:17.837 [main]INFO  stepDefinition.ElementsSteps - Validating field: Permanent Address | Expected: Permananet Address :456 Side Street | Actual: Permananet Address :456 Side Street
+11:42:25.513 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+11:42:25.514 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+11:42:39.543 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+11:42:41.170 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+11:42:41.226 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+11:42:44.114 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+11:42:44.506 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+11:42:44.507 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+11:42:45.145 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+11:42:45.825 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+11:42:46.084 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+11:42:46.555 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+11:42:46.832 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+11:42:46.833 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+11:42:58.018 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+11:42:58.018 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+11:43:16.532 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+11:43:18.229 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+11:43:18.273 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+11:43:21.186 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+11:43:21.542 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+11:43:21.543 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+11:43:22.295 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+11:43:22.723 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+11:43:23.484 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+11:43:23.694 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+11:43:23.918 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+11:43:23.920 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+11:43:24.317 [main]INFO  stepDefinition.ElementsSteps - Validating field: name | Expected: Name:Shubham Nikam | Actual: Name:Shubham Nikam
+11:43:24.490 [main]INFO  stepDefinition.ElementsSteps - Validating field: email | Expected: Email:nikam@yahoo.com | Actual: Email:nikam@yahoo.com
+11:43:24.613 [main]INFO  stepDefinition.ElementsSteps - Validating field: Current Address | Expected: Current Address :123 Main Street | Actual: Current Address :123 Main Street
+11:43:24.737 [main]INFO  stepDefinition.ElementsSteps - Validating field: Permanent Address | Expected: Permananet Address :456 Side Street | Actual: Permananet Address :456 Side Street
+11:43:25.068 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+11:43:25.068 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+11:45:10.610 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+11:45:12.281 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+11:45:12.322 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+11:45:15.542 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Elements
+11:45:15.934 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Text Box
+11:45:15.935 [main]INFO  pages.HomePage - Clicking on menu item: Text Box | XPath: //*[@class='menu-list']/li/*[text()='Text Box']
+11:45:16.780 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Text Box']
+11:45:17.055 [main]INFO  pages.TextBoxPage - Entered 'Shubham Nikam' in field: Full Name
+11:45:17.473 [main]INFO  pages.TextBoxPage - Entered 'nikam@yahoo.com' in field: Email
+11:45:17.828 [main]INFO  pages.TextBoxPage - Entered '123 Main Street' in field: Current Address
+11:45:18.206 [main]INFO  pages.TextBoxPage - Entered '456 Side Street' in field: Permanent Address
+11:45:18.207 [main]INFO  stepDefinition.ElementsSteps - I_click_on_submit_button method
+11:45:19.001 [main]INFO  stepDefinition.ElementsSteps - Validating field: name | Expected: Name:Shubham Nikam | Actual: Name:Shubham Nikam
+11:45:19.211 [main]INFO  stepDefinition.ElementsSteps - Validating field: email | Expected: Email:nikam@yahoo.com | Actual: Email:nikam@yahoo.com
+11:45:19.371 [main]INFO  stepDefinition.ElementsSteps - Validating field: Current Address | Expected: Current Address :123 Main Street | Actual: Current Address :123 Main Street
+11:45:19.517 [main]INFO  stepDefinition.ElementsSteps - Validating field: Permanent Address | Expected: Permananet Address :456 Side Street | Actual: Permananet Address :456 Side Street
+11:45:19.975 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+11:45:19.976 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+11:47:18.224 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+11:47:19.946 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+11:47:19.979 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+11:47:22.883 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+11:47:23.212 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+11:47:23.213 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+11:47:23.726 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+11:47:27.877 [main]INFO  pages.PracticeFormPage - Form submitted successfully, confirmation details displayed.
+11:47:28.256 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+11:47:28.256 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+12:13:40.063 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+12:13:42.002 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+12:13:42.059 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+12:13:45.559 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+12:13:45.938 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+12:13:45.940 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+12:13:46.397 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+12:22:02.543 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+12:22:02.544 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+12:23:39.925 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+12:23:42.035 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+12:23:42.108 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+12:23:44.685 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+12:23:44.914 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+12:23:44.914 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+12:23:45.275 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+12:26:26.679 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+12:26:28.450 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+12:26:28.486 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+12:26:31.333 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+12:26:31.741 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+12:26:31.742 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+12:26:32.345 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+12:26:34.989 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+12:26:34.989 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+12:27:34.258 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+12:27:36.008 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+12:27:36.029 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+12:27:39.837 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+12:27:40.102 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+12:27:40.103 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+12:27:40.621 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+12:27:40.860 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+12:27:41.308 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+12:27:41.764 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+12:27:42.079 [main]INFO  pages.PracticeFormPage - Entered 'Male' in field: Gender
+12:27:42.360 [main]INFO  pages.PracticeFormPage - Entered '1234567890' in field: Mobile Number
+12:27:42.810 [main]INFO  pages.PracticeFormPage - Entered '01 Jan 1990' in field: Date of Birth
+12:27:43.474 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+12:27:43.475 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+12:40:18.228 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+12:40:20.811 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+12:40:20.846 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+12:40:23.684 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+12:40:24.045 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+12:40:24.046 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+12:40:24.583 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+12:40:25.044 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+12:40:25.168 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+12:40:25.561 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+12:40:25.831 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+12:40:26.878 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+12:40:27.314 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+12:40:28.223 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+12:40:28.223 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+12:42:12.783 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+12:42:14.618 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+12:42:14.684 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+12:42:17.734 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+12:42:18.098 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+12:42:18.099 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+12:42:18.841 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+12:42:59.038 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+12:43:05.711 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+12:46:54.791 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+12:47:03.649 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+13:13:13.478 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:13:15.361 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:13:15.400 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:13:18.538 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+13:13:18.945 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+13:13:18.946 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:13:19.587 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:13:20.166 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+13:13:20.625 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+13:13:21.155 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+13:13:21.792 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:13:21.792 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:15:16.012 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:15:17.848 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:15:17.880 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:15:20.734 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+13:15:21.088 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+13:15:21.088 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:15:21.556 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:15:21.883 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+13:15:22.386 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+13:15:22.877 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+13:15:23.550 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:15:23.550 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:20:22.410 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:20:24.222 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:20:24.290 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:20:26.934 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+13:20:27.265 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+13:20:27.265 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:20:27.806 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:23:22.877 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+13:23:49.622 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+13:26:05.501 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+13:27:22.158 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:27:23.781 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:27:23.841 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:27:33.902 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+13:27:34.243 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+13:27:34.244 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:27:34.689 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:27:43.247 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+13:32:08.320 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+13:32:31.012 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+13:33:09.245 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:33:09.245 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:33:57.516 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:33:59.252 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:33:59.331 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:34:02.214 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+13:34:02.618 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+13:34:02.619 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:34:03.218 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:34:11.888 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+13:35:47.744 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+13:35:57.186 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+13:36:34.402 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:36:34.403 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:44:21.796 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:44:24.248 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:44:24.278 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:44:27.261 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+13:44:27.661 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+13:44:27.661 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:44:28.230 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:49:18.850 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:49:18.851 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:49:36.162 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:49:38.003 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:49:38.079 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:49:41.080 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+13:49:41.415 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+13:49:41.416 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:49:41.940 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:49:53.641 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+13:49:59.385 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+13:50:04.600 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+13:50:41.885 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:50:41.886 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:52:48.880 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:52:50.401 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:52:50.437 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:52:53.454 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+13:52:53.834 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+13:52:53.835 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:52:54.691 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:52:55.257 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+13:52:55.771 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+13:52:56.439 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+13:52:57.679 [main]WARN  pages.PracticeFormPage - Click intercepted, using JS Click for: Male
+13:52:58.056 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:52:58.056 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+13:56:04.160 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+13:56:06.012 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+13:56:06.069 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+13:56:08.941 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+13:56:09.293 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+13:56:09.294 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:56:09.760 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+13:57:04.741 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+13:57:08.330 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+13:57:14.727 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+13:58:34.097 [main]WARN  pages.PracticeFormPage - Click intercepted, using JS Click for: Male
+13:58:46.738 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+13:58:46.738 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:00:02.823 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:00:04.515 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:00:04.550 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:00:07.591 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:00:07.905 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:00:07.905 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:00:08.648 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:00:09.061 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:00:09.501 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:00:10.118 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:00:11.327 [main]WARN  pages.PracticeFormPage - Click intercepted, using JS Click for: Male
+14:00:11.886 [main]INFO  pages.PracticeFormPage - Entered '1234567890' in field: Mobile Number
+14:00:12.363 [main]INFO  pages.PracticeFormPage - Entered '01 Jan 1990' in field: Date of Birth
+14:00:12.954 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:00:12.955 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:17:47.439 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:17:49.237 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:17:49.286 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:17:51.913 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:17:52.263 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:17:52.264 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:17:53.213 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:18:02.700 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:18:06.999 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:18:18.444 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:18:49.356 [main]WARN  pages.PracticeFormPage - Click intercepted, using JS Click for: Male
+14:19:14.043 [main]INFO  pages.PracticeFormPage - Entered '1234567890' in field: Mobile Number
+14:19:28.870 [main]INFO  pages.PracticeFormPage - Entered '01 Jan 1990' in field: Date of Birth
+14:20:28.056 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:20:28.057 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:20:59.108 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:21:00.835 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:21:00.869 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:21:03.511 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:21:03.824 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:21:03.825 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:21:04.276 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:21:04.726 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:21:05.178 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:21:05.672 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:21:06.986 [main]WARN  pages.PracticeFormPage - Click intercepted, using JS Click for: Male
+14:21:07.673 [main]INFO  pages.PracticeFormPage - Entered '1234567890' in field: Mobile Number
+14:21:08.254 [main]INFO  pages.PracticeFormPage - Entered '01 Jan 1990' in field: Date of Birth
+14:21:08.369 [main]INFO  pages.PracticeFormPage - Selected hobby: Reading
+14:21:08.456 [main]INFO  pages.PracticeFormPage - Selected hobby: Music
+14:21:09.105 [main]INFO  pages.PracticeFormPage - Entered '123 Main St, City' in field: Address
+14:21:09.787 [main]INFO  pages.PracticeFormPage - Form submitted successfully, confirmation details displayed.
+14:21:10.373 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:21:10.373 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:21:24.658 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:21:26.411 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:21:26.449 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:21:29.044 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:21:29.379 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:21:29.380 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:21:29.912 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:21:30.330 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:21:30.805 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:21:31.235 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:21:32.500 [main]WARN  pages.PracticeFormPage - Click intercepted, using JS Click for: Male
+14:21:32.942 [main]INFO  pages.PracticeFormPage - Entered '1234567890' in field: Mobile Number
+14:21:33.566 [main]INFO  pages.PracticeFormPage - Entered '01 Jan 1990' in field: Date of Birth
+14:21:33.623 [main]INFO  pages.PracticeFormPage - Selected hobby: Reading
+14:21:33.714 [main]INFO  pages.PracticeFormPage - Selected hobby: Music
+14:21:34.068 [main]INFO  pages.PracticeFormPage - Entered '123 Main St, City' in field: Address
+14:21:34.549 [main]INFO  pages.PracticeFormPage - Form submitted successfully, confirmation details displayed.
+14:21:34.881 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:21:34.881 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:31:54.527 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:31:56.388 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:31:56.413 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:31:59.748 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:32:00.100 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:32:00.100 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:32:00.696 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:32:01.085 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:32:01.602 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:32:02.102 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:32:13.901 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:32:13.901 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:33:29.880 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:33:31.490 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:33:31.525 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:33:34.419 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:33:34.716 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:33:34.716 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:33:35.321 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:33:35.659 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:33:35.933 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:33:36.546 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:33:47.326 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:33:47.326 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:34:46.923 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:34:48.943 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:34:48.996 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:34:52.106 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:34:52.491 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:34:52.492 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:34:53.068 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:34:53.315 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:34:53.744 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:34:54.297 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:36:13.167 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:36:13.167 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:39:43.606 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:39:45.632 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:39:45.673 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:39:48.540 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:39:48.881 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:39:48.882 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:39:49.427 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:39:49.897 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:39:50.275 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:39:50.822 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:40:01.512 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:40:01.512 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:41:15.907 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:41:18.032 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:41:18.089 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:41:20.875 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:41:21.199 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:41:21.199 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:41:21.672 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:41:22.122 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:41:22.539 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:41:23.221 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:41:34.052 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:41:34.053 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:42:36.142 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:42:37.984 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:42:38.040 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:42:41.047 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:42:41.401 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:42:41.401 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:42:42.072 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:42:42.530 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:42:42.810 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:42:43.738 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:42:54.565 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:42:54.566 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:44:17.235 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:44:19.128 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:44:19.204 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:44:22.026 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:44:22.388 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:44:22.388 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:44:23.288 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:44:23.812 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:44:24.178 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:44:24.846 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:49:11.902 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:49:14.718 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:49:14.764 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:49:17.460 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:49:17.669 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:49:17.669 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:49:18.134 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:49:18.506 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:49:18.799 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:49:19.359 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:49:30.083 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:49:30.085 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:51:49.387 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:51:50.640 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:51:50.663 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:51:53.294 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:51:53.496 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:51:53.496 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:51:53.815 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:51:54.086 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:51:54.458 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:51:54.716 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:52:05.254 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:52:05.255 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:52:49.760 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:52:51.060 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:52:51.099 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:52:54.713 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:52:54.908 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:52:54.908 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:52:55.163 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:52:55.480 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:52:55.690 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:52:56.105 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:53:55.423 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:53:56.816 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:53:56.860 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:53:59.458 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:53:59.684 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:53:59.684 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:53:59.925 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:54:00.212 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:54:00.385 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:54:00.734 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:54:19.893 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:54:19.894 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:56:37.951 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:56:39.277 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:56:39.299 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:56:41.934 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:56:42.136 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:56:42.137 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:56:42.363 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:56:42.501 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:56:42.663 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:56:42.884 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:56:53.840 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:56:53.842 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
+14:57:55.050 [main]INFO  utility.ConfigReader - Loaded config.properties successfully.
+14:57:56.297 [main]INFO  hooks.Hooks - Test setup completed with browser: chrome
+14:57:56.316 [main]INFO  stepDefinition.ElementsSteps - I_am_on_the_DemoQA_homepage method
+14:57:59.063 [main]INFO  stepDefinition.ElementsSteps - Clicking on card: Forms
+14:57:59.231 [main]INFO  stepDefinition.ElementsSteps - I_click_on_MenuItem: Practice Form
+14:57:59.231 [main]INFO  pages.HomePage - Clicking on menu item: Practice Form | XPath: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:57:59.510 [main]INFO  Base.BasePage - Clicked button: //*[@class='menu-list']/li/*[text()='Practice Form']
+14:57:59.709 [main]INFO  pages.PracticeFormPage - Entered 'Test' in field: firstName
+14:57:59.922 [main]INFO  pages.PracticeFormPage - Entered 'User' in field: lastName
+14:58:00.234 [main]INFO  pages.PracticeFormPage - Entered 'test.user@mail.com' in field: Email
+14:58:01.425 [main]WARN  pages.PracticeFormPage - Click intercepted, using JS Click for: Male
+14:58:01.606 [main]INFO  pages.PracticeFormPage - Entered '1234567890' in field: Mobile Number
+14:58:01.884 [main]INFO  pages.PracticeFormPage - Entered '01 Jan 1990' in field: Date of Birth
+14:58:01.943 [main]INFO  pages.PracticeFormPage - Selected hobby: Reading
+14:58:01.998 [main]INFO  pages.PracticeFormPage - Selected hobby: Music
+14:58:02.224 [main]INFO  pages.PracticeFormPage - Entered '123 Main St, City' in field: Address
+14:58:02.622 [main]INFO  pages.PracticeFormPage - Form submitted successfully, confirmation details displayed.
+14:58:02.972 [main]INFO  utility.DriverManager - WebDriver session quit successfully.
+14:58:02.972 [main]INFO  hooks.Hooks - Test teardown completed. Browser closed.
