@@ -26,6 +26,7 @@ public class BasePage {
         waits.waitUntil(() -> {
             try {
                 WebElement button = driver.findElement(By.xpath(locator));
+                scrollToElement(button);
                 if (button.isDisplayed() && button.isEnabled()) {
                     waits.waitForElementToBeClickable(button); // Ensure element is clickable
                     button.click();
